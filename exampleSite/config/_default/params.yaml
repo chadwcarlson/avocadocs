@@ -10,6 +10,7 @@
 ################################################################################
 
 # Basics
+version: "v1.0.0"
 description: A Hugo Documentation Theme by Platform.sh
 author: Platform.sh
 title: User documentation
@@ -54,9 +55,11 @@ font:
   main:
     font: "Overpass"
     family-sans-serif: "'Overpass', sans-serif;"
+    source: "remote"
   mono:
-    font: "Overpass-mono"
+    font: "Overpass+Mono"
     family-monospace: "'Overpass Mono', monospace;"
+    source: "remote"
 
 # Colors
 colors:
@@ -103,12 +106,10 @@ colors:
 footer:
   # Copyright
   copyright:
-    name: "avocadocs"
     year: 2020
-    company:
-      name: "Platform.sh"
-      url: "https://platform.sh"
-    license: "MIT"
+    name: "Platform.sh"
+    url: "https://platform.sh"
+    license: "MIT LICENSE"
   # Icon attribution
   icon-attr: true
   # links
@@ -125,19 +126,27 @@ footer:
       url: "https://platform.sh"
   # Social
   social:
-    github: "platformsh"
-    facebook: "platform.sh"
+    github: "https://github.com/platformsh"
+    facebook: "https://facebook.com/platform.sh"
     # instagram: "none"
-    twitter: "platformsh"
+    twitter: "https://twitter.com/platformsh"
     # dribble: "none"
 
 # Metadata
-site-name: "avocadocs"
-description: avocadocs is a mobile-first documentation theme for Hugo written and maintained by the Platform.sh Developer Relations team.
-image: "images/avocadocs/avocado-icon-dark.png"
-url: "https://htmlstream.com/preview/docs-ui-kit/index.html"
-keywords: &keywords
-  - documentation
-  - template
-  - open source
-  - hugo
+meta:
+  sitename: "avocadocs"
+  description: avocadocs is a mobile-first documentation theme for Hugo written and maintained by the Platform.sh Developer Relations team.
+  image: "images/avocadocs/avocado-icon-dark.png"
+  url: "https://htmlstream.com/preview/docs-ui-kit/index.html"
+  twittercard:
+    card: "product"
+    site: "@platformsh"
+    title: "avocadocs: A Hugo Documentation Theme by Platform.sh"
+    description: "avocadocs is a mobile-first documentation theme for Hugo written and maintained by the Platform.sh Developer Relations team."
+    creator: "@platformsh"
+    image: "images/avocadocs/avocado-icon-dark.png"
+  keywords:
+    - documentation
+    - template
+    - open source
+    - hugo

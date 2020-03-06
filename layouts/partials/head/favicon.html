@@ -1,11 +1,5 @@
 <!-- Favicon -->
-{{ $docstyle := "avocadocs" }}
-{{ if isset .Site.Params "docstyle" }}
-  {{ $docstyle = .Site.Params.docstyle }}
-{{ end }}
 
-{{ if isset ( index .Site.Data.docs $docstyle ) "favicon" }}
-
-  <link rel="shortcut icon" href="{{ index .Site.Data.docs $docstyle "favicon" | relURL }}">
-
+{{ if isset .Site.Params "favicon" }}
+  <link rel="shortcut icon" href="{{ .Site.Params.favicon | relURL }}">
 {{ end }}

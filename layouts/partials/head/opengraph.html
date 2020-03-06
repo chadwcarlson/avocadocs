@@ -1,7 +1,30 @@
 <!-- Open Graph -->
-<meta property="og:title" content="Documentation Help Desk by Htmlstream">
-<meta property="og:type" content="article">
-<meta property="og:url" content="https://htmlstream.com/preview/docs-ui-kit/index.html">
-<meta property="og:image" content="docsuikit/docs-ui-kit-thumbnail.jpg">
-<meta property="og:description" content="Docs UI Kit is beautiful Open Source Bootstrap 4 UI Kit under MIT license. The UI Kit comes with 10 beautiful complete and functional pages including lots of reusable and customizable UI Blocks. Every component crafted with love to speed up your workflow.">
-<meta property="og:site_name" content="Htmlstream">
+
+{{ if isset .Site.Params "meta" }}
+
+  {{ if isset .Site.Params "description" }}
+    <meta property="og:title" content="{{ .Site.Params.description }}">
+  {{ end }}
+
+  <meta property="og:type" content="article">
+
+  {{ if isset .Site.Params.meta "url" }}
+    <meta property="og:url" content="{{ .Site.Params.meta.url }}">
+  {{ end }}
+
+  <!-- Thumbnail -->
+  {{ if isset .Site.Params.meta "image" }}
+    <meta property="og:image" content="{{ .Site.Params.meta.image }}">
+  {{ end }}
+
+  <!-- Longer description -->
+  {{ if isset .Site.Params.meta "description" }}
+    <meta name="og:description" content="{{ .Site.Params.meta.description }}">
+  {{ end }}
+
+  <!-- Thumbnail -->
+  {{ if isset .Site.Params.meta "sitename" }}
+    <meta property="og:site_name" content="{{ .Site.Params.meta.sitename }}">
+  {{ end }}
+
+{{ end }}

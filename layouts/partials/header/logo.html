@@ -1,23 +1,18 @@
 <!-- Logo and version badge -->
 
-{{ $docstyle := "avocadocs" }}
-{{ if isset .Site.Params "docstyle" }}
-  {{ $docstyle = .Site.Params.docstyle }}
-{{ end }}
-
-{{ if isset ( index .Site.Data.docs $docstyle ) "logo" }}
+{{ if isset .Site.Params "logo" }}
 
   <!-- Logo -->
   {{ $logolinksto := "/" }}
-  {{ if isset ( index .Site.Data.docs $docstyle ) "logolinksto" }}
-    {{ $logolinksto = .Site.Home.Permalink }}
+  {{ if isset .Site.Params "logolinksto" }}
+    {{ $logolinksto = .Site.Params.logolinksto }}
   {{ end }}
 
   <a class="navbar-brand bg-md-primary-darker col-md-3 col-xl-2 mr-0 py-4" href="{{ $logolinksto }}">
-    <img class="mr-1" src="{{ index .Site.Data.docs $docstyle "logo" | relURL }}" alt="Docs UI Kit" style="max-width: 173px;">
+    <img class="mr-1" src="{{ .Site.Params.logo | relURL }}" style="max-width: 173px;">
 
     <!-- Version badge -->
-    {{ if isset ( index .Site.Data.docs $docstyle ) "showVersionBadge" }}
+    {{ if ( isset .Site.Params "showversionbadge" ) and ( isset .Site.Params "version" ) }}
       <span class="small">
         <span class="badge badge-light text-space-1">{{ .Site.Params.version }}</span>
       </span>

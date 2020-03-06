@@ -1,7 +1,33 @@
-<!-- Twitter Card -->
-<meta name="twitter:card" content="product">
-<meta name="twitter:site" content="@htmlstream">
-<meta name="twitter:title" content="Documentation Help Desk by Htmlstream">
-<meta name="twitter:description" content="Docs UI Kit is beautiful Open Source Bootstrap 4 UI Kit under MIT license. The UI Kit comes with 10 beautiful complete and functional pages including lots of reusable and customizable UI Blocks. Every component crafted with love to speed up your workflow.">
-<meta name="twitter:creator" content="@htmlstream">
-<meta name="twitter:image" content="docsuikit/docs-ui-kit-thumbnail.jpg">
+<!-- Twitter card previews -->
+
+{{ if isset .Site.Params "meta" }}
+
+  {{ if isset .Site.Params.meta "twittercard" }}
+
+    {{ if isset .Site.Params.meta.twittercard "card" }}
+      <meta name="twitter:card" content="{{ .Site.Params.meta.twittercard.card }}">
+    {{ end }}
+
+    {{ if isset .Site.Params.meta.twittercard "site" }}
+      <meta name="twitter:site" content="{{ .Site.Params.meta.twittercard.site }}">
+    {{ end }}
+
+    {{ if isset .Site.Params.meta.twittercard "title" }}
+      <meta name="twitter:title" content="{{ .Site.Params.meta.twittercard.title }}">
+    {{ end }}
+
+    {{ if isset .Site.Params.meta.twittercard "description" }}
+      <meta name="twitter:description" content="{{ .Site.Params.meta.twittercard.description }}">
+    {{ end }}
+
+    {{ if isset .Site.Params.meta.twittercard "creator" }}
+      <meta name="twitter:creator" content="{{ .Site.Params.meta.twittercard.creator }}">
+    {{ end }}
+
+    {{ if isset .Site.Params.meta.twittercard "image" }}
+      <meta name="twitter:image" content="{{ .Site.Params.meta.twittercard.image }}">
+    {{ end }}
+
+  {{ end }}
+
+{{ end }}

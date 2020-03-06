@@ -1,3 +1,15 @@
 <!--  Meta tags -->
-<meta name="keywords" content="documentation template, help desk, open source, free template, freebies, bootstrap 4, bootstrap4">
-<meta name="description" content="Docs UI Kit is beautiful Open Source Bootstrap 4 UI Kit under MIT license. The UI Kit comes with 10 beautiful complete and functional pages including lots of reusable and customizable UI Blocks. Every component crafted with love to speed up your workflow.">
+
+{{ if isset .Site.Params "meta" }}
+
+  <!-- Keywords -->
+  {{ if isset .Site.Params.meta "keywords" }}
+    <meta name="keywords" content="{{ range .Site.Params.keywords }}{{ . }},{{ end }}">
+  {{ end }}
+
+  <!-- Description -->
+  {{ if isset .Site.Params.meta "description" }}
+    <meta name="description" content="{{ .Site.Params.meta.description }}">
+  {{ end }}
+  
+{{ end }}

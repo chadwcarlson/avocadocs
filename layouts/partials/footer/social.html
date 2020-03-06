@@ -1,76 +1,17 @@
 <!-- Social Icons -->
 
-{{ $docstyle := "avocadocs" }}
-{{ if isset .Site.Params "docstyle" }}
-  {{ $docstyle = .Site.Params.docstyle }}
-{{ end }}
+<p>
+  <ul class="list-inline text-center text-md-right mb-0">
 
-{{ if isset (index .Site.Data.docs $docstyle) "social"}}
-              <!-- col-md-6 col-xl-4 align-self-center -->
-  <div class="col-md-6 text-center text-dark text-md-left mb-3 mb-md-2">
+    {{ range $index, $value := .Site.Params.footer.social }}
+      <li class="list-inline-item mx-2" data-toggle="tooltip" data-placement="top" title="" data-original-title="{{ $index }}">
+        <a class="text-dark" target="_blank" href="{{ $value }}">
+          <i class="fab fa-{{ $index }}"></i>
+        </a>
+      </li>
+    {{ end }}
 
-    <ul class="list-inline text-center text-md-right mb-0">
-      {{ if isset .Site.Params "footer" }}
-        {{ if isset .Site.Params.footer "links" }}
-          {{ range .Site.Params.footer.links }}
-            <li class="list-inline-item mx-2"><a class="text-dark" target="_blank" href="{{ .url }}">{{ .name }}</a></li>
-          {{ end }}
-        {{ end }}
-      {{ end }}
-    </ul>
-
-    <p>
-      <ul class="list-inline text-center text-md-right mb-0">
-
-        <!-- GitHub -->
-        {{ if isset (index .Site.Data.docs $docstyle "social") "github"}}
-          <li class="list-inline-item mx-2" data-toggle="tooltip" data-placement="top" title="" data-original-title="Github">
-            <a class="text-dark" target="_blank" href="https://github.com/{{ index .Site.Data.docs $docstyle "social" "github" }}/">
-              <i class="fab fa-github"></i>
-            </a>
-          </li>
-        {{ end }}
-
-        <!-- Facebook -->
-        {{ if isset (index .Site.Data.docs $docstyle "social") "facebook"}}
-          <li class="list-inline-item mx-2" data-toggle="tooltip" data-placement="top" title="" data-original-title="Facebook">
-            <a class="text-dark" target="_blank" href="https://www.facebook.com/{{ index .Site.Data.docs $docstyle "social" "facebook" }}">
-              <i class="fab fa-facebook"></i>
-            </a>
-          </li>
-        {{ end }}
-
-        <!-- Instagram -->
-        {{ if isset (index .Site.Data.docs $docstyle "social") "instagram"}}
-          <li class="list-inline-item mx-2" data-toggle="tooltip" data-placement="top" title="" data-original-title="Instagram">
-            <a class="text-dark" target="_blank" href="https://www.instagram.com/{{ index .Site.Data.docs $docstyle "social" "instagram" }}">
-              <i class="fab fa-instagram"></i>
-            </a>
-          </li>
-        {{ end }}
-
-        <!-- Twitter -->
-        {{ if isset (index .Site.Data.docs $docstyle "social") "twitter"}}
-          <li class="list-inline-item mx-2" data-toggle="tooltip" data-placement="top" title="" data-original-title="Twitter">
-            <a class="text-dark" target="_blank" href="https://twitter.com/{{ index .Site.Data.docs $docstyle "social" "twitter" }}">
-              <i class="fab fa-twitter"></i>
-            </a>
-          </li>
-        {{ end }}
-
-        <!-- Dribble -->
-        {{ if isset (index .Site.Data.docs $docstyle "social") "dribble"}}
-          <li class="list-inline-item ml-2" data-toggle="tooltip" data-placement="top" title="" data-original-title="Dribbble">
-            <a class="text-dark" target="_blank" href="https://dribbble.com/{{ index .Site.Data.docs $docstyle "social" "dribble" }}">
-              <i class="fab fa-dribbble"></i>
-            </a>
-          </li>
-        {{ end }}
-
-      </ul>
-    </div>
-  </p>
-
-{{ end }}
+  </ul>
+</p>
 
 <!-- End Social Icons -->
