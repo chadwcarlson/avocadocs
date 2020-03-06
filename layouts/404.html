@@ -1,0 +1,19 @@
+{{ define "main" }}
+  <main class="ml-sm-auto col-md-9 col-lg-10 px-4 pt-0 pt-md-11">
+    <div class="row pt-3">
+      <div class="col-xl-10 order-xl-1 duik-content border-bottom">
+        <div align="center">
+         <h1 id="title">404</h1>
+         <p>
+           This page either does not exist, or it has been moved.
+         </p>
+         <img src="{{ "images/404/static_images_404_404-hero@2x.png" | relURL }}" alt="Italian Trulli">
+         <p>
+           <a href="{{ "/" | relURL }}">Return home</a>
+         </p>
+        </div>
+      </div>
+    </div>
+    {{ partial "footer/footer" . }}
+  </main>
+{{ end }}

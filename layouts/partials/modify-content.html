@@ -1,0 +1,25 @@
+
+{{ $glossaryURL := "/other/glossary.html"}}
+
+{{ $temp := .dot }}
+{{ $termRegEx := "" }}
+{{ $replaceTerm := "" }}
+
+<!-- {{ $temp }} -->
+
+<!-- {{ range $index, $info := .glossary}}
+  {{ $termRegEx = printf "(%s)" $info.name }}
+  {{ $replaceTerm = printf "<a href=\"%s#%s\">%s</a>" $glossaryURL $index $info.name }}
+  {{ $temp = $temp | replaceRE $termRegEx $replaceTerm | safeHTML }}
+{{ end }} -->
+
+<!-- {{ $temp }} -->
+
+<!-- Glossary terms -->
+
+<!-- Place Anchor Icons next to headers -->
+<!-- {{ $icon := "/docsuikit/assets/vendor/feather/link.svg" | relURL }} -->
+<!-- {{ $replaceString := printf ( "${1}&nbsp;<a class=\"headline-hash\" href=\"#${2}\"><img src=\"%s\"></a> ${3}" ) $icon }} -->
+<!-- {{ $replaceString := printf ( "${1}&nbsp;<a class=\"headline-hash\" href=\"#${2}\"><i class=\"fa fa-link\" style=\"font-size:1.3rem; color:black;\" aria-hidden=\"true\"></i></a> ${3}" ) $icon }} -->
+<!-- {{ $temp | replaceRE "(<h[1-9] id=\"([^\"]+)\".+)(</h[1-9]+>)" $replaceString | safeHTML }} -->
+{{ $temp }}

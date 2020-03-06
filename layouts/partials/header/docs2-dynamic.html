@@ -1,0 +1,24 @@
+<!-- Docs2: dynamic for "books" -->
+
+{{ if isset .Site.Params "books" }}
+
+  <!-- Header Links -->
+  <ul class="navbar-nav align-items-md-center ml-md-auto">
+    <li class="nav-item mx-md-1 mx-lg-2">
+      <a class="nav-link link-dark small" href="/"><span class="d-md-none d-lg-inline-block">{{ .Site.Params.title }}</span></a>
+    </li>
+
+    {{ range $bookPath, $bookParams := sort ( .Site.Params.books ) "weight" }}
+      <li class="nav-item mx-md-1 mx-lg-2">
+        {{ $suffixFreePath := path.Join "/" ( index $bookParams "section" ) }}
+        <a class="nav-link link-dark small" href="{{ printf "%s.html" $suffixFreePath }}" title="{{ index $bookParams "title" }}"><span class="d-md-none d-lg-inline-block">{{ index $bookParams "title"  }}</span></a>
+      </li>
+    {{ end }}
+
+  </ul>
+
+
+
+  <!-- End Header Links -->
+
+{{ end }}

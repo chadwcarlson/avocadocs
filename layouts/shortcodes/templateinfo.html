@@ -1,0 +1,11 @@
+{{ $url := .Get "url" }}
+{{ $results := getJSON $url }}
+{{ $content := ( base64Decode $results.content) | transform.Unmarshal }}
+{{ range $content }}
+
+  {{ $type := split .type ":" }}
+  {{ $image := index $type 0 }}
+  {{ $version := index $type 1}}
+  <br>{{ $image }}: {{ $version }}
+
+{{ end }}

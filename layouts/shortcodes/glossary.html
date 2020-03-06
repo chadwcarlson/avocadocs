@@ -1,0 +1,6 @@
+{{ $terms := .Site.Data.glossary }}
+
+{{ range $index, $term := $terms }}
+  <h2 id="{{ $index }}">{{ $term.name }} <a class="headline-hash" href="#{{ $index }}"><img src="/docsuikit/assets/vendor/feather/link.svg"></a></h2>
+  <p>{{ $term.definition | markdownify }}</p>
+{{ end }}

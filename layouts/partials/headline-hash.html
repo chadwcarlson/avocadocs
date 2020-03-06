@@ -1,0 +1,3 @@
+{{ $icon := "/docsuikit/assets/vendor/feather/link.svg" | relURL }}
+{{ $replaceString := printf ( "${1}&nbsp;<a class=\"headline-hash\" href=\"#${2}\"><img src=\"%s\"></a> ${3}" ) $icon }}
+{{ . | replaceRE "(<h[1-9] id=\"([^\"]+)\".+)(</h[1-9]+>)" $replaceString | safeHTML }}

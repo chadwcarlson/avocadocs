@@ -1,0 +1,73 @@
+{{ define "main" }}
+
+
+  {{ $glossary := .Site.Data.glossary }}
+
+
+
+
+  <main class="ml-sm-auto col-md-9 col-lg-10 px-4 pt-0 pt-md-11">
+  <!-- <main class="ml-sm-auto col-md-9 col-lg-11 px-4 pt-0 pt-md-11"> -->
+
+    <div class="row pt-3">
+
+      <!-- {{ partial "navigation/content-nav" . }} -->
+
+      <!-- <div class="col-xl-10 order-xl-1 duik-content"> -->
+      <div class="col-xl-12 order-xl-1 duik-content border-bottom">
+<!--
+        <nav class="previous-page" aria-label="Page navigation example">
+          <ul class="pagination-lg">
+            <li class="page-item">
+              <a class="page-link" href="#" aria-label="Previous">
+                <i class="fa fa-angle-left"></i>
+                <svg class="duik-icon-svg-1x" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <nav class="next-page" aria-label="Page navigation example">
+          <ul class="pagination-lg">
+            <li class="page-item">
+              {{with .Site.RegularPages.Next . }}
+              <a class="page-link" href="{{.RelPermalink}}" aria-label="Next">
+              {{ end }}
+                <i class="fa fa-angle-right"></i>
+                <svg class="duik-icon-svg-1x" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+              </a>
+            </li>
+          </ul>
+        </nav> -->
+
+
+
+        <!-- <div class="border-bottom mb-7"> -->
+          <!-- <h1>{{ .Title }}</h1> -->
+          <!-- <p class="lead mb-5">{{ .Params.description | safeHTML }}</p> -->
+          <!-- {{ if .Params.toc }} -->
+            <!-- <div class="toc"> -->
+              <!-- <h4>Contents:</h4> -->
+              <!-- {{ .TableOfContents }} -->
+            <!-- </div> -->
+          <!-- {{ end }} -->
+          <!-- <br> -->
+
+
+
+
+        <!-- </div> -->
+
+      {{ partial "welcome" . }}
+
+      {{ .Content }}
+      <!-- {{ partial "headline-hash.html" .Content }} -->
+
+
+      <!-- Glossary -->
+      <!-- {{ partial "modify-content" ( dict "glossary" $glossary "dot" .Content)}} -->
+      </div>
+    </div>
+    {{ partial "footer/footer" . }}
+  </main>
+{{ end }}

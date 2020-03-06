@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  {{ partial "head/head" . }}
+  <body class="bg-white">
+    {{ partial "header/header" . }}
+    {{ partial "scripts/scripts" . }}
+
+
+    <!-- Full body text  -->
+    <div class="container-fluid">
+
+    <!-- More Gitbook-like bordering around main text -->
+    <!-- <div class="container py-1"> -->
+
+
+      <div class="row pt-3">
+        {{ partial "navigation/sidebar/sidebar" . }}
+
+        {{- block "main" . }}{{- end }}
+      </div>
+    </div>
+    {{ partial "navigation/gototopbutton" . }}
+  </body>
+</html>

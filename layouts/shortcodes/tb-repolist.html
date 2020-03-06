@@ -1,0 +1,69 @@
+{{ $info := ( printf "https://api.github.com/repos/platformsh/template-builder/contents/templates/%s/files/README.md" .name ) }}
+{{ $infoA := getJSON $info }}
+{{ $infoB := $infoA.content | base64Decode }}
+{{ $infoC := $infoB | htmlUnescape | markdownify }}
+{{ $header := split $infoC " for " }}
+{{ $title := index ( split ( index $header 0 ) ">" ) 1 }}
+{{ $title = index ( split $title "<" ) 0 }}
+
+
+
+<div class="platformrepos">
+    {{ $lang := .Get "lang" }}
+    {{ $registry := .Site.Data.registry }}
+
+
+<table>
+    <tr>
+      <th>Template</th>
+      <th>Description</th>
+    </tr>
+    {{ $templates := ( printf "https://api.github.com/search/repositories?q=org:platformsh-templates+language:%s" $lang )}}
+    {{ $results := getJSON $templates }}
+    {{ range $results.items }}
+
+      <!-- Template Info -->
+      {{ $templateInfo := ( printf "https://api.github.com/repos/platformsh/template-builder/contents/templates/%s/.platform.template.yaml" .name ) }}
+      {{ $resultsTemplate := getJSON $templateInfo }}
+      {{ $contentTemplate := ( base64Decode $resultsTemplate.content ) | transform.Unmarshal }}
+
+      <!-- Runtime Info -->
+      {{ $appYAML := ( printf "https://api.github.com/repos/platformsh/template-builder/contents/templates/%s/files/.platform.app.yaml" .name ) }}
+      {{ $resultsApp := getJSON $appYAML }}
+      {{ $contentApp := ( base64Decode $resultsApp.content) | transform.Unmarshal }}
+      {{ $typeApp := split $contentApp.type ":" }}
+      {{ $runtimeVersion := index $typeApp 1 }}
+
+      <!-- Service info -->
+      {{ $serviceYAML := ( printf "https://api.github.com/repos/platformsh/template-builder/contents/templates/%s/files/.platform/services.yaml" .name )}}
+      {{ $resultsServ := getJSON $serviceYAML }}
+      {{ $contentServ := ( base64Decode $resultsServ.content) | transform.Unmarshal }}
+
+      <tr>
+        <td><a href="{{.html_url}}">{{humanize .name}}</a></td>
+        <td>
+          {{.description}}
+          <br><br>
+          <i>Version:</i> {{ $runtimeVersion}}
+
+          {{ if $contentServ }}
+            <br>
+            <i>Services:</i>
+            <ul>
+              {{ range $contentServ }}
+
+                {{ $typeServ := split .type ":" }}
+                {{ $imageServ := index $typeServ 0 }}
+                {{ $versionServ := index $typeServ 1}}
+                <li><a href={{ index $registry $imageServ "docs" "url" }}>{{ index $registry $imageServ "name" }}</a>: {{ $versionServ }} </li>
+
+              {{ end }}
+            </ul>
+          {{ end }}
+        </td>
+      </tr>
+    {{ end }}
+
+</table>
+<br>
+</div>

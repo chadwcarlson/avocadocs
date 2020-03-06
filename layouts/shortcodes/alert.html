@@ -1,0 +1,11 @@
+<div class="alert {{- " " -}}{{- if .IsNamedParams -}}
+{{- with .Get "theme" -}}alert-{{.}}{{- else -}}alert-primary{{- end -}}
+{{- else -}}
+	{{- with .Get 0 -}}alert-{{.}}{{- else -}}alert-primary{{- end -}}
+{{- end -}}
+" role="alert">
+{{- with .Get "icon" -}}
+<i class="fas fa-{{.}} mr-2"></i>
+{{end}}
+{{- .Inner -}}
+</div>

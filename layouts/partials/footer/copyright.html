@@ -1,0 +1,17 @@
+<!-- Copyright -->
+
+{{ $docstyle := "avocadocs" }}
+{{ if isset .Site.Params "docstyle" }}
+  {{ $docstyle = .Site.Params.docstyle }}
+{{ end }}
+
+{{ if isset .Site.Params.footer "copyright" }}
+
+  <div class="col-md-6 text-center text-dark text-md-left mb-3 mb-md-0">
+    <p><b>avocadocs</b> {{ if isset .Site.Params.footer.copyright "year" }} &copy; {{ .Site.Params.footer.copyright.year }}{{ end }}  <a class="text-dark" href="https://platform.sh">Platform.sh</a> MIT LICENSE.</p>
+    <p>Icons made by <a class="text-dark" href="https://www.flaticon.com/authors/freepik">Freepik</a> from <a class="text-dark" href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></p>
+  </div>
+
+{{ end }}
+
+<!-- End Copyright -->

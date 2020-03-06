@@ -1,0 +1,15 @@
+{{ $altTitle := "alt title"}}
+{{ $widthScale := 100 }}
+{{ with .Get "alt" }}
+  {{ $altTitle = . }}
+{{ end }}
+{{ with .Get "scale" }}
+  {{ $widthScale = mul . $widthScale }}
+{{ end }}
+<div align="center">
+  <p class="mb-4" style="max-width: {{ $widthScale }}rem;">
+    {{ with .Get "src" }}
+        <img class="img-fluid w-100 duik-browser-img" src="{{ . }}" alt="{{ $altTitle }}">
+    {{ end }}
+  </p>
+</div>
