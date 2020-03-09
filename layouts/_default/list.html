@@ -1,46 +1,38 @@
 {{ define "main" }}
-  {{ $glossary := .Site.Data.glossary }}
+
   <main class="ml-sm-auto col-md-9 col-lg-10 px-4 pt-0 pt-md-11">
-  <!-- <main class="ml-sm-auto col-md-9 col-lg-11 px-4 pt-0 pt-md-11"> -->
-
-
-
-
     <div class="row pt-3">
 
-
-      <!-- <div class="col-xl-10 order-xl-1 duik-content"> -->
       <div class="col-xl-12 order-xl-1 duik-content border-bottom">
-
         <div class="border-bottom mb-7">
+
+          <!-- List page title -->
           <h1>{{ .Title }}</h1>
+
+          <!-- List page description -->
           <p class="lead mb-5">{{ .Params.description | safeHTML }}</p>
-          {{ if .Params.toc }}
-            <div class="toc">
-              <h4>Contents:</h4>
-              {{ .TableOfContents }}
-            </div>
-          {{ end }}
+
           <br>
-          <!-- <p class="lead mb-5">Click the heading for each section for more information.</p> -->
+
         </div>
-      <!-- {{ .Content }} -->
-      <!-- {{ partial "headline-hash.html" .Content }} -->
-      {{ partial "modify-content" ( dict "glossary" $glossary "dot" .Content)}}
-      {{ range .Pages }}
-        <div class="card-list-page">
-          <h2><a href="{{ .RelPermalink }}">{{ if isset .Params "sidebartitle" }}{{ .Params.sidebarTitle }}{{ else }}{{ .Title }}{{ end }}</a></h2>
-          <p>{{ .Params.description | safeHTML }}<p>
-          <!-- {{ if .Params.toc }}
-            <div class="toc">
-              <h5>Contents:</h5>
-            {{ .TableOfContents }}
-            </div>
-          {{ end }} -->
-        </div>
-      {{ end }}
+
+        <!-- Page content, anchorized -->
+        {{ partial "headline-hash.html" .Content }}
+
+        <!-- Section cards -->
+        {{ range .Pages }}
+          <div class="card-list-page">
+            <h2><a href="{{ .RelPermalink }}">{{ if isset .Params "sidebartitle" }}{{ .Params.sidebarTitle }}{{ else }}{{ .Title }}{{ end }}</a></h2>
+            <p>{{ .Params.description | safeHTML }}<p>
+          </div>
+        {{ end }}
+
       </div>
     </div>
+
+    <!-- Footer -->
     {{ partial "footer/footer" . }}
+
   </main>
+
 {{ end }}

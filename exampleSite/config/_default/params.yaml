@@ -14,6 +14,9 @@ version: "v0.0.1"
 description: A Hugo Documentation Theme by Platform.sh
 author: Platform.sh
 title: User documentation
+issuerepo: "https://github.com/platformsh/platformsh-docs/"
+repo: "https://github.com/platformsh/platformsh-docs/"
+editPageButton: true
 
 # Images (kept in static/)
 showVersionBadge: true
@@ -36,6 +39,12 @@ welcome:
 searchtext: "Type to search"
 searchIndex:
   base: /
+
+# 404
+_404:
+  title: "Lost in space"
+  # image: "/images/404-8.png"
+  issues: "https://github.com/platformsh/platformsh-docs/issues/new"
 
 # Books
 # Note: If you would like sections to match uglyurls, add the ".html" extension manually to `section`.
