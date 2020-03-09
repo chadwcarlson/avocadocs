@@ -5,7 +5,7 @@ tar xvzf hugo_${HUGOVERSION}_Linux-64bit.tar.gz
 
 rm hugo_${HUGOVERSION}_Linux-64bit.tar.gz
 
-npm run prod
+# npm run prod
 
 cd exampleSite
 ./hugo
