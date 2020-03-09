@@ -12,19 +12,19 @@
 
         <!-- Logo -->
         {{ if isset .Site.Params.welcome "logo" }}
-          <img class="img-fluid w-100 duik-browser-img" src="{{ .Site.Params.welcome.logo }}" {{ if isset ( index .Site.Data.docs $docstyle ) "site-name" }}alt="{{ index .Site.Data.docs $docstyle "site-name" }}"{{end}}>
+          <img class="img-fluid w-100 duik-browser-img" src="{{ .Site.Params.welcome.logo }}" {{ if isset .Site.Params.meta "sitename" }}alt="{{ .Site.Params.meta.sitename }}"{{end}}>
         {{ end }}
 
         <!-- Credit -->
         {{ if isset .Site.Params.welcome "credit" }}
           <h2 class="d-flex align-items-center justify-content-center text-uppercase font-weight-bold small text-space-1 mb-3">
-            <span class="text-dark">{{ index .Site.Data.docs $docstyle "welcome" "credit" }}</span>
+            <span class="text-dark">{{ .Site.Params.welcome.credit }}</span>
           </h2>
         {{ end }}
 
         <!-- Description -->
         {{ if isset .Site.Params.welcome "desc" }}
-          <p class="text-center mb-5">{{ index .Site.Data.docs $docstyle "welcome" "desc" | safeHTML }}</p>
+          <p class="text-center mb-5">{{ .Site.Params.welcome.desc | safeHTML }}</p>
         {{ end }}
 
         <!-- Deploy on Platform.sh -->

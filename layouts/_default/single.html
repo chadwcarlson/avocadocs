@@ -12,9 +12,6 @@
     <div class="row pt-3">
 
 
-      <!-- {{ partial "navigation/content-nav" . }} -->
-
-
       <div class="col-xl-12 order-xl-1 edit-page">
         {{ $editLocation := printf "https://%s/edit/master/content/%s/%s" .Site.Params.editrepo .Page.Language .File.Path}}
         <button type="button" class="btn btn-edit-page" onclick="window.location.href='{{ $editLocation }}'"><i class="fa fa-edit"></i>  Edit Page</button>

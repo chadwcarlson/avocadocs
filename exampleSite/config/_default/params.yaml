@@ -10,7 +10,7 @@
 ################################################################################
 
 # Basics
-version: "v1.0.0"
+version: "v0.0.1"
 description: A Hugo Documentation Theme by Platform.sh
 author: Platform.sh
 title: User documentation
@@ -18,7 +18,7 @@ title: User documentation
 # Images (kept in static/)
 showVersionBadge: true
 logo: "images/avocadocs/avocadocs-light.svg"
-logolinksto: "https://platform.sh"
+# logolinksto: "https://platform.sh"
 favicon: "images/avocadocs/avocado-icon-dark.png"
 
 # Welcome message
@@ -28,14 +28,18 @@ welcome:
     utm_content: "hugo"
   logo: "images/avocadocs/avocadocs-dark.svg"
   credit: A Hugo Documentation Theme by Platform.sh
-  desc: avocadocs is a mobile-first documentation theme for Hugo written <br> and maintained by the Platform.sh Developer Relations team.
+  desc: avocadocs is a mobile-first documentation theme for Hugo written and maintained by the Platform.sh Developer Relations team. It relies heavily on the DocsUIKit open-source Bootstrap templates made by HTMLStream.
 
-# Search Index
+
+
+# Search
+searchtext: "Type to search"
 searchIndex:
   base: /
 
 # Books
 # Note: If you would like sections to match uglyurls, add the ".html" extension manually to `section`.
+#     (i.e. books.example.section: example.html)
 books:
   home:
     title: User Documentation
@@ -53,11 +57,13 @@ books:
 # Fonts
 font:
   main:
-    font: "Overpass"
-    family-sans-serif: "'Overpass', sans-serif;"
+    # font: "Overpass"
+    # family-sans-serif: "'Overpass', sans-serif;"
+    font: "Oxygen"
     source: "remote"
   mono:
-    font: "Overpass+Mono"
+    # font: "Overpass+Mono"
+    font: "Oxygen+Mono"
     family-monospace: "'Overpass Mono', monospace;"
     source: "remote"
 
@@ -85,6 +91,7 @@ colors:
     dark: "#1e2022"
     primary-lighter: "#1e2022"
     dark-soft: "#7e8892"
+  # hamburger: "#145CC6"
   standard:
     blue: "#007bff"
     indigo: "#6610f2"
@@ -105,11 +112,11 @@ colors:
 # Footer
 footer:
   # Copyright
-  copyright:
-    year: 2020
-    name: "Platform.sh"
-    url: "https://platform.sh"
-    license: "MIT LICENSE"
+  # copyright:
+  #   year: 2020
+  #   name: "Platform.sh"
+  #   url: "https://platform.sh"
+  #   license: "MIT LICENSE"
   # Icon attribution
   icon-attr: true
   # links

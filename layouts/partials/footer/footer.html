@@ -11,6 +11,9 @@
         <!-- Company copyright information -->
         {{ if isset .Site.Params.footer "copyright" }}
           {{ partial "footer/copyright" . }}
+        {{ else }}
+          <!-- avocadocs theme footer -->
+          {{ partial "footer/theme" . }}
         {{ end }}
 
         <!-- Freepik icon attribution -->

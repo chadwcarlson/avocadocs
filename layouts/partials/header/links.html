@@ -1,11 +1,8 @@
+<!-- Header/Book Links -->
 
 {{ if isset .Site.Params "books" }}
 
-  <!-- Header/Book Links -->
   <ul class="navbar-nav duik-header__nav large text-nowrap flex-row px-3 ml-0 ml-sm-3">
-    <!-- <li class="nav-item">
-      <a class="nav-link" href="/"><i class="mobile-only fa fa-home mr-sm-1" aria-hidden="true"></i><span class="d-none d-lg-inline-block">{{ .Site.Params.title }}</span></a>
-    </li> -->
 
     {{ range $bookPath, $bookParams := sort ( .Site.Params.books ) "weight" }}
 
@@ -18,26 +15,6 @@
 
   </ul>
 
-  <!-- <div id="user-widget"></div> -->
-
-
-
-
-  <!-- End Header Links -->
-
 {{ end }}
 
-
-
-<!-- <ul id="user-widget" class="navbar-nav duik-header__nav small text-nowrap flex-row px-3 ml-0 ml-sm-3"> -->
-<!-- <nav class="navbar navbar-dark fixed-top bg-primary flex-nowrap p-0"> -->
-  <!-- <li class="nav-item">
-    <a class="nav-link" href="/" title="Live Preview"><i class="fa fa-home mr-sm-1"></i> <span class="d-none d-lg-inline-block">User Documentation</span></a>
-  </li>
-  <li class="nav-item ml-4">
-    <a class="nav-link" href="https://github.com/htmlstreamofficial/docs-ui-kit" title="Report an Issue" target="_blank"><i class="fas fa-arrow-circle-right mr-sm-1"></i> <span class="d-none d-lg-inline-block">Getting Started</span></a>
-  </li> -->
-  <!-- <li class="nav-item ml-3 ml-sm-5">
-    <a class="btn btn-sm btn-light text-primary" href="https://htmlstream.com/templates/docs-ui-kit" title="Download"><i class="fas fa-cloud-download-alt mr-sm-1"></i> Download</a>
-  </li> -->
-<!-- </ul> -->
+<!-- End Header Links -->

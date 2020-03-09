@@ -7,6 +7,15 @@
 
 
 :root {
+
+  /* --test1: "Overpass";
+  --test2: "Overpass-mono";
+  --test3: 'Overpass', sans-serif; */
+
+  --test1: "Oxygen";
+  --test2: "Oxygen-mono";
+  --test3: 'Oxygen', sans-serif;
+
   --blue: #007bff;
   --indigo: #6610f2;
   --purple: #6f42c1;
@@ -37,11 +46,11 @@
   --breakpoint-md: 768px;
   --breakpoint-lg: 992px;
   --breakpoint-xl: 1200px;
-  --font-family-sans-serif: "Overpass";
-  --font-family-monospace: "Overpass-mono";
+  --font-family-sans-serif: var(--test1);
+  --font-family-monospace: var(--test2);
 
-  --brand-font: "Overpass";
-  --brand-font-mono: "Overpass-mono";
+  --brand-font: var(--test1);
+  --brand-font-mono: var(--test2);
   --brand-color-primary-blue: #145CC6;
   --brand-color-light-blue: #d0def4;
   --brand-font-color-black: #49475F;
@@ -53,6 +62,13 @@
   --button-bg-gold: #DD901A;
   --top-bg-color: #302F45;
 
+}
+
+/* Download button */
+
+.download-button {
+  padding-right: 5rem;
+  margin-right: 2rem;
 }
 
 /*****************
@@ -69,7 +85,9 @@ USER WIDGET
     display: block;
     font-size: 0.9rem;
     font-weight: 200;
+
     /* font-family: "Overpass", "Helvetica Neue", Helvetica, Arial, sans-serif; */
+    font-family: var(--test3);
   }
 }
 
@@ -108,7 +126,10 @@ MERMAID FIGURES
 **********************/
 
 .foreignObject {
+
   /* font-family: "Overpass", "Helvetica Neue", Helvetica, Arial, sans-serif; */
+  font-family: var(--test3);
+
   font-size: 2rem;
 }
 
@@ -175,7 +196,10 @@ MAIN
 }
 
 .btn-edit-page {
+
   /* font-family: "Overpass", "Helvetica Neue", Helvetica, Arial, sans-serif; */
+  font-family: var(--test3);
+
   float: right;
   color: var(--brand-font-color-black);
   border-color: var(--brand-font-color-black);
@@ -235,7 +259,9 @@ MAIN
 .asciinema-div {
   padding-top: 2rem;
   padding-bottom: 1rem;
-  background-color: #EDEDEF;
+  background-color: #EEEDE4;
+  /* background-color: #D0DEF4; */
+  /* background-color: #FFEEEE; */
   text-align: left;
 }
 
@@ -455,7 +481,10 @@ body {
   /* padding-left: 78px; */
   /* margin-left: 3rem; */
   margin-top: 0rem;
-  font-family: "Overpass", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+  /* font-family: "Overpass", "Helvetica Neue", Helvetica, Arial, sans-serif; */
+  font-family: var(--test3);
+
   /* font-family: 'Lora', serif; */
   /* font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; */
   font-size: 1rem;
@@ -664,7 +693,10 @@ body {
 }
 
 .duik-header {
+
   /* font-family: "Overpass", "Helvetica Neue", Helvetica, Arial, sans-serif; */
+  font-family: var(--test3);
+
   /* font-size: 24px; */
   font-size: 1.2rem;
   /* line-height: 40px; */
@@ -678,14 +710,20 @@ body {
 }
 
 .duik-sidebar__item {
+
   /* font-family: "Overpass", "Helvetica Neue", Helvetica, Arial, sans-serif; */
+  font-family: var(--test3);
+
   /* font-size: 1rem; */
   font-weight: 500 !important;
   font-size: 16px;
 }
 
 .duik-sidebar__heading {
+
   /* font-family: "Overpass", "Helvetica Neue", Helvetica, Arial, sans-serif; */
+  font-family: var(--test3);
+
   font-weight: 700;
   font-size: 18px;
   /* font-size: 1.2rem;
