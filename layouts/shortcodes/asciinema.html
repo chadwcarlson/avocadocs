@@ -1,12 +1,11 @@
-<br>
+<!-- Asciinema recordings-->
+
 <div class="asciinema-div" align="center">
   <p class="mb-4">
+
     {{- with .Get "src" -}}
       <asciinema-player src="{{ . | relURL}}" preload=1></asciinema-player>
     {{end}}
-  </p>
-  <p class="asciinema-desc">
-    <b>Lorem ipsum dolor:</b> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et dui eu ex tincidunt cursus et id enim. Mauris vitae <code>sapien felis</code>. Aliquam id ligula ultricies, feugiat erat at, elementum sem. Sed ac consectetur nibh, fringilla mollis tortor. Ut elementum ac eros eu tempus. Cras cursus sapien quis ipsum pulvinar bibendum.
+    
   </p>
 </div>
-<br>

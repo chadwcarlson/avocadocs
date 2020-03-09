@@ -5,7 +5,7 @@
 
     {{ range $index, $value := .Site.Params.footer.social }}
       <li class="list-inline-item mx-2" data-toggle="tooltip" data-placement="top" title="" data-original-title="{{ $index }}">
-        <a class="text-dark" target="_blank" href="{{ $value }}">
+        <a class="social-{{ $index }} text-dark" target="_blank" href="{{ $value }}">
           <i class="fab fa-{{ $index }}"></i>
         </a>
       </li>

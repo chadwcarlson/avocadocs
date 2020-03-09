@@ -204,13 +204,18 @@ Add additional notes about how to deploy this on a live system.
 
 ## TODO <a name=""></a>
 
+---
+- search bar spacing (above, on mobile)
+- shortcodes placed within a highlight block get rendered, making it tough to document the theme
+- highlight block padding seems wrong, like there's no spacing at all
+---
+
 - [ ] Heading anchors (see https://discourse.gohugo.io/t/adding-anchor-next-to-headers/1726/7)
   - [ ] They work, and are build automatically, but the link `#` character does not appear to let others link without guessing the anchor
   - [ ] Actually, using the link above _does_ generate these anchors for _list_ pages, but NOT for _singles_
   - [ ] could use feather icons for anchors, but its currently processing  as safeHTML, so that will take  some finagling.
 - [ ] Buttons: first and last buttons get smooshed smaller in mobile rather than filling block
 - [ ] Books: Need to add book links to the top of the TOC in mobile.
-- [x] Footer (Platformsh): bottom line still appears on main book root index
 - [ ] Add additional shortcodes
   - [ ] Hugo-book/hugoBasicExample: KaTeX math formatting
   - [ ] Hugo-book: columns

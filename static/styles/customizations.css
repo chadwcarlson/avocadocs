@@ -62,6 +62,11 @@
   --button-bg-gold: #DD901A;
   --top-bg-color: #302F45;
 
+  /* green palate 5 */
+  /* --sidebar-bg-color: #E8E8E8;
+  --sidebar-bg-logo : #333A56;
+  --top-bg-color: #52658F; */
+
 }
 
 /* Download button */
@@ -256,12 +261,12 @@ MAIN
   padding-top: 0;
 }
 
-.asciinema-div {
+/* .asciinema-div {
   padding-top: 2rem;
   padding-bottom: 1rem;
   background-color: #EEEDE4;
-  /* background-color: #D0DEF4; */
-  /* background-color: #FFEEEE; */
+  background-color: #D0DEF4;
+  background-color: #FFEEEE;
   text-align: left;
 }
 
@@ -269,9 +274,9 @@ MAIN
   text-align: left;
   padding-left: 3rem;
   padding-right: 3rem;
-}
+} */
 
-.video {
+/* .video {
   align: center;
   max-width: 90%;
 }
@@ -288,7 +293,7 @@ MAIN
   text-align: left;
   padding-left: 3rem;
   padding-right: 3rem;
-}
+} */
 
 .card-header {
   /* padding: 1rem 1rem; */

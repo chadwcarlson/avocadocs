@@ -42,7 +42,6 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vulputate, odio e
 
 {{< /columns >}}
 
-
 ## Code
 
 {{< columns >}}

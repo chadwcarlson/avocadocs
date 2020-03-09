@@ -43,7 +43,7 @@ searchIndex:
 # 404
 _404:
   title: "Lost in space"
-  # image: "/images/404-8.png"
+  image: "/images/404-8.png"
   issues: "https://github.com/platformsh/platformsh-docs/issues/new"
 
 # Books
@@ -130,15 +130,17 @@ footer:
   icon-attr: true
   # links
   links:
-    - name: "Hugo"
-      url: "https://platform.sh"
     - name: "Theme"
+      url: "https://platform.sh"
+    - name: "Changelog"
       url: "https://platform.sh"
     - name: "License"
       url: "https://platform.sh"
     - name: "Contributing"
       url: "https://platform.sh"
     - name: "Platform.sh"
+      url: "https://platform.sh"
+    - name: "Hugo"
       url: "https://platform.sh"
   # Social
   social:

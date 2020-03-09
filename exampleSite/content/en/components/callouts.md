@@ -19,10 +19,3 @@ Callout are available for any length of text, as well as an optional dismiss but
 {{< callout theme="warning" >}}This is a warning alert — check it out!{{< /callout >}}
 {{< callout theme="info" >}}This is a info alert — check it out!{{< /callout >}}
 {{< callout theme="dark" >}}This is a dark alert — check it out!{{< /callout >}}
-
-## Icons
-
-{{< callout theme="primary" icon="peace" >}}This is a primary alert — check it out!{{< /callout >}}
-{{< callout theme="secondary" icon="thumbs-up" >}}This is a secondary alert — check it out!{{< /callout >}}
-{{< callout theme="danger" icon="hand-pointer" >}}This is a danger alert — check it out!{{< /callout >}}
-{{< callout theme="dark" icon="handshake" >}}This is a dark alert — check it out!{{< /callout >}}
