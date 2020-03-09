@@ -10,4 +10,5 @@ rm hugo_${HUGOVERSION}_Linux-64bit.tar.gz
 # npm run prod
 
 # cd exampleSite
-./hugo
+# ./hugo
+HUGO_THEME=avocadocs ./hugo --themesDir ../../
