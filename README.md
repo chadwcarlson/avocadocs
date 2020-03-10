@@ -207,7 +207,6 @@ Add additional notes about how to deploy this on a live system.
 ---
 - search bar spacing (above, on mobile)
 - shortcodes placed within a highlight block get rendered, making it tough to document the theme
-- highlight block padding seems wrong, like there's no spacing at all
 ---
 
 - [ ] Heading anchors (see https://discourse.gohugo.io/t/adding-anchor-next-to-headers/1726/7)

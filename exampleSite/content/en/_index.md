@@ -9,6 +9,36 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et dui eu ex tincid
 
 Cras cursus sapien quis ipsum pulvinar bibendum. Proin iaculis dignissim quam sit amet hendrerit. Donec consectetur vel lectus sit amet egestas. Pellentesque pharetra ligula a mi dapibus efficitur.
 
+```yaml
+# .platform.app.yaml
+
+# The name of this application, which must be unique within a project.
+name: 'app'
+
+# The type key specifies the language and version for your application.
+type: 'nodejs:10'
+
+# The hooks that will be triggered when the package is deployed.
+hooks:
+    # Build hooks can modify the application files on disk but not access any services like databases.
+    build: !include
+      type: string
+      path: build.sh
+
+# The size of the persistent disk of the application (in MB).
+disk: 5120
+
+# The configuration of the application when it is exposed to the web.
+web:
+    locations:
+        '/exampleSite':
+            # The public directory of the application relative to its root.
+            root: 'public'
+            index: ['index.html']
+            scripts: false
+            allow: true
+```
+
 
 ## Getting started
 

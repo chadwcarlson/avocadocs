@@ -7,7 +7,7 @@ description: A Hugo Documentation Theme by Platform.sh
 
 # Themes
 theme: avocadocs
-themesdir: ../..
+themesdir: ../../
 
 # Language settings
 languages:

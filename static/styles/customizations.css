@@ -72,8 +72,18 @@
 /* Download button */
 
 .download-button {
-  padding-right: 5rem;
+  padding-right: 1rem;
   margin-right: 2rem;
+}
+
+/* Syntax highighting */
+
+.highlight {
+  border-color: var(--brand-font-color-black);
+}
+
+pre {
+  padding: 1rem;
 }
 
 /*****************
