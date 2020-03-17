@@ -9,5 +9,5 @@
 {{- with .Get "icon" -}}
 <i class="fas fa-{{.}} mr-2"></i>
 {{end}}
-{{- .Inner -}}
+{{- .Inner | markdownify -}}
 </div>

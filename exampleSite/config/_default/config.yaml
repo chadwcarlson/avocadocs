@@ -23,4 +23,4 @@ languages:
 # Syntax highlighting
 markup:
   highlight:
-    style: monokailight
+    style: friendly

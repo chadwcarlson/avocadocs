@@ -62,6 +62,10 @@ books:
     title: FAQ
     section: faq
     weight: -100
+  community:
+    title: Community
+    url: "https://community.platform.sh/"
+    weight: -90
 
 # Fonts
 font:

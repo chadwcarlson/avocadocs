@@ -1,0 +1,20 @@
+name = "avocadocs"
+license = "MIT"
+licenselink = "https://github.com/platformsh/avocadocs/blob/master/LICENSE.md"
+description = "avocadocs is a mobile-first documentation theme for Hugo written and maintained by the Platform.sh Developer Relations team. It relies heavily on the DocsUIKit open-source Bootstrap templates made by HTMLStream."
+homepage = "https://gethugothemes.com/products/academia/"
+min_version = "0.55.0"
+tags = [
+  "documentation"
+        ]
+# features = ["page builder", "widgets", "themes", "search", "research publication system", "filterable portfolio", "blog", "create courses", "talks", "events", "slides", "gallery", "contact form"]
+
+[author]
+  name = "Platform.sh"
+  homepage = "https://platform.sh"
+
+# If porting an existing theme
+# [original]
+#   name = "academic"
+#   homepage = "https://sourcethemes.com/academic/"
+#   repo = "https://github.com/gcushen/hugo-academic"

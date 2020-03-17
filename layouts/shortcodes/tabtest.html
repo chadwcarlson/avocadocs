@@ -1,0 +1,44 @@
+
+<!-- Shortcode separator strings -->
+{{ $splitTabChar := "<--->" }}
+{{ $paramFrontMatterChar := "---" }}
+
+{{ $allParams := newScratch }}
+{{ $allContent := newScratch}}
+
+{{ $tabIndex := 0}}
+{{ $tabKeys := slice }}
+{{ range split .Inner $splitTabChar }}
+
+  {{ $splitParams := ( split . $paramFrontMatterChar ) }}
+  {{ $params := index $splitParams 1 }}
+  {{ $body := index $splitParams 2 }}
+
+  <!-- Pull out the params  -->
+  {{ $tabParams := newScratch }}
+  {{ range (split $params "\n") }}
+    {{ $key := index ( split . "=" ) 0 }}
+    {{ $value := index ( split . "=" ) 1 }}
+    {{ $tabParams.Set $key $value }}
+  {{ end }}
+  {{ $allParams.Set ( string $tabIndex ) $tabParams }}
+
+  <!-- Pull out the content -->
+  {{ $allContent.Set ( string $tabIndex ) $body }}
+
+
+  <!-- Increment ze loop -->
+  {{ $tabKeys = $tabKeys | append ( string $tabIndex )}}
+  {{ $tabIndex = add $tabIndex 1}}
+
+
+{{ end }}
+
+{{ range $tabKeys }}
+
+  {{ with ( $allParams.Get . ) }}
+    {{ .Get "title" }}<br>
+  {{ end }}
+  {{ $allContent.Get . }}<br><hr>
+
+{{ end }}

@@ -2,9 +2,15 @@
 {{ with .Get "markdownify" }}
   {{ $markdown = . }}
 {{ end }}
+{{ $highlight := "false"}}
+{{ with .Get "highlight"}}
+  {{ $highlight = . }}
+{{ end }}
 
 {{ if eq $markdown "true" }}
 {{ with .Get "file" }}{{ markdownify ( readFile . ) }}{{end}}
+{{ else if ne $highlight "false" }}
+{{ with .Get "file" }}{{ highlight ( readFile . ) $highlight "style=igor" }}{{end}}
 {{ else }}
 {{ with .Get "file" }}{{ safeHTML ( readFile . ) }}{{end}}
 {{ end }}

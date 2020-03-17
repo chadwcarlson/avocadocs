@@ -1,6 +1,5 @@
 ---
 title: Introduction
-toc: true
 ---
 
 ## Purpose
@@ -38,7 +37,6 @@ web:
             scripts: false
             allow: true
 ```
-
 
 ## Getting started
 
