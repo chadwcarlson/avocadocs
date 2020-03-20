@@ -26,7 +26,7 @@ web:
     locations:
         '/':
             # The public directory of the application relative to its root.
-            root: 'exampleSite/public'
+            root: 'docs/public'
             index: ['index.html']
             scripts: false
             allow: true
