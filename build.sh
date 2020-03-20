@@ -3,14 +3,14 @@ HUGOVERSION=0.66.0
 mkdir exampleSite/themes
 mkdir exampleSite/themes/avocadocs
 
-cp -a . exampleSite/themes/avocadocs
+mv . exampleSite/themes/avocadocs
 
-cd exampleSite
+# cd exampleSite
 
-wget https://github.com/gohugoio/hugo/releases/download/v$HUGOVERSION/hugo_${HUGOVERSION}_Linux-64bit.tar.gz
-tar xvzf hugo_${HUGOVERSION}_Linux-64bit.tar.gz
-
-rm hugo_${HUGOVERSION}_Linux-64bit.tar.gz
+# wget https://github.com/gohugoio/hugo/releases/download/v$HUGOVERSION/hugo_${HUGOVERSION}_Linux-64bit.tar.gz
+# tar xvzf hugo_${HUGOVERSION}_Linux-64bit.tar.gz
+#
+# rm hugo_${HUGOVERSION}_Linux-64bit.tar.gz
 
 # npm run prod
 
