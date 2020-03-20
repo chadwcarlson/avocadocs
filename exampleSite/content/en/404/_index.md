@@ -1,5 +1,6 @@
 ---
 title: "Lost in space"
+sidebarIgnore: true
 ---
 
 {{< callout theme="primary" >}}

@@ -19,7 +19,7 @@ repo: "https://github.com/platformsh/platformsh-docs/"
 editPageButton: true
 
 # Images (kept in static/)
-showVersionBadge: true
+# showVersionBadge: true
 logo: "images/avocadocs/avocadocs-light.svg"
 # logolinksto: "https://platform.sh"
 favicon: "images/avocadocs/avocado-icon-dark.png"
@@ -31,7 +31,7 @@ welcome:
     utm_content: "hugo"
   logo: "images/avocadocs/avocadocs-dark.svg"
   credit: A Hugo Documentation Theme by Platform.sh
-  desc: avocadocs is a mobile-first documentation theme for Hugo written and maintained by the Platform.sh Developer Relations team. It relies heavily on the DocsUIKit open-source Bootstrap templates made by HTMLStream.
+  desc: avocadocs is a mobile-first documentation theme for Hugo written and maintained by the Platform.sh Developer Relations team. It relies heavily on the DocsUIKit open-source Bootstrap template made by HTMLStream.
 
 
 
@@ -63,7 +63,7 @@ books:
     section: faq
     weight: -100
   community:
-    title: Community
+    title: External link
     url: "https://community.platform.sh/"
     weight: -90
 
@@ -72,13 +72,13 @@ font:
   main:
     # font: "Overpass"
     # family-sans-serif: "'Overpass', sans-serif;"
-    font: "Oxygen"
-    source: "remote"
+    # font: "Oxygen"
+    # source: "remote"
   mono:
     # font: "Overpass+Mono"
-    font: "Oxygen+Mono"
-    family-monospace: "'Overpass Mono', monospace;"
-    source: "remote"
+    # font: "Oxygen+Mono"
+    # family-monospace: "'Overpass Mono', monospace;"
+    # source: "remote"
 
 # Colors
 colors:

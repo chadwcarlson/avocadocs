@@ -458,7 +458,9 @@ def usage_example():
 
 {{< /newtabs >}}
 
-> Test note plaintext
+> **note**
+>
+> Lorem ipsum
 
 ## Reading files
 
@@ -626,7 +628,103 @@ database:
 
 ## Tabs checking
 
+### Raw text
+
 {{< tabtest >}}
+
+---
+title=MD
+file=none
+highlight=false
+markdownify=true
+---
+Mauris orci nisl, finibus quis libero in, aliquam iaculis lacus. Vestibulum sit amet mi fermentum, posuere mauris sit amet, blandit leo. In ante urna, congue eu justo vel, egestas luctus ante. Fusce luctus massa varius ligula varius, sed rutrum nisi interdum.
+
+> **note**
+>
+> Mauris orci nisl, finibus quis libero in, aliquam iaculis lacus. Vestibulum sit amet mi fermentum, posuere mauris sit amet, blandit leo. In ante urna, congue eu justo vel, egestas luctus ante. Fusce luctus massa varius ligula varius, sed rutrum nisi interdum.
+>
+> ```python
+> import platformshconfig
+> config = platformsconfig.Config()
+> config.credentials('database')
+> ```
+>
+> Vestibulum vehicula nisi consequat nulla molestie, in rutrum orci ornare. Sed commodo erat ac dignissim pretium. Fusce sagittis efficitur arcu, ac elementum metus varius eu. Vestibulum id mattis nunc.
+
+Mauris orci nisl, finibus quis libero in, aliquam iaculis lacus. Vestibulum sit amet mi fermentum, posuere mauris sit amet, blandit leo. In ante urna, congue eu justo vel, egestas luctus ante. Fusce luctus massa varius ligula varius, sed rutrum nisi interdum.
+
+<--->
+
+---
+title=YAML
+file=none
+highlight=yaml
+markdownify=false
+---
+database:
+  type: mysql:10.2
+  disk: 2048
+<--->
+
+---
+title=JS
+file=none
+highlight=js
+markdownify=false
+---
+const config = require("platformsh-config").config();
+
+const credentials = config.credentials('postgresdatabase');
+
+let settings = {
+  client: "postgres",
+  host: credentials.ip,
+  port: credentials.port,
+  database: credentials.path,
+  username: credentials.username,
+  password: credentials.password
+};
+
+<--->
+
+---
+title=JSON
+file=none
+highlight=json
+markdownify=false
+---
+{
+   "database" : [
+      {
+         "path" : "main",
+         "query" : {
+            "is_master" : true
+         },
+         "port" : 3306,
+         "username" : "user",
+         "password" : "",
+         "host" : "database.internal",
+         "ip" : "246.0.241.50",
+         "scheme" : "mysql"
+      }
+   ]
+}
+
+{{< /tabtest >}}
+
+### Pulled in local files
+
+{{< tabtest >}}
+
+---
+title=MD
+file=static/files/misc/lorem.md
+highlight=false
+markdownify=true
+---
+
+<--->
 
 ---
 title=YAML
@@ -634,7 +732,6 @@ file=static/files/misc/mysql.yaml
 highlight=yaml
 markdownify=false
 ---
-Lorem ipsum-yaml
 
 <--->
 
@@ -644,16 +741,14 @@ file=static/files/misc/basic.js
 highlight=js
 markdownify=false
 ---
-Lorem ipsum-js
 
 <--->
 
 ---
-title=MD
-file=static/files/misc/lorem.md
-highlight=false
-markdownify=true
+title=JSON
+file=static/files/misc/basic.json
+highlight=json
+markdownify=false
 ---
-Lorem ipsum-md
 
 {{< /tabtest >}}
