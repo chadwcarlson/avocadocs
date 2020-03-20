@@ -9,6 +9,7 @@ rm hugo_${HUGOVERSION}_Linux-64bit.tar.gz
 
 # npm run prod
 
+pwd
 cd exampleSite
 # ./hugo
 # pwd
