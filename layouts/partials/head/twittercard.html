@@ -1,9 +1,14 @@
 <!-- Twitter card previews -->
 
-<meta name="twitter:description" content="{{ .Params.description }}">
+{{ if isset .Params "description" }}
+  <meta name="twitter:description" content="{{ .Params.description }}">
+{{ else if isset .Site.Params "meta" }}
+  {{ if isset .Site.Params.meta "description" }}
+    <meta name="twitter:description" content="{{ .Site.Params.meta.twittercard.description }}">
+  {{ end }}
+{{ end }}
 
-
-<!-- {{ if isset .Site.Params "meta" }}
+{{ if isset .Site.Params "meta" }}
 
   {{ if isset .Site.Params.meta "twittercard" }}
 
@@ -19,10 +24,6 @@
       <meta name="twitter:title" content="{{ .Site.Params.meta.twittercard.title }}">
     {{ end }}
 
-    {{ if isset .Site.Params.meta.twittercard "description" }}
-      <meta name="twitter:description" content="{{ .Site.Params.meta.twittercard.description }}">
-    {{ end }}
-
     {{ if isset .Site.Params.meta.twittercard "creator" }}
       <meta name="twitter:creator" content="{{ .Site.Params.meta.twittercard.creator }}">
     {{ end }}
@@ -33,4 +34,4 @@
 
   {{ end }}
 
-{{ end }} -->
+{{ end }}
