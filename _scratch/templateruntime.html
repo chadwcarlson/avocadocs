@@ -1,5 +1,0 @@
-{{ $url := .Get "url" }}
-{{ $results := getJSON $url }}
-{{ $content := ( base64Decode $results.content) | transform.Unmarshal }}
-{{ $type := split $content.type ":" }}
-{{ index $type 1 }}
