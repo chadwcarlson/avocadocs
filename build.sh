@@ -8,12 +8,12 @@ mv data exampleSite/themes/avocadocs/data
 mv layouts exampleSite/themes/avocadocs/layouts
 mv static exampleSite/themes/avocadocs/static
 
-# cd exampleSite
+cd exampleSite
 
-# wget https://github.com/gohugoio/hugo/releases/download/v$HUGOVERSION/hugo_${HUGOVERSION}_Linux-64bit.tar.gz
-# tar xvzf hugo_${HUGOVERSION}_Linux-64bit.tar.gz
-#
-# rm hugo_${HUGOVERSION}_Linux-64bit.tar.gz
+wget https://github.com/gohugoio/hugo/releases/download/v$HUGOVERSION/hugo_${HUGOVERSION}_Linux-64bit.tar.gz
+tar xvzf hugo_${HUGOVERSION}_Linux-64bit.tar.gz
+
+rm hugo_${HUGOVERSION}_Linux-64bit.tar.gz
 
 # npm run prod
 

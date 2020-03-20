@@ -6,7 +6,7 @@ author: Platform.sh
 description: A Hugo Documentation Theme by Platform.sh
 
 # Themes
-# theme: avocadocs
+theme: avocadocs
 # themesdir: ../..
 
 # Language settings
