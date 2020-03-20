@@ -1,6 +1,9 @@
 <!-- Twitter card previews -->
 
-{{ if isset .Site.Params "meta" }}
+<meta name="twitter:description" content="{{ .Params.description }}">
+
+
+<!-- {{ if isset .Site.Params "meta" }}
 
   {{ if isset .Site.Params.meta "twittercard" }}
 
@@ -30,4 +33,4 @@
 
   {{ end }}
 
-{{ end }}
+{{ end }} -->
