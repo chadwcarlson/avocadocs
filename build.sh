@@ -3,7 +3,7 @@ HUGOVERSION=0.66.0
 mkdir exampleSite/themes
 mkdir exampleSite/themes/avocadocs
 
-# cp -r !(exampleSite) exampleSite/themes/avocadocs
+cp -a . exampleSite/themes/avocadocs
 
 cd exampleSite
 
