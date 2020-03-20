@@ -32,6 +32,8 @@ Running locally
 hugo serve --themesDir ../.. -s exampleSite/
 ```
 
+- looks like, at least in Slack, page descriptions can be unfurled and show for markdown format, but not for html format. In that case, should markdownify everywhere page descriptions are used. 
+
 ## Table of Contents
 - [About](#about)
 - [Getting Started](#getting_started)

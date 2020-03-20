@@ -1,5 +1,5 @@
 HUGOVERSION=0.66.0
-SITEDIR=exampleSite
+SITEDIR=docs
 
 # Move theme into the example site
 mkdir $SITEDIR/themes
