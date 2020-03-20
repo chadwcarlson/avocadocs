@@ -29,7 +29,7 @@
 Running locally
 
 ```
-hugo serve --themesDir ../..
+hugo serve --themesDir ../.. -s exampleSite/
 ```
 
 ## Table of Contents
