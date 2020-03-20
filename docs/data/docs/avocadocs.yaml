@@ -1,0 +1,7 @@
+header:
+  logo:
+    image: "images/avocadocs/avocadocs-light.svg"
+    favicon: "images/avocadocs/avocado-icon-dark.png"
+    link: "/"
+    showVersionBadge: true
+  downloadbutton: false

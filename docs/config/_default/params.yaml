@@ -1,0 +1,26 @@
+author: Chad Carlson
+version: v0.0.1
+description: Hugo documentation theme using Docs UI Kit Bootstrap templates
+docstyle: platformsh
+
+title: User Documentation
+
+editrepo: github.com/platformsh/platformsh-docs
+
+home:
+  section: overview
+  title: Introduction
+
+books:
+  gettingstarted:
+    title: Getting Started
+    section: gettingstarted
+    icon: fa-rocket
+    weight: -110
+
+searchIndex:
+  base: /
+
+algolia:
+  index: "platform-sh"
+  key: "a15bb8c2ec55f21f33cac3f2bc71d805"

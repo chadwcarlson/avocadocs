@@ -1,0 +1,28 @@
+baseURL: /
+title: Platform.sh documentation
+theme: avocadocs
+# themesdir: ../..
+
+# "Ugly URLs" (https://gohugo.io/content-management/urls/#ugly-urls) retain the html
+# suffix on all pages (https://example.com/about.html), which can be useful to minimize
+# broken links when migrating from GitBook. Comment out this line to generate pages
+# without suffixes. (https://example.com/about/)
+uglyurls: true
+
+languages:
+  en:
+    contentDir: content/en
+    languageName: English
+    weight: 10
+  # li:
+  #   contentDir: content/lorem
+  #   languageName: Lorem Ipsum
+  #   weight: 20
+
+markup:
+  highlight:
+    style: tango
+  tableOfContents:
+    endLevel: 3
+    ordered: false
+    startLevel: 2
