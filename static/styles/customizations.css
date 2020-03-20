@@ -915,9 +915,16 @@ hr {
 .nav-link {
   display: block;
   padding: .5rem .5rem;
-  font-size: 1.05rem;
-  /* text-transform: uppercase; */
+  font-size: 1.15rem;
+  /* text-decoration: underline !important; */
 }
+
+/* Underline active books */
+
+.nav-link > .active-book {
+  border-bottom: .1rem solid #ffffff;
+}
+
 
 .nav-pills .nav-link {
   color: var(--brand-font-color-black);
