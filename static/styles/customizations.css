@@ -12,9 +12,9 @@
   --test2: "Overpass-mono";
   --test3: 'Overpass', sans-serif; */
 
-  --test1: "Oxygen";
+  /* --test1: "Oxygen";
   --test2: "Oxygen-mono";
-  --test3: 'Oxygen', sans-serif;
+  --test3: 'Oxygen', sans-serif; */
 
   --blue: #007bff;
   --indigo: #6610f2;
@@ -46,11 +46,11 @@
   --breakpoint-md: 768px;
   --breakpoint-lg: 992px;
   --breakpoint-xl: 1200px;
-  --font-family-sans-serif: var(--test1);
-  --font-family-monospace: var(--test2);
+  /* --font-family-sans-serif: var(--test1); */
+  /* --font-family-monospace: var(--test2); */
 
-  --brand-font: var(--test1);
-  --brand-font-mono: var(--test2);
+  /* --brand-font: var(--test1); */
+  /* --brand-font-mono: var(--test2); */
   --brand-color-primary-blue: #145CC6;
   --brand-color-light-blue: #d0def4;
   --brand-font-color-black: #49475F;
@@ -126,7 +126,7 @@ USER WIDGET
     font-weight: 200;
 
     /* font-family: "Overpass", "Helvetica Neue", Helvetica, Arial, sans-serif; */
-    font-family: var(--test3);
+    /* font-family: var(--test3); */
   }
 }
 
@@ -167,7 +167,7 @@ MERMAID FIGURES
 .foreignObject {
 
   /* font-family: "Overpass", "Helvetica Neue", Helvetica, Arial, sans-serif; */
-  font-family: var(--test3);
+  /* font-family: var(--test3); */
 
   font-size: 2rem;
 }
@@ -237,7 +237,7 @@ MAIN
 .btn-edit-page {
 
   /* font-family: "Overpass", "Helvetica Neue", Helvetica, Arial, sans-serif; */
-  font-family: var(--test3);
+  /* font-family: var(--test3); */
 
   float: right;
   color: var(--brand-font-color-black);
@@ -525,7 +525,7 @@ body {
   margin-top: 0rem;
 
   /* font-family: "Overpass", "Helvetica Neue", Helvetica, Arial, sans-serif; */
-  font-family: var(--test3);
+  /* font-family: var(--test3); */
 
   /* font-family: 'Lora', serif; */
   /* font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; */
@@ -734,10 +734,47 @@ body {
   background-color: var(--top-bg-color) !important;
 }
 
+/* Search */
+
+.input-group-lg > .form-control,
+.input-group-lg > .custom-select,
+.input-group-lg > .input-group-prepend > .input-group-text,
+.input-group-lg > .input-group-append > .input-group-text,
+.input-group-lg > .input-group-prepend > .btn,
+.input-group-lg > .input-group-append > .btn {
+  font-size: 0.9rem;
+  border-radius: 0rem;
+}
+
+/* Logo */
+
+/* .navbar > .col-md-3 {
+  text-align: center;
+} */
+
+/* Links */
+
+/* .flex-nowrap > .nav-books {
+  justify-content: left;
+} */
+
+/* .navbar-nav {
+  text-align: left !important;
+  justify-content: left !important;
+} */
+/*
+nav > .navbar {
+  align-content: left;
+  text-align: left;
+  justify-content: left;
+} */
+
+
+
 .duik-header {
 
   /* font-family: "Overpass", "Helvetica Neue", Helvetica, Arial, sans-serif; */
-  font-family: var(--test3);
+  /* font-family: var(--test3); */
 
   /* font-size: 24px; */
   font-size: 1.2rem;
@@ -754,7 +791,7 @@ body {
 .duik-sidebar__item {
 
   /* font-family: "Overpass", "Helvetica Neue", Helvetica, Arial, sans-serif; */
-  font-family: var(--test3);
+  /* font-family: var(--test3); */
 
   /* font-size: 1rem; */
   font-weight: 500 !important;
@@ -764,7 +801,7 @@ body {
 .duik-sidebar__heading {
 
   /* font-family: "Overpass", "Helvetica Neue", Helvetica, Arial, sans-serif; */
-  font-family: var(--test3);
+  /* font-family: var(--test3); */
 
   font-weight: 700;
   font-size: 18px;
@@ -853,6 +890,14 @@ body {
   padding: 5rem;
 } */
 
+/* Sidebar */
+
+hr {
+  border-top: 1.5px solid #ffffff;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
 /* Code tabs */
 
 .tabs {
@@ -860,6 +905,7 @@ body {
   /* padding-top: 1rem;
   padding-bottom: 1rem; */
   /* background-color: #f0f0f0; */
+  margin-bottom: 2rem;
 }
 
 .nav-pills {
@@ -877,17 +923,17 @@ body {
   color: var(--brand-font-color-black);
   border: .5px solid var(--brand-font-color-black);
   border-radius: 0rem !important;
-  border-top-left-radius: .5rem !important;
-  border-top-right-radius: .5rem !important;
-  background-color: #f0f0f0;
+  /* border-top-left-radius: .5rem !important; */
+  /* border-top-right-radius: .5rem !important; */
+  background-color: #E7E7E7;
   /* margin-right: .25rem; */
 }
 
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
   color: var(--brand-color-primary-blue);
-  background-color: #f0f0f0;
-  border-bottom: .5px solid #f0f0f0;
+  background-color: #fff;
+  border-bottom: none;
 }
 
 .tab-content > .active {

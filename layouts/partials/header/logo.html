@@ -9,7 +9,8 @@
   {{ end }}
 
   <a class="navbar-brand bg-md-primary-darker col-md-3 col-xl-2 mr-0 py-4" href="{{ $logolinksto }}">
-    <img class="mr-1" src="{{ .Site.Params.logo | relURL }}" style="max-width: 173px;" {{ if isset .Site.Params.meta "sitename" }}alt="{{ .Site.Params.meta.sitename }}"{{ end }}>
+
+    <img class="mr-0" src="{{ .Site.Params.logo | relURL }}" style="max-width: 200px;" {{ if isset .Site.Params.meta "sitename" }}alt="{{ .Site.Params.meta.sitename }}"{{ end }}>
 
     <!-- Version badge -->
     {{ if ( isset .Site.Params "showversionbadge" ) and ( isset .Site.Params "version" ) }}

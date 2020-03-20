@@ -2,19 +2,19 @@
 
 {{ if isset .Site.Params "books" }}
 
-  <ul class="navbar-nav duik-header__nav large text-nowrap flex-row px-3 ml-0 ml-sm-3">
+  <ul class="navbar-nav duik-header__nav large flex-row mr-md-auto">
 
     {{ range $bookPath, $bookParams := sort ( .Site.Params.books ) "weight" }}
 
       {{ $suffixFreePath := "/" }}
-      <li class="nav-item ml-4">
+      <li class="nav-item ml-5">
         {{ if isset $bookParams "section" }}
           {{ $suffixFreePath = path.Join $suffixFreePath ( index $bookParams "section" ) }}
         {{ else if isset $bookParams "url" }}
           {{ $suffixFreePath = ( index $bookParams "url" ) }}
         {{ end }}
         {{ $icon := printf "fa %s mr-sm-1" ( index $bookParams "icon" ) }}
-        <a class="nav-link" href="{{ printf "%s" $suffixFreePath }}" title="{{ index $bookParams "title" }}"><i class="mobile-only {{ $icon }}"></i> <span class="d-none d-lg-inline-block">{{ index $bookParams "title"  }}</span></a>
+        <a class="nav-link" href="{{ printf "%s" $suffixFreePath }}" title="{{ index $bookParams "title" }}"><span class="d-none d-lg-inline-block">{{ index $bookParams "title"  }}</span></a>
       </li>
     {{ end }}
 
