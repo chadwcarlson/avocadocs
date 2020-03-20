@@ -26,6 +26,12 @@
 
 ---
 
+Running locally
+
+```
+hugo serve --themesDir ../..
+```
+
 ## Table of Contents
 - [About](#about)
 - [Getting Started](#getting_started)
