@@ -6,7 +6,7 @@ mkdir exampleSite/themes/avocadocs
 mv archetypes exampleSite/themes/avocadocs/archetypes
 mv data exampleSite/themes/avocadocs/data
 mv layouts exampleSite/themes/avocadocs/layouts
-mv statis exampleSite/themes/avocadocs/static
+mv static exampleSite/themes/avocadocs/static
 
 # cd exampleSite
 
