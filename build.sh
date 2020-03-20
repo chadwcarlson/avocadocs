@@ -3,7 +3,10 @@ HUGOVERSION=0.66.0
 mkdir exampleSite/themes
 mkdir exampleSite/themes/avocadocs
 
-mv . exampleSite/themes/avocadocs
+mv archetypes exampleSite/themes/avocadocs/archetypes
+mv data exampleSite/themes/avocadocs/data
+mv layouts exampleSite/themes/avocadocs/layouts
+mv statis exampleSite/themes/avocadocs/static
 
 # cd exampleSite
 
