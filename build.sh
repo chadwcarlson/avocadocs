@@ -16,6 +16,7 @@ tar xvzf hugo_${HUGOVERSION}_Linux-64bit.tar.gz
 rm hugo_${HUGOVERSION}_Linux-64bit.tar.gz
 
 # For docs, prepare files
+npm install
 npm run fetch-files
 
 # Build the site
