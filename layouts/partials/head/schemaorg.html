@@ -1,6 +1,9 @@
 <!-- Schema.org -->
+<meta itemprop="name" content="{{ .Page.Params.description }}">
+<meta itemprop="image" content="{{ .Site.Params.meta.image }}">
 
-{{ if isset .Page.Params "description" }}
+
+<!-- {{ if isset .Page.Params "description" }}
   <meta name="description" content="{{ .Page.Params.description }}">
 {{ else if isset .Site.Params "meta" }}
   {{ if isset .Site.Params.meta "description" }}
@@ -8,16 +11,16 @@
   {{ end }}
 {{ end }}
 
-{{ if isset .Site.Params "meta" }}
+{{ if isset .Site.Params "meta" }} -->
 
   <!-- Short description  -->
-  {{ if isset .Site.Params "description" }}
+  <!-- {{ if isset .Site.Params "description" }}
     <meta itemprop="name" content="{{ .Site.Params.description }}">
-  {{ end }}
+  {{ end }} -->
 
   <!-- Thumbnail -->
-  {{ if isset .Site.Params.meta "image" }}
+  <!-- {{ if isset .Site.Params.meta "image" }}
     <meta itemprop="image" content="{{ .Site.Params.meta.image }}">
   {{ end }}
 
-{{ end }}
+{{ end }} -->

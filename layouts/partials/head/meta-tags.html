@@ -1,17 +1,20 @@
 <!--  Meta tags -->
 
+<meta name="description" content="{{ .Page.Description }}">
+
+
 <!-- Description -->
-{{ if isset .Page.Params "description" }}
+<!-- {{ if isset .Page.Params "description" }}
   <meta name="description" content="{{ .Page.Description }}">
 {{ else if isset .Site.Params "meta" }}
   {{ if isset .Site.Params.meta "description" }}
     <meta name="description" content="{{ .Site.Params.meta.description }}">
   {{ end }}
-{{ end }}
+{{ end }} -->
 
 <!-- Keywords -->
-{{ if isset .Site.Params "meta" }}
+<!-- {{ if isset .Site.Params "meta" }}
   {{ if isset .Site.Params.meta "keywords" }}
     <meta name="keywords" content="{{ range .Site.Params.keywords }}{{ . }},{{ end }}">
   {{ end }}
-{{ end }}
+{{ end }} -->
