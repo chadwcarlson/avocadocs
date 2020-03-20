@@ -10,4 +10,4 @@ rm hugo_${HUGOVERSION}_Linux-64bit.tar.gz
 # ./hugo
 # pwd
 # HUGO_THEME=avocadocs ./hugo --themesDir ../../
-./hugo -s exampleSite
+./hugo -s exampleSite --themesDir ../../ --debug
