@@ -1,15 +1,18 @@
 <!-- Schema.org -->
 
+{{ if isset .Page.Params "description" }}
+  <meta name="description" content="{{ .Page.Params.description }}">
+{{ else if isset .Site.Params "meta" }}
+  {{ if isset .Site.Params.meta "description" }}
+    <meta name="description" content="{{ .Site.Params.meta.description }}">
+  {{ end }}
+{{ end }}
+
 {{ if isset .Site.Params "meta" }}
 
   <!-- Short description  -->
   {{ if isset .Site.Params "description" }}
     <meta itemprop="name" content="{{ .Site.Params.description }}">
-  {{ end }}
-
-  <!-- Longer description -->
-  {{ if isset .Site.Params.meta "description" }}
-    <meta name="description" content="{{ .Site.Params.meta.description }}">
   {{ end }}
 
   <!-- Thumbnail -->

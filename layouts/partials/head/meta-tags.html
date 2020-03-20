@@ -1,8 +1,7 @@
 <!--  Meta tags -->
 
 <!-- Description -->
-{{ $description := "" }}
-{{ if isset .Page .Description }}
+{{ if isset .Page.Params "description" }}
   <meta name="description" content="{{ .Page.Description }}">
 {{ else if isset .Site.Params "meta" }}
   {{ if isset .Site.Params.meta "description" }}
