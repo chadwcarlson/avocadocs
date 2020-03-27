@@ -1,4 +1,4 @@
-HUGOVERSION=0.66.0
+HUGOVERSION=0.68.3
 SITEDIR=exampleSite
 
 # Move theme into the example site
@@ -14,6 +14,10 @@ cd $SITEDIR
 wget https://github.com/gohugoio/hugo/releases/download/v$HUGOVERSION/hugo_${HUGOVERSION}_Linux-64bit.tar.gz
 tar xvzf hugo_${HUGOVERSION}_Linux-64bit.tar.gz
 rm hugo_${HUGOVERSION}_Linux-64bit.tar.gz
+
+# For docs, prepare files - make sure to update web.locations
+npm install
+npm run fetch-files
 
 # Build the site
 ./hugo

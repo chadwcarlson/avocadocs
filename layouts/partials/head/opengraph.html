@@ -1,10 +1,14 @@
 <!-- Open Graph -->
 
-{{ if isset .Site.Params "meta" }}
-
-  {{ if isset .Site.Params "description" }}
-    <meta property="og:title" content="{{ .Site.Params.description }}">
+{{ if isset .Params "description" }}
+  <meta name="og:description" content="{{ .Params.description }}">
+{{ else if isset .Site.Params "meta" }}
+  {{ if isset .Site.Params.meta "description" }}
+    <meta name="og:description" content="{{ .Site.Params.meta.description }}">
   {{ end }}
+{{ end }}
+
+{{ if isset .Site.Params "meta" }}
 
   <meta property="og:type" content="article">
 
@@ -17,10 +21,7 @@
     <meta property="og:image" content="{{ .Site.Params.meta.image }}">
   {{ end }}
 
-  <!-- Longer description -->
-  {{ if isset .Site.Params.meta "description" }}
-    <meta name="og:description" content="{{ .Site.Params.meta.description }}">
-  {{ end }}
+
 
   <!-- Thumbnail -->
   {{ if isset .Site.Params.meta "sitename" }}

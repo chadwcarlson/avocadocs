@@ -4,7 +4,7 @@
 name: 'app'
 
 # The type key specifies the language and version for your application.
-type: 'nodejs:10'
+type: 'nodejs:12'
 
 # The hooks that will be triggered when the package is deployed.
 hooks:
@@ -12,11 +12,6 @@ hooks:
     build: !include
       type: string
       path: build.sh
-
-# hooks:
-#     build: |
-#         chmod +x static/scripts/build.sh
-#         ./static/scripts/build.sh
 
 # The size of the persistent disk of the application (in MB).
 disk: 5120
