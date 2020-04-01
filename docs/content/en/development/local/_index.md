@@ -2,7 +2,7 @@
 title: "Set up your local development environment"
 weight: 4
 description: "While Platform.sh is great as a tool for hosting an application during both development and production, it's naturally not the ideal place to edit code.  You can't, in fact, as the file system is read-only (as it should be).  The proper place to edit your code is on your computer.<br><br>You must have an <a href=\"/development/tools.html#ssh\">SSH key</a> already configured on your account, and have both <a href=\"/development/tools.html#git\">Git</a> and the <a href=\"/development/cli.html\">Platform.sh CLI</a> installed before continuing."
-toc: true
+ 
 sidebarTitle: "Local development"
 layout: single
 ---

@@ -2,7 +2,7 @@
 title: "Variables"
 weight: 5
 description: "Platform.sh allows a high degree of control over both the build process and the runtime environment of a project.  Part of that control comes in the form of <b>variables</b> that are set independently of the project's code base but available either at build or runtime for your code to leverage. Platform.sh also exposes additional information to your application that way, including information like database credentials, the host or port it can use, and so forth."
-toc: true
+ 
 ---
 
 

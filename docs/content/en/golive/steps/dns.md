@@ -1,7 +1,7 @@
 ---
 title: "DNS management and Apex domains"
 weight: 1
-toc: true
+ 
 description: "Platform.sh expects you to use a CNAME for all DNS records.  However, that is problematic with some DNS registrars."
 sidebarTitle: "DNS and CNAMEs"
 ---

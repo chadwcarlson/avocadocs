@@ -1,7 +1,7 @@
 ---
 title: "Generic Webhook"
 weight: 9
-toc: true
+ 
 sidebarTitle: "Webhooks"
 description: |
   This hook allows you to capture any push events on platform and POST a JSON message describing the activity to the url of your choice. You can use this to further automate your Platform.sh workflow.
@@ -10,7 +10,7 @@ description: |
 ## Setup
 
 ```bash
-$ platform integration:add --type=webhook --url=A-URL-THAT-CAN-RECEIVE-THE-POSTED-JSON
+platform integration:add --type=webhook --url=A-URL-THAT-CAN-RECEIVE-THE-POSTED-JSON
 ```
 
 The webhook URL will receive a POST message for every "Activity" that is triggered, and the message will contain complete information about the entire state of the project at that time.  In practice most of the message can be ignored but is available if needed.  The most commonly used values are documented below.
@@ -406,6 +406,6 @@ The following is an example of a webhook message.  Specifically, this one was cr
 
 You can then verify that your integration is functioning properly [using the CLI](/administration/integrations.md#validating-integrations) command
 
-```
-$ platform integration:validate
+```bash
+platform integration:validate
 ```

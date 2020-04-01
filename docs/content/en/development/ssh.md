@@ -1,7 +1,7 @@
 ---
 title: "Using SSH keys"
 weight: 12
-toc: true
+ 
 description: "One of the ways Platform.sh keeps things secure is by using SSH behind the scenes. Users can interact with their environment through a command shell, or push changes to the environment's Git repository, and both of these features rely on SSH.<br><br>You can manage SSH keys through the CLI (see below), or through the SSH keys tab under Account Settings."
 sidebarTitle: "Using SSH"
 ---

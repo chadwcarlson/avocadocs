@@ -1,7 +1,7 @@
 ---
 title: "Symfony - Getting started"
 weight: 7
-toc: true
+ 
 sidebarTitle: "Symfony"
 ---
 

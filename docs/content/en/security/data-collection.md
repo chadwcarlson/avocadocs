@@ -2,7 +2,7 @@
 title: "Data collection"
 weight: 3
 description: "As part of our normal business operations we do collect various pieces of data.<br><br>In GDPR terms:<ul><li>Article 4: Our accounts system contains some (routine) Article 4 items (name, address, phone, etc.) in order to allow us to bill your account appropriately.  This information can be verified, changed, and deleted by [logging into your account](https://accounts.platform.sh/).</li><li>Article 9: We don't capture and store any Article 9 special identifiers (such as race, religion, sexual orientation, or other attributes that are irrelevant to our business).</li><li>Article 30: The only Article 30 items we keep are IP address and Log files. These reside on AWS/Azure/Orange (depending on your hosting), and may be sent to Sentry.io when there are crashes.</li></ul>"
-toc: true
+ 
 ---
 
 ## Application logs

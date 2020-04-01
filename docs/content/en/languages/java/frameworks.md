@@ -1,7 +1,7 @@
 ---
 title: "Frameworks"
 weight: 1
-toc: true
+ 
 ---
 
 # Java Featured Frameworks

@@ -1,7 +1,7 @@
 ---
 title: "Backup and restore"
 weight: 6
-toc: true
+ 
 description: |
   Backups vary by our offering and their retention is governed by our <a href="/security/data-retention.html">data retention</a> policies.<br><br>
 

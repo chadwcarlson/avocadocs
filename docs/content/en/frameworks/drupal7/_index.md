@@ -2,7 +2,7 @@
 title: "Drupal 7 - Getting Started"
 weight: 1
 sidebarTitle: "Drupal 7"
-toc: true
+ 
 ---
 
 ## Structure your files

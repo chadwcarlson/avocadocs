@@ -1,7 +1,7 @@
 ---
 title: "Example"
 weight: 5
-toc: true
+ 
 description: "In this short section we will give you a  very simple, typical example. More involved use-cases (such as site with many domains or multiple applications are simply variations on this)."
 ---
 

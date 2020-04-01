@@ -2,7 +2,7 @@
 title: "RabbitMQ (Message Queue service)"
 weight: 10
 description: "RabbitMQ is an open source message broker software (sometimes called message-oriented middleware) that implements the Advanced Message Queuing Protocol (AMQP).<br><br>See the <a href=\"http://www.rabbitmq.com/documentation.html\">RabbitMQ documentation</a> for more information."
-toc: true
+ 
 sidebarTitle: "RabbitMQ"
 ---
 

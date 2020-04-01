@@ -1,14 +1,14 @@
 ---
 title: "Health notifications"
 weight: 3
-toc: true
+ 
 description: |
   Platform.sh can notify you when various events happen on your project, in any environment. At this time the only notification provided is a low disk space warning, but others may be added in the future.
 ---
 
-> **note**
->
-> Remember that you must have `admin` access to a project in order to add or modify an integration.  See [User administration](/administration/users.md) for more details.
+{{< note >}}
+Remember that you must have `admin` access to a project in order to add or modify an integration.  See [User administration](/administration/users.html) for more details.
+{{< /note >}}
 
 ## Available notifications
 
@@ -124,6 +124,6 @@ Please refer to the [JOSE Cookbook](https://github.com/ietf-jose/cookbook) for e
 
 You can then verify that your integration is functioning properly [using the CLI](/administration/integrations.md#validating-integrations) command
 
-```
+```bash
 $ platform integration:validate
 ```

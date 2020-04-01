@@ -1,7 +1,7 @@
 ---
 title: "eZ Platform"
 weight: 3
-toc: true
+ 
 description: |
   eZ Platform is a Composer-based PHP CMS, and as such fits well with the Platform.sh model.  As a Symfony-based application its setup is very similar to Symfony.<br><br>
 

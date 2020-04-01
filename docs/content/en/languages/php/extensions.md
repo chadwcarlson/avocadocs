@@ -1,7 +1,7 @@
 ---
 title: "Extensions"
 weight: 1
-toc: true
+ 
 ---
 
 You can define the PHP extensions you want to enable or disable:

@@ -1,15 +1,15 @@
 ---
 title: "Platform.sh Environments"
 weight: 2
-toc: true
+ 
 sidebarTitle: "Environments"
 description: |
-  Platform.sh helps a coder with the development workflow by making it easy to manage multiple environments, including the Master environment which runs the production website. It's precisely like a "development" or a "staging" server, except they are created on the fly, and they are absolutely identical copies of their parent environments.<br><br>
-
-  An environment is tied to a Git branch, plus all the services that are serving that branch. You can see that as a <b>complete working website</b>. With Bitbucket and GitHub integrations you can even get a "development server" for each and every pull request.<br><br>
-
-  You can have branches that are not tied to a running instance of your application; these are what we call "inactive environments".
+  Platform.sh helps a coder with the development workflow by making it easy to manage multiple environments, including the Master environment which runs the production website. It's precisely like a "development" or a "staging" server, except they are created on the fly, and they are absolutely identical copies of their parent environments.
 ---
+
+An environment is tied to a Git branch, plus all the services that are serving that branch. You can see that as a **complete working website**. With Bitbucket and GitHub integrations you can even get a "development server" for each and every pull request.
+
+You can have branches that are not tied to a running instance of your application; these are what we call "inactive environments".
 
 ## Master environment
 
@@ -17,9 +17,10 @@ Every Platform.sh project starts with a Master environment which corresponds to 
 
 If you subscribed to a production plan, this environment is your **live site** and can be mapped to a domain name and a custom SSL certificate.
 
-> **note**
->
-> Your project must have a `master` branch: it will not function properly without one.
+{{< note >}}
+Your project must have a `master` branch: it will not function properly without one.
+{{< /note >}}
+
 
 ## Hierarchy
 

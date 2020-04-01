@@ -3,7 +3,7 @@ title: "CLI (Command Line Interface)"
 weight: 3
 description: "The CLI is the official tool to use and manage your Platform.sh projects directly from your terminal. Anything you can do within the management console can be done with the CLI. Behinds the scenes it uses both the Git interface and our REST API.<br><br>The source code of the CLI is hosted on <a href=\"https://github.com/platformsh/platformsh-cli\">GitHub</a>."
 sidebarTitle: "CLI"
-toc: true
+ 
 layout: single
 ---
 

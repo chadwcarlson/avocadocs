@@ -2,7 +2,7 @@
 title: "Frequently Asked Questions (FAQ)"
 weight: 15
 sidebarTitle: "FAQ"
-toc: true
+ 
 ---
 
 ## What is the difference between a Platform, a Project and an Environment?

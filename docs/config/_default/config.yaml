@@ -1,43 +1,15 @@
-baseURL: /
-title: Platform.sh documentation
-theme: avocadocs
-# themesdir: ../..
-
-# "Ugly URLs" (https://gohugo.io/content-management/urls/#ugly-urls) retain the html
-# suffix on all pages (https://example.com/about.html), which can be useful to minimize
-# broken links when migrating from GitBook. Comment out this line to generate pages
-# without suffixes. (https://example.com/about/)
-uglyurls: true
-
-languages:
-  en:
-    contentDir: content/en
-    languageName: English
-    weight: 10
-  # li:
-  #   contentDir: content/lorem
-  #   languageName: Lorem Ipsum
-  #   weight: 20
-
-markup:
-  highlight:
-    style: tango
-  tableOfContents:
-    endLevel: 3
-    ordered: false
-    startLevel: 2
-
-
-
 # Basics
 baseURL: /
-title: avocadocs
+title: Platform.sh User Documentation
 author: Platform.sh
-description: A Hugo Documentation Theme by Platform.sh
+description: Platform.sh User Documentation
 
 # Themes
 theme: avocadocs
 # themesdir: ../..
+
+uglyurls: true
+pygmentsUseClasses: true
 
 # Language settings
 languages:
@@ -51,6 +23,6 @@ languages:
   #   weight: 20
 
 # Syntax highlighting
-markup:
-  highlight:
-    style: friendly
+# markup:
+#   highlight:
+#     style: friendly

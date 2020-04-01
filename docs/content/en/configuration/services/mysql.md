@@ -1,7 +1,7 @@
 ---
 title: "MariaDB/MySQL (Database service)"
 weight: 7
-toc: true
+ 
 description: "Platform.sh supports both MariaDB and Oracle MySQL.  While there are some differences at the application level for developers, they function nearly identically from an infrastructure point of view.<br><br>See the <a href=\"https://mariadb.org/learn/\">MariaDB documentation</a> or <a href=\"https://dev.mysql.com/doc/refman/8.0/en/\">MySQL documentation</a> for more information."
 sidebarTitle: "MariaDB/MySQL"
 ---

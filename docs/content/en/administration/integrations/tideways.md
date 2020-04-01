@@ -1,16 +1,16 @@
 ---
 title: "Tideways"
 weight: 8
-toc: true
+ 
 description: |
-  Platform.sh supports <a href="https://tideways.com/">Tideways APM</a> for PHP.  This functionality is only available on PHP 7.0 and later.
+  Platform.sh supports [Tideways APM](https://tideways.com/) for PHP.  This functionality is only available on PHP 7.0 and later.
 ---
 
-> **note**
->
-> The upstream now maintains two versions for Tideways, and both plugins are available on Platform.sh:
-> * [tideways_xhprof](https://github.com/tideways/php-xhprof-extension): The open source version, therefore no licensing is required (On the downside, less integration services are available). You can use it in combination with [xhprof UI](https://github.com/phacility/xhprof).
-> * [tideways](https://tideways.com): The bundle proprietary full version of the product and plugins, which the rest of the guide is mostly aimed to cover.
+{{< note >}}
+The upstream now maintains two versions for Tideways, and both plugins are available on Platform.sh:
+* [tideways_xhprof](https://github.com/tideways/php-xhprof-extension): The open source version, therefore no licensing is required (On the downside, less integration services are available). You can use it in combination with [xhprof UI](https://github.com/phacility/xhprof).
+* [tideways](https://tideways.com): The bundle proprietary full version of the product and plugins, which the rest of the guide is mostly aimed to cover.
+{{< /note >}}
 
 ## Get Started
 

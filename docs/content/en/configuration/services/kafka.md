@@ -2,7 +2,7 @@
 title: "Kafka (Message Queue service)"
 weight: 4
 description: "Apache Kafka is an open-source stream-processing software platform. It is a framework for storing, reading and analyzing streaming data.<br><br>See the <a href\"https://kafka.apache.org/documentation/\">Kafka documentation</a> for more information."
-toc: true
+ 
 sidebarTitle: "Kafka"
 ---
 

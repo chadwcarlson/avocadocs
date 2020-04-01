@@ -1,7 +1,7 @@
 ---
 title: "Platform.sh Dedicated"
 weight: 1
-toc: true
+ 
 sidebarTitle: "Overview"
 description: |
   Platform.sh Dedicated is a robust, redundant layer on top of Platform.sh Professional.  It is well-suited for those who like the Platform.sh development experience but need more resources and redundancy for their production environment.  It is available only with an Enterprise contract.<br><br>

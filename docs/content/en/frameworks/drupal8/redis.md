@@ -2,7 +2,7 @@
 title: "Using Redis with Drupal 8.x"
 weight: 3
 sidebarTitle: "Redis"
-toc: true
+ 
 description: |
   The Drupal 8 Redis module currently only supports the <a href="https://github.com/nicolasff/phpredis">PhpRedis</a> option, which relies on a PHP extension. Fortunately, that extension is trivial to enable on Platform.sh.
 ---

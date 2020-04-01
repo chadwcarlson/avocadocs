@@ -2,6 +2,7 @@
 title: "Vouchers"
 weight: 4
 sidebarTitle: "Adding vouchers"
+toc: false
 ---
 
 ## Applying a voucher to your project

@@ -1,7 +1,7 @@
 ---
 title: "Redis (Object cache)"
 weight: 11
-toc: true
+ 
 description: "Redis is a high-performance in-memory object store, well-suited for application level caching.<br><br>See the <a href=\"https://redis.io/documentation\">Redis documentation</a> for more information.<br><br>Platform.sh supports two different Redis configurations: One persistent (useful for key-value application data) and one ephemeral (in-memory only, useful for application caching).  Aside from that distinction they are identical."
 sidebarTitle: "Redis"
 ---

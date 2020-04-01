@@ -1,7 +1,7 @@
 ---
 title: "Encryption"
 weight: 7
-toc: true
+ 
 ---
 
 ## Data in Transit

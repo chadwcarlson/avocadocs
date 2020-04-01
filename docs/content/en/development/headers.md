@@ -2,7 +2,7 @@
 title: "HTTP Headers"
 weight: 7
 description: "Platform.sh adds a number of HTTP headers to both inbound and outbound messages.  We do not, however, modify or block existing headers on either request or response."
-toc: true
+ 
 sidebarTitle: "Headers"
 ---
 

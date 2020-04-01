@@ -1,8 +1,9 @@
 ---
 title: "Project configuration"
 weight: 1
-toc: true
-description: "You can access the project-wide configuration settings by selecting the project from your list of projects, then click the `Settings` tab at the top of the screen."
+ 
+description: |
+  You can access the project-wide configuration settings by selecting the project from your list of projects, then click the `Settings` tab at the top of the screen.
 ---
 
 ## General
@@ -19,9 +20,9 @@ You can invite new users to your project by clicking the `Add` button and enteri
 
 ![Project configure icon](/images/management-console/settings-project-access.png)
 
-> **note**
->
-> Currently, permissions changes that grant or revoke SSH access to an environment take effect only after the next time that environment is deployed.
+{{< note >}}
+Currently, permissions changes that grant or revoke SSH access to an environment take effect only after the next time that environment is deployed.
+{{< /note >}}
 
 Selecting a user will allow you to either edit that user's permissions or delete the user's access to the project entirely.
 
@@ -29,9 +30,9 @@ Selecting a user will allow you to either edit that user's permissions or delete
 
 If you check the `Project admin` box, this user will be an administrator of the project and will have fulll access on all environments. If you uncheck the box, you'll have the option of adjusting the user's permissions on each environment.
 
-> **note**
->
-> The `Account owner` is locked and you can't change its permissions.
+{{< note >}}
+The `Account owner` is locked and you can't change its permissions.
+{{< /note >}}
 
 ## Domains
 
@@ -41,10 +42,9 @@ The `Domains` screen allows you to manage your domains that your project will be
 
 More information on how to [setup your domain](/golive/steps.md).
 
-> **note**
->
-> Platform.sh expects an ASCII representation of the domain here. In case you want to use an internationalized domain name you can use the [conversion tool provided by Verisign](https://www.verisign.com/en_US/channel-resources/domain-registry-products/idn/idn-conversion-tool/index.xhtml) to convert your IDN domain to ASCII.
-
+{{< note >}}
+Platform.sh expects an ASCII representation of the domain here. In case you want to use an internationalized domain name you can use the [conversion tool provided by Verisign](https://www.verisign.com/en_US/channel-resources/domain-registry-products/idn/idn-conversion-tool/index.xhtml) to convert your IDN domain to ASCII.
+{{< /note >}}
 
 ## Certificates
 

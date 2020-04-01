@@ -3,7 +3,7 @@ title: "Katex math"
 weight: 3
 math: true
 description: "Every time you push to a live branch (a git branch with an active environment attached to it) or activate an <a href=\"/administration/web/environments.html\">environment</a> for a branch, there are two main processes that happen: <b>Build</b> and <b>Deploy</b>."
-toc: true
+ 
 ---
 
 [KaTeX setup guide](https://github.com/gohugoio/hugoBasicExample/blob/master/content/post/math-typesetting.mmark)

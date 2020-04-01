@@ -2,7 +2,7 @@
 title: "Drupal Frequently Asked Questions (FAQ)"
 weight: 10
 sidebarTitle: "FAQ"
-toc: true
+ 
 ---
 
 ## How can I import configuration on production?

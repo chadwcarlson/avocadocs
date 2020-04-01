@@ -2,7 +2,7 @@
 title: "PostgreSQL (Database service)"
 weight: 9
 description: "PostgreSQL is a high-performance, standards-compliant relational SQL database.<br><br>See the <a href=\"https://www.postgresql.org/docs/9.6/index.html\">PostgreSQL documentation</a> for more information."
-toc: true
+ 
 sidebarTitle: "PostgreSQL"
 ---
 

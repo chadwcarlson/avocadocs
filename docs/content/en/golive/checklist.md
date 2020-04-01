@@ -2,7 +2,7 @@
 title: "Going Live - Pre-Launch Checklist"
 weight: 1
 description: "Before you can take your site live there are a few preparation steps to take."
-toc: true
+ 
 sidebarTitle: "Pre-Launch Checklist"
 ---
 

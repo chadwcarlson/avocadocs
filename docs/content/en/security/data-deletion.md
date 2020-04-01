@@ -1,7 +1,7 @@
 ---
 title: "Data deletion"
 weight: 5
-toc: true
+ 
 description: |
   Data deletion is handled via our backend providers. When a volume is released back to the provider, the provider will perform a wipe on the data utilizing either <a href="https://csrc.nist.gov/publications/detail/sp/800-88/rev-1/final">NIST 800-88</a> or <a href="(http://www.dss.mil/documents/odaa/nispom2006-5220.pdf)">DoD 5220.22-M</a> depending upon the offering. This wipe is done immediately before reuse.<br><br>
 

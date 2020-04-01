@@ -1,7 +1,7 @@
 ---
 title: "Using Memcached with Drupal 8.x"
 weight: 4
-toc: true
+ 
 sidebarTitle: "Memcached"
 description: |
   Platform.sh recommends using Redis for caching with Drupal 8 over Memcached, as Redis offers better performance when dealing with larger values as Drupal tends to produce.  However, Memcached is also available if desired and is fully supported.

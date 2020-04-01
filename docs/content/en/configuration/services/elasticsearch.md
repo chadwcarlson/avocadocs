@@ -2,7 +2,7 @@
 title: "Elasticsearch (Search Service)"
 weight: 1
 description: "Elasticsearch is a distributed RESTful search engine built for the cloud. <br><br>See the <a href=\"https://www.elastic.co/guide/en/elasticsearch/reference/current/index.html\">Elasticsearch documentation</a> for more information."
-toc: true
+ 
 sidebarTitle: "Elasticsearch"
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: "Frameworks"
 weight: 2
-toc: true
+ 
 description: "Full Drush support and Composer-based builds make handling dependencies and builds for PHP frameworks as simple as committing your <code>composer.json</code> to your project."
 ---
 

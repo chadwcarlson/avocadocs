@@ -2,7 +2,7 @@
 title: "Solr (Search service)"
 weight: 12
 description: "Apache Solr is a scalable and fault-tolerant search index.<br><br>Solr search with generic schemas provided, and a custom schema is also supported.<br><br>See the <a href=\"https://lucene.apache.org/solr/6_3_0/index.html\">Solr documentation</a> for more information."
-toc: true
+ 
 sidebarTitle: "Solr"
 ---
 

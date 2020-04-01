@@ -1,7 +1,7 @@
 ---
 title: "Drupal 8 - Getting Started"
 weight: 2
-toc: true
+ 
 sidebarTitle: "Drupal 8"
 ---
 

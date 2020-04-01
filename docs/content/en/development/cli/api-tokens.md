@@ -1,7 +1,7 @@
 ---
 title: "API Tokens"
 weight: 1
-toc: true
+ 
 ---
 
 ## Obtaining a token

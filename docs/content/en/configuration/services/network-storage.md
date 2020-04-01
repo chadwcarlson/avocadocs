@@ -2,7 +2,7 @@
 title: "Network Storage"
 weight: 8
 description: "Platform.sh supports internal \"storage as a service\" to provide a file store that can be shared between different application containers.<br><br>The network storage service enables a new kind of <code>mount</code> that refers to a shared service rather than to a local directory.  Any application can use both <code>local</code> and/or <code>service</code> mounts, or neither."
-toc: true
+ 
 ---
 
 ## Supported versions

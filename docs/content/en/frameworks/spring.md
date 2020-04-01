@@ -1,7 +1,7 @@
 ---
 title: "Spring"
 weight: 6
-toc: true
+ 
 description: |
   The <a href="https://spring.io/projects/spring-framework">Spring Framework</a> provides a comprehensive programming and configuration model for modern Java-based enterprise applications - on any kind of deployment platform. Platform.sh is flexible, and allows you to use Spring Framework in several flavors such as <a href="https://docs.spring.io/spring/docs/current/spring-framework-reference/web.html">Spring MVC</a> and <a href="https://spring.io/projects/spring-boot)">Spring Boot</a>.
 ---

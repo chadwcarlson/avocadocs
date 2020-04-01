@@ -2,7 +2,7 @@
 title: "Public IP addresses"
 weight: 14
 sidebarTitle: "Public IPs"
-toc: true
+ 
 description: "Platform.sh regions reach the outside through a limited number of IP addresses.<br><br>Use the inbound IP addresses if you have a corporate firewall which blocks outgoing SSH connections.  In that case, simply add our IP addresses for inbound traffic below to your whitelist."
 ---
 

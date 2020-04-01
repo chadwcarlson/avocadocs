@@ -1,7 +1,7 @@
 ---
 title: "Options"
 weight: 5
-toc: true
+ 
 ---
 
 ## Staging environments

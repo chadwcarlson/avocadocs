@@ -2,7 +2,7 @@
 title: "Build & Deploy"
 weight: 2
 description: "Every time you push to a live branch (a git branch with an active environment attached to it) or activate an <a href=\"/administration/web/environments.html\">environment</a> for a branch, there are two main processes that happen: <b>Build</b> and <b>Deploy</b>."
-toc: true
+ 
 ---
 
 1. The build process looks through the configuration files in your repository and assembles the necessary containers.  

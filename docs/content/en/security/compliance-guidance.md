@@ -1,7 +1,7 @@
 ---
 title: "Compliance guidance"
 weight: 9
-toc: true
+ 
 description: |
   Platform.sh has many PCI and SOC 2 certified customers using our services. Some requirements are the responsibility of the host and others are the responsibility of the application developer.<br><br>
 

@@ -2,7 +2,7 @@
 title: "Jakarta EE/Eclipse MicroProfile"
 weight: 5
 sidebarTitle: "Jakarta EE"
-toc: true
+ 
 description: |
   <a href=https://microprofile.io/>Eclipse MicroProfile</a> is a community dedicated to optimizing the Enterprise Java mission for microservice-based architectures. The goal is to define a microservices application platform that is portable across multiple runtimes. Currently, the leading players in this group are IBM, Red Hat, Tomitribe, Payara, the London Java Community (LJC), and SouJava.<br><br>
 

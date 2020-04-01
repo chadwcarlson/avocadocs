@@ -2,7 +2,7 @@
 title: "Headless Chrome"
 weight: 2
 description: "Headless Chrome is a headless browser that can be configured on projects like any other service on Platform.sh. You can interact with the <code>headless-chrome</code> service container using Puppeteer, a Node.js library that provides an API to control Chrome over the DevTools Protocol.<br><br>Puppeteer can be used to generate PDFs and screenshots of web pages, automate form submission, and test your project's UI. You can find out more information about using Puppeteer on <a href=\"https://github.com/GoogleChrome/puppeteer\">GitHub<a> or in their <a href=\"https://pptr.dev/\">documentation<a>."
-toc: true
+ 
 ---
 
 ## Supported versions

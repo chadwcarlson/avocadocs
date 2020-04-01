@@ -2,7 +2,7 @@
 title: "Reading local files"
 weight: 9
 description: If you have some text repeated across your documentation, you can save it to a separate file and pull it into multiple locations using the <code>readFile</code> shortcode.
-toc: true
+ 
 ---
 
 ## Basics

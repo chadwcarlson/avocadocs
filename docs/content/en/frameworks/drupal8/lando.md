@@ -2,7 +2,7 @@
 title: "Using Lando for local Drupal development"
 weight: 8
 sidebarTitle: "Lando "
-toc: true
+ 
 description: |
   <a href="/gettingstarted/local/lando.md">Lando</a> is a local development platform that works well with Platform.sh.  Once installed locally it is a simple matter to create an approximate equivalent of your Platform.sh environment for development.<br><br>
 

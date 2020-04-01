@@ -2,7 +2,7 @@
 title: "InfluxDB (Database service)"
 weight: 3
 description: "InfluxDB is a time series database optimized for high-write-volume use cases such as logs, sensor data, and real-time analytics.  It exposes an HTTP API for client interaction.<br><br>See the <a href=\"https://docs.influxdata.com/influxdb/\">InfluxDB documentation</a> for more information."
-toc: true
+ 
 sidebarTitle: "InfluxDB"
 ---
 

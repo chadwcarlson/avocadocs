@@ -2,7 +2,7 @@
 title: "Working with Drush in Drupal 8"
 weight: 2
 sidebarTitle: "Drush"
-toc: true
+ 
 description: |
   Drush is a command-line shell and scripting interface for Drupal, a veritable Swiss Army knife designed to make life easier for those who spend their working hours hacking away at the command prompt. Drush commands can, for example, be used to clear the Drupal cache, run module and database updates, revert features, perform database imports and dumps, and a whole lot more. You can reference the full set of Drush commands at <a href="(http://www.drush.org)">Drush.org</a>. 
 ---

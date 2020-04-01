@@ -2,17 +2,15 @@
 title: "Management console"
 weight: 4
 layout: single
-toc: true
+ 
 description: "Platform.sh provides a responsive management console which allows you to interact with your projects and manage your environments."
 ---
 
-![Management Console](/images/management-console/project.png "0.5")
+Platform.sh provides a responsive management console which allows you to interact with your projects and manage your environments.
+
+![Management Console](/images/management-console/project.png)
 
 Everything you can do with the management console you can also achieve with the  [CLI (Command Line Interface)](/development/cli.md).
-
-> **note**
->
-> Platform.sh recently launched a new web management console.  This documentation refers to the new console.  To access the legacy user interface select the user drop-down in the top right and click `Legacy` under the "Console mode" option.  [Documentation for the legacy interface](https://pr-1068-yzlkgby-t2llqeifuhpzg.eu.platform.sh/administration/web.html) is still available until it is fully retired.
 
 ## Environment List
 

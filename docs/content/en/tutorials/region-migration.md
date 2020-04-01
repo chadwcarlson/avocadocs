@@ -2,7 +2,7 @@
 title: "Region migration"
 weight: 5
 sidebarTitle: "Changing regions"
-toc: true
+ 
 description: |
   Platform.sh is available in a number of different <b>Regions</b>.  Each region is a self-contained copy of Platform.sh in a single datacenter.  When you first create a project you can specify which region it should be in.<br><br>
 

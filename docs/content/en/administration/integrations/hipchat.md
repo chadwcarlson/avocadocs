@@ -1,7 +1,7 @@
 ---
 title: "HipChat"
 weight: 7
-toc: true
+ 
 description: |
   The <a href="https://hipchat.com">HipChat</a> integration allows you to send notifications about your Platform.sh activity directly to HipChat.
 ---
@@ -22,7 +22,7 @@ description: |
 ### 3. Create the HipChat webhook with Platform CLI.
 
 ```bash
-$ platform integration:add --type=hipchat --room=ROOM-ID --token=HIPCHAT-TOKEN
+platform integration:add --type=hipchat --room=ROOM-ID --token=HIPCHAT-TOKEN
 ```
 
 There are a number of optional parameters as well who's **default values** include:
@@ -40,6 +40,6 @@ You're given a chance to customize these parameters in an interactive shell prom
 
 You can then verify that your integration is functioning properly [using the CLI](/administration/integrations.md#validating-integrations) command
 
-```
-$ platform integration:validate
+```bash
+platform integration:validate
 ```

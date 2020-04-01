@@ -2,7 +2,7 @@
 title: "Configure Routes"
 weight: 2
 description: Platform.sh allows you to define the routes used in your environments.<br><br>A route describes how an incoming HTTP request is going to be processed by Platform.sh. The routes are defined using <code>.platform/routes.yaml</code> file in your Git repository.
-toc: true
+ 
 sidebarTitle: "Routes (routes.yaml)"
 layout: single
 ---

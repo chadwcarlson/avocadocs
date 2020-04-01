@@ -1,7 +1,7 @@
 ---
 title: "Environment configuration"
 weight: 3
-toc: true
+ 
 sidebarTitle: "Configure environments"
 description: |
   You can access an environment's settings by selecting that environment from the <b>Select Environments</b> pull-down menu at the top of the page or by clicking that environment within the Environments graphic on the right side. Click the `Settings` tab at the top of the screen.
@@ -31,13 +31,13 @@ The `Deactivate & Delete Data` action will
 
 Once the environment is deactivated, the Git branch will remain on Platform.sh in the inactive environment. To delete the branch as well, you need to execute the following:
 
-```
+```bash
 git push origin :BRANCH-NAME
 ```
 
-> **note**
->
-> Deleting the Master environment is forbidden.
+{{< note >}}
+Deleting the Master environment is forbidden.
+{{< /note >}}
 
 ### Outgoing emails
 
@@ -59,7 +59,7 @@ From this tab, you can tell search engines to ignore the site entirely, even if 
 
 By default, Platform.sh includes an additional `X-Robots-Tag` header on all non-production environments:
 
-```
+```bash
 X-Robots-Tag: noindex, nofollow
 ```
 
@@ -71,7 +71,7 @@ platform environment:info restrict_robots false
 
 Or to disable it for a specific environment other than the one that is currently checked out, execute the following:
 
-```
+```bash
 platform environment:info -e ENVNAME restrict_robots false
 ```
 
@@ -79,15 +79,13 @@ where `ENVNAME` is the name of the environment.
 
 On a production instance (the master branch, after a domain has been assigned) the search-blocker is disabled and your application can serve a `robots.txt` file as normal.  However, you must ensure that the file is in your project's web root (the directory where the `/` location maps to) and your application is configured to serve it.  See [the location section in `.platform.app.yaml`](/configuration/app/web.md#locations).
 
-
-
 ### HTTP access control
 
 You should not expose your development environments to the whole wide world. Platform.sh allows you to simply implement access control, either by login/password (the equivalent to .htaccess) or by filtering IP addresses or a network using the [CIDR format](https://en.wikipedia.org/wiki/Classless_Inter-Domain_Routing).  That is, `4.5.6.7` and `4.5.6.0/8` are both legal formats.
 
-> **note**
->
-> Changing access control will trigger a new deploy of the current environment. However, the changes will not propagate to child environments until they are manually redeployed.
+{{< note >}}
+Changing access control will trigger a new deploy of the current environment. However, the changes will not propagate to child environments until they are manually redeployed.
+{{< /note >}}
 
 These settings get inherited by branches below the one you are on. That means if you create a `staging` environment, and you create branches from this one, they will all inherit the same authentication information and you only have to set-it up once.
 
@@ -99,7 +97,7 @@ You can allow or deny access to specific IPs or IP ranges. First switch the acce
 
 For example, the following configuration will only allow the 1.2.3.4 IP to access your website.
 
-```
+```bash
 1.2.3.4/32 allow
 0.0.0.0/0 deny
 ```
@@ -113,9 +111,9 @@ You can invite new users to a specific environment by clicking the `Add` button 
 
 ![Manage users of your Platform.sh environments](/images/management-console/settings-environment-access.png "0.7")
 
-> **note**
->
-> Currently, permission changes that grant or revoke SSH access to an environment take effect only after the next time that environment is deployed.
+{{< note >}}
+Currently, permission changes that grant or revoke SSH access to an environment take effect only after the next time that environment is deployed.
+{{< /note >}}
 
 Selecting a user will allow you to either edit or remove access to that environment.
 

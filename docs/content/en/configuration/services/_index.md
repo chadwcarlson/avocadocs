@@ -2,7 +2,7 @@
 title: "Configure Services"
 weight: 3
 description: "Platform.sh allows you to completely define and configure the topology and services you want to use on your project.<br><br>Unlike other PaaS services, Platform.sh is <b>batteries included</b> which means that you don't need to subscribe to an external service to get a cache or a search engine. And that those services are managed. When you back up your project, all of the services are backed-up. <br><br>Services are configured through the <code>.platform/services.yaml</code> file you will need to commit to your Git repository. This section describes specifics you might want to know about for each service."
-toc: true
+ 
 sidebarTitle: "Services (services.yaml)"
 layout: single
 ---

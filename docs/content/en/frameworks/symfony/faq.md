@@ -2,7 +2,7 @@
 title: "Symfony Frequently Asked Questions (FAQ)"
 weight: 1
 sidebarTitle: "FAQ"
-toc: true
+ 
 ---
 
 ## How do I store my session files?

@@ -1,9 +1,9 @@
 ---
 title: "New Relic"
 weight: 4
-toc: true
+ 
 description: |
-  Platform.sh supports <a href="https://newrelic.com/products/application-monitoring">New Relic APM</a>.
+  Platform.sh supports [New Relic APM](https://newrelic.com/products/application-monitoring).
 ---
 
 ## On a Grid plan

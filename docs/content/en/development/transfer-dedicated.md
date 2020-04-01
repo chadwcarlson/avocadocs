@@ -1,7 +1,7 @@
 ---
 title: "Transferring data to and from a Dedicated cluster"
 weight: 13
-toc: true
+ 
 sidebarTitle: "Synching to Dedicated"
 ---
 

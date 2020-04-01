@@ -2,7 +2,7 @@
 title: "Technical Requirements: Git and SSH"
 weight: 2
 sidebarTitle: "Tools"
-toc: true
+ 
 ---
 
 ## Git

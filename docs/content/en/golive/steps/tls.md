@@ -2,7 +2,7 @@
 title: "(Optional) Configure a third-party TLS certificate"
 weight: 2
 sidebarTitle: "Custom TLS"
-toc: true
+ 
 description: "Platform.sh automatically provides standard TLS certificates issued by <a href=\"https://letsencrypt.org/\">Let's Encrypt</a> to all production instances. No further action is required to use TLS-encrypted connections beyond <a href=\"/configuration/routes.html#HTTPS\">specifying HTTPS routes</a> in your <code>routes.yaml</code> file.<br><br>Alternatively, you may provide your own third party TLS certificate from the TLS issuer of your choice at no charge from us.  Please consult your TLS issuer for instructions on how to generate an TLS certificate.<br><br>A custom certificate is not necessary for development environments.  Platform.sh automatically provides wildcard certificates that cover all *.platform.sh domains, including development environments."
 ---
 

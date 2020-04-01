@@ -1,7 +1,7 @@
 ---
 title: "Accessing logs"
 weight: 9
-toc: true
+ 
 description: "Logs for various tasks on an application container are available in the <code>/var/log</code> directory. They can be accessed on the normal shell after logging in with <code>platform ssh</code>. Alternatively, they may also be accessed remotely using the <code>platform log</code> command.  The CLI lets you specify which log file to access (the name of the file below minus the <code>.log` extension</code>, as well as view the entire file in a pager, only the most recent lines, and so forth.<br><br>Run <code>platform log --help</code> for complete documentation."
 ---
 

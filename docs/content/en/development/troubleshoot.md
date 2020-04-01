@@ -1,7 +1,7 @@
 ---
 title: "Troubleshooting"
 weight: 16
-toc: true
+ 
 ---
 
 ## Total disk usage exceeds project maximum

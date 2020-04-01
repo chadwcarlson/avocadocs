@@ -1,19 +1,16 @@
 ---
 title: "Blackfire"
 weight: 2
-toc: true
+ 
 description: |
-  Platform.sh supports <a href="https://blackfire.io/">Blackfire.io</a>.<br><br>
-
-  Blackfire is a PHP profiler and automated performance testing tool that can be used in the development Integration, Staging, and Production environments.
-
-  It grants details information on your PHP code's resources consumption across Wall-Time, CPU, I/O, Memory, Network Calls, HTTP requests and SQL queries.
-
-  In addition, it can profile your code automatically and notify you whenever your code does not comply with best practices for PHP, Symfony, Drupal, eZPlatform, Typo3 & Magento code performance management.<br><br>
-
-  For a high level overview and demo of Blackfire, check out the <a href="https://www.youtube.com/watch?v=-5icUW9pUH8">full video tutorial</a>.
-
+  Platform.sh supports [Blackfire.io](https://blackfire.io/). Blackfire is a PHP profiler and automated performance testing tool that can be used in the development Integration, Staging, and Production environments.
 ---
+
+It grants details information on your PHP code's resources consumption across Wall-Time, CPU, I/O, Memory, Network Calls, HTTP requests and SQL queries.
+
+In addition, it can profile your code automatically and notify you whenever your code does not comply with best practices for PHP, Symfony, Drupal, eZPlatform, Typo3 & Magento code performance management.
+
+For a high level overview and demo of Blackfire, check out the [full video tutorial](https://www.youtube.com/watch?v=-5icUW9pUH8).
 
 ## Version
 
@@ -23,11 +20,12 @@ Check the latest versions of the probe and CLI tool on [Blackfire's documentatio
 
 ### 1. Get your credentials
 
-**Sign up for the free 15 days Premium trial** at [blackfire.io](https://blackfire.io/pricing) and install the **Blackfire Companion** web browser extension ([Chrome](https://chrome.google.com/webstore/detail/blackfire-companion/miefikpgahefdbcgoiicnmpbeeomffld) or [Firefox](https://addons.mozilla.org/firefox/addon/blackfire/)).
+**Sign up for the free 15 days Premium trial** at [Blackfire.io](https://blackfire.io/pricing) and install the **Blackfire Companion** web browser extension ([Chrome](https://chrome.google.com/webstore/detail/blackfire-companion/miefikpgahefdbcgoiicnmpbeeomffld) or [Firefox](https://addons.mozilla.org/firefox/addon/blackfire/)).
 
-> **note**
->
-> Blackfire also offers a perpetually-free edition but it is for local development only and will not run on Platform.sh.
+
+{{< note >}}
+Blackfire also offers a perpetually-free edition but it is for local development only and will not run on Platform.sh.
+{{< /note >}}
 
 Go to your Dashboard and create a new environment [under the Environments tab](https://blackfire.io/my/environments).
 
@@ -81,7 +79,7 @@ platform variable:create -e=<insert your branch name> env:BLACKFIRE_SERVER_TOKEN
 
 Login via SSH to your container and confirm that Blackfire is running as follows:
 
-```bash
+```text
 php --ri blackfire
 
 blackfire
@@ -113,7 +111,7 @@ That's it! Your site will be profiled and you should get all the results in your
 
 To profile your PHP CLI scripts, use the following command line:
 
-```
+```bash
 blackfire --config /etc/platform/$USER/blackfire.ini <command>
 ```
 
@@ -130,11 +128,9 @@ Blackfire also enables to:
 
 Check [Blackfire's documentation](https://blackfire.io/docs/introduction) for more information.
 
-> **note**
->
-> Those features may require a Premium or an Enterprise subscription.
-> We offer attractive bundles of Platform.sh and Blackfire.io subscriptions.
-> Please [contact our sales department](https://platform.sh/contact/) to discuss how we can help you.
+{{< note >}}
+Those features may require a Premium or an Enterprise subscription. We offer attractive bundles of Platform.sh and Blackfire.io subscriptions. Please [contact our sales department](https://platform.sh/contact/) to discuss how we can help you.
+{{< /note >}}
 
 ## Troubleshooting
 

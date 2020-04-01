@@ -2,7 +2,7 @@
 title: "Memcached (Object cache)"
 weight: 5
 description: "Memcached is a simple in-memory object store well-suited for application level caching.<br><br>See the <a href=\"https://memcached.org/\">Memcached documentation</a> for more information.<br><br>Both Memcached and Redis can be used for application caching.  As a general rule, Memcached is simpler and thus more widely supported while Redis is more robust.  Platform.sh recommends using Redis if possible but Memcached is fully supported if an application favors that cache service."
-toc: true
+ 
 sidebarTitle: "Memcached"
 ---
 

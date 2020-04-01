@@ -1,7 +1,7 @@
 ---
 title: "Developing with Drupal"
 weight: 1
-toc: true
+ 
 ---
 
 ## Push changes to an environment

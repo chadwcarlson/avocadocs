@@ -1,7 +1,7 @@
 ---
 title: "Use a private Git repository"
 weight: 10
-toc: true
+ 
 sidebarTitle: "Private repositories"
 ---
 

@@ -2,7 +2,7 @@
 title: "Using Solr with Drupal 8.x"
 weight: 6
 sidebarTitle: "Solr"
-toc: true
+ 
 description: |
   The Drupal <a href="https://www.drupal.org/project/search_api_solr">Search API Solr</a> module has a somewhat involved setup process, as it requires live access to the Solr server in order to generate the configuration files for it.  The following procedure is therefore necessary to ensure each step is able to proceed.
 ---

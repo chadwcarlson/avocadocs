@@ -2,7 +2,7 @@
 title: "Varnish"
 weight: 13
 description: "Varnish is a popular HTTP proxy server, often used for caching.  It is usually not needed on Platform.sh, as each project's router provides an HTTP cache already and most more advanced use cases will use a CDN instead, both of which render Varnish redundant.<br><br>However, it is possible to configure a Varnish instance as part of an application if Varnish-specific functionality is needed."
-toc: true
+ 
 ---
 
 ## Supported versions

@@ -11,13 +11,13 @@
       {{ end }}
 
       <div class="col-xl-12 order-xl-1 duik-content border-bottom">
-        <div class="border-bottom mb-7">
+        <div class="mb-7">
 
           <!-- Page title -->
           <h1>{{ .Title }}</h1>
 
           <!-- Page description -->
-          <p class="lead mb-5">{{ .Params.description | safeHTML }}</p>
+          <p class="lead mb-5">{{ .Params.description | markdownify }}</p>
 
           <!-- Table of contents -->
           {{ if ne .Params.toc false }}

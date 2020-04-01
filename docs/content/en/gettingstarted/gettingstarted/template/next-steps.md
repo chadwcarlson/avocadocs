@@ -1,7 +1,6 @@
 ---
 title: Next steps
 weight: 5
-<!-- toc: true -->
 description: |
   In this guide you created a project using the <a href="/administration/web.html">management console</a> and installed the <a href="/development/cli.html">Platform.sh CLI</a>. Now you can explore some of the next steps for working with Platform.sh.
 ---

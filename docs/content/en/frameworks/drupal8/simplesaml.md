@@ -1,7 +1,7 @@
 ---
 title: "SimpleSAML"
 weight: 7
-toc: true
+ 
 description: |
   SimpleSAMLphp is a library for authenticating a PHP-based application against a SAML server, such as Shibboleth.  Although Drupal has modules available to authenticate using SimpleSAML some additional setup is required.
 ---

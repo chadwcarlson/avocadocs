@@ -2,7 +2,7 @@
 title: "Using Elasticsearch with Drupal 8.x"
 weight: 5
 sidebarTitle: "Elasticsearch"
-toc: true
+ 
 ---
 
 ## Requirements

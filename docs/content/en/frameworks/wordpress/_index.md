@@ -1,7 +1,7 @@
 ---
 title: "Wordpress"
 weight: 9
-toc: true
+ 
 description: |
   The recommended way to deploy WordPress on Platform.sh is using Composer.  The most popular and supported way to do so is with the <a href="https://github.com/johnpbloch/wordpress">John Bloch</a> script.<br><br>
 

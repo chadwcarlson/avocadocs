@@ -2,7 +2,7 @@
 title: "Go"
 weight: 2
 description: Platform.sh supports building and deploying applications written in Go using Go modules.  They are compiled during the Build hook phase, and support both committed dependencies and download-on-demand.
-toc: true
+ 
 ---
 
 ## Supported versions

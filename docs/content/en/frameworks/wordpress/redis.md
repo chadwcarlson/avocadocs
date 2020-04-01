@@ -2,7 +2,7 @@
 title: "Using Redis with WordPress"
 weight: 1
 sidebarTitle: "Redis"
-toc: true
+ 
 description: |
   There are a number of Redis libraries for WordPress, only some of which are compatible with Platform.sh.  We have tested and recommend <a href="https://packagist.org/packages/devgeniem/wp-redis-object-cache-dropin">devgeniem/wp-redis-object-cache-dropin</a>, which requires extremely little configuration.
 ---

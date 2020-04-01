@@ -1,7 +1,7 @@
 ---
 title: "Using Git submodules"
 weight: 11
-toc: true
+ 
 sidebarTitle: "Git submodules"
 ---
 

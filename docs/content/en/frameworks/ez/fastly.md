@@ -2,7 +2,7 @@
 title: "eZ Platform Enterprise with Fastly"
 weight: 1
 sidebarTitle: "Fastly"
-toc: true
+ 
 description: |
   eZ Platform Enterprise is a "commercial extended" version of ez Platform that includes, among other things, support for push-based purging on the Fastly CDN.
 ---

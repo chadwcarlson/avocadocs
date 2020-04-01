@@ -1,7 +1,7 @@
 ---
 title: "Alernative Node.js install"
 weight: 1
-toc: true
+ 
 ---
 
 ## How to use NVM to run different versions of Node.js

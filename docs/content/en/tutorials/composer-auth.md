@@ -1,7 +1,7 @@
 ---
 title: "Authenticated Composer repositories"
 weight: 1
-toc: true
+ 
 sidebarTitle: "Authenticated Composer"
 description: |
   Some PHP projects may need to leverage a private, third party Composer repository in addition to the public Packagist.org repository.  Often, such third party repositories require authentication in order to download packages, and not everyone is comfortable putting those credentials into their Git repository source code (for obvious reasons).<br><br>

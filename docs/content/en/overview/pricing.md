@@ -2,7 +2,7 @@
 title: "Pricing"
 weight: 3
 description: "Platform.sh is the Idea-to-Cloud Application Platform—the end to end solution to develop and deploy web apps and sites. We offer a free trial period so you can test the service and see how great it is.<br><br>You can view all information about our product pricing on our <a href=\"https://platform.sh/pricing/\">website</a>."
-toc: true
+ 
 ---
 
 You can see our full pricing information at: https://platform.sh/pricing/

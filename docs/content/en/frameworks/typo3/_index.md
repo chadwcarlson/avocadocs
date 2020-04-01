@@ -2,7 +2,7 @@
 title: "TYPO3 - Getting started"
 weight: 8
 sidebarTitle: "TYPO3"
-toc: true
+ 
 ---
 
 ## Prerequisites

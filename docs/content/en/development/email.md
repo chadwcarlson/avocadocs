@@ -2,7 +2,7 @@
 title: "Sending E-mail"
 weight: 8
 sidebarTitle: "E-mail"
-toc: true
+ 
 description: "By default only the master environment can send emails.  For the non-master environments, you can configure outgoing emails via the <a href=\"/administration/web/configure-environment.html#settings\">management console</a>.<br><br>Emails from Platform.sh are sent via a SendGrid-based SMTP proxy.  Each Platform.sh project is provisioned as a SendGrid sub-account. These SendGrid sub-accounts are capped at 12k emails per month.  You can use <code>/usr/sbin/sendmail</code> on your application container to send emails with the assigned SendGrid sub-account. Alternatively, you can use the <code>PLATFORM_SMTP_HOST</code> environment variable to use in your SMTP configuration."
 ---
 
