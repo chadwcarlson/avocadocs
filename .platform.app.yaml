@@ -25,4 +25,4 @@ web:
             index: ['index.html']
             scripts: false
             allow: true
-            expires: 60m
+            expires: 24h
