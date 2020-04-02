@@ -11,7 +11,6 @@ const uglify = require("gulp-uglify");
 function cssBuild() {
     return gulp
         .src(`./public/docsuikit/assets/css/*.css`)
-        .bundle()
         .pipe(postcss([cssnano()]))
         .pipe(gulp.dest(`./public/docsuikit/assets/css/`));
 }
