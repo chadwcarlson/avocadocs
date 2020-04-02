@@ -1,9 +1,11 @@
 ---
 title: "YAML"
 weight: 1
-description: <a href="https://en.wikipedia.org/wiki/YAML">YAML</a> (YAML Ain't Markup Language) is a human-readable data file format, well suited to human-edited configuration files. Nearly all aspects of your project's build and deploy pipeline are controlled via YAML files.
- 
+description: |
+  [YAML](https://en.wikipedia.org/wiki/YAML) ("YAML Ain't Markup Language") is a human-readable data file format, well suited to human-edited configuration files. Nearly all aspects of your project's build and deploy pipeline are controlled via YAML files.
 ---
+
+{{< description >}}
 
 YAML is a whitespace-sensitive format that is especially good at key/value type configuration, such as that used by Platform.sh. There are many good YAML tutorials online and the format is reasonably self-documenting.  We especially recommend:
 

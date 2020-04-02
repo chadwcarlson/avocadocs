@@ -17,7 +17,7 @@ rm hugo_${HUGOVERSION}_Linux-64bit.tar.gz
 
 # For docs, prepare files - make sure to update web.locations
 npm install
-npm run fetch-files
+# npm run fetch-files
 
 # Build the site
 ./hugo
