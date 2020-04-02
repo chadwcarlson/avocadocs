@@ -1,13 +1,9 @@
 ---
 title: "Data retention"
 weight: 4
-description: "Platform.sh logs and stores all sorts of data as a normal part of its business.  This information is retained as needed for business purposes and old data is purged. The retention time varies depending on the type of data stored."
- 
+description: |
+  Platform.sh logs and stores all sorts of data as a normal part of its business.  This information is retained as needed for business purposes and old data is purged. The retention time varies depending on the type of data stored.
 ---
-
-# Data retention
-
-Platform.sh logs and stores all sorts of data as a normal part of its business.  This information is retained as needed for business purposes and old data is purged. The retention time varies depending on the type of data stored.
 
 ## Account information
 

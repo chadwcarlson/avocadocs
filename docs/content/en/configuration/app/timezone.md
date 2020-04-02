@@ -1,9 +1,8 @@
 ---
-title: "Timezone"
+title: "Cron timezone"
 weight: 4
+sidebarTitle: "Timezone"
 ---
-
-# Cron timezone
 
 All Platform.sh containers default to running in UTC time.  Applications and application runtimes may elect to use a different timezone but the container itself runs in UTC.  That includes the `spec` parameter for cron tasks that are defined by the application.
 

@@ -1,10 +1,11 @@
 ---
 title: "HipChat"
 weight: 7
- 
 description: |
-  The <a href="https://hipchat.com">HipChat</a> integration allows you to send notifications about your Platform.sh activity directly to HipChat.
+  The [HipChat](https://hipchat.com) integration allows you to send notifications about your Platform.sh activity directly to HipChat.
 ---
+
+{{< description >}}
 
 ## Setup
 

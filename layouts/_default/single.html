@@ -16,9 +16,6 @@
           <!-- Page title -->
           <h1>{{ .Title }}</h1>
 
-          <!-- Page description -->
-          <p class="lead mb-5">{{ .Params.description | markdownify }}</p>
-
           <!-- Table of contents -->
           {{ if ne .Params.toc false }}
             <div class="toc">

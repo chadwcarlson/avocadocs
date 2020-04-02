@@ -2,11 +2,10 @@
 title: "Management console"
 weight: 4
 layout: single
- 
 description: "Platform.sh provides a responsive management console which allows you to interact with your projects and manage your environments."
 ---
 
-Platform.sh provides a responsive management console which allows you to interact with your projects and manage your environments.
+{{< description >}}
 
 ![Management Console](/images/management-console/project.png)
 

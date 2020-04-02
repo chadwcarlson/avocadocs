@@ -1,9 +1,8 @@
 ---
-title: "Cron and scheduled tasks"
+title: "Cron jobs"
 weight: 12
+sidebarTitle: "Cron and scheduled tasks"
 ---
-
-# Cron jobs
 
 Cron jobs allow you to run scheduled tasks at specified times or intervals. The `crons` section of `.platform.app.yaml` describes these tasks and the schedule when they are triggered.  Each item in the list is a unique name identifying a separate cron job. Crons are started right after build phase.
 

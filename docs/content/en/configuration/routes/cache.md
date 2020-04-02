@@ -1,9 +1,13 @@
 ---
 title: "HTTP Cache"
 weight: 2
-description: Platform.sh supports HTTP caching at the server level. Caching is enabled by default, but is only applied to <code>GET</code> and <code>HEAD</code> requests.<br><br>The cache can be controlled using the <code>cache</code> key in your <code>.platform/routes.yaml</code> file.
- 
+description: |
+  Platform.sh supports HTTP caching at the server level. Caching is enabled by default, but is only applied to `GET` and `HEAD` requests.
 ---
+
+{{< description >}}
+
+The cache can be controlled using the `cache` key in your `.platform/routes.yaml` file.
 
 If a request is cacheable, Platform.sh builds a cache key from several request properties and stores the response associated with this key. When a request comes with the same cache key, the cached response is reused.
 

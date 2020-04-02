@@ -9,11 +9,6 @@
           <!-- List page title -->
           <h1>{{ .Title }}</h1>
 
-          <!-- List page description -->
-          <p class="lead mb-5">{{ .Params.description | markdownify }}</p>
-
-          <br>
-
         </div>
 
         <!-- Page content, anchorized -->
@@ -23,7 +18,7 @@
         {{ range .Pages }}
           <div class="card-list-page">
             <h2><a href="{{ .RelPermalink }}">{{ if isset .Params "sidebartitle" }}{{ .Params.sidebarTitle }}{{ else }}{{ .Title }}{{ end }}</a></h2>
-            <p>{{ .Params.description | safeHTML }}<p>
+            <p>{{ .Params.description | markdownify }}<p>
           </div>
         {{ end }}
 

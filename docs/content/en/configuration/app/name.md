@@ -1,9 +1,8 @@
 ---
 title: "Name"
 weight: 1
+toc: false
 ---
-
-# Name
 
 The `name` is the unique identifier of the application. Platform.sh supports multiple applications within a project, so each application must have a **unique name** within a project. The name may only be composed of lower case alpha-numeric characters (a-z0-9).
 

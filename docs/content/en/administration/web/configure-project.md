@@ -1,10 +1,12 @@
 ---
 title: "Project configuration"
 weight: 1
- 
+
 description: |
   You can access the project-wide configuration settings by selecting the project from your list of projects, then click the `Settings` tab at the top of the screen.
 ---
+
+{{< description >}}
 
 ## General
 

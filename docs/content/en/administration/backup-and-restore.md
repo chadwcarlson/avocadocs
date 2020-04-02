@@ -1,11 +1,13 @@
 ---
 title: "Backup and restore"
 weight: 2
- 
+
 description: |
   Backups are triggered directly via the management console or via the CLI. The backup creates a complete snapshot of the environment. It includes all persistent data from all running services (MySQL, Solr,...) and any files stored on the mounted volumes.
 
 ---
+
+{{< description >}}
 
 ## Backup
 

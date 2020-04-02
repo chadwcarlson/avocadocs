@@ -1,9 +1,8 @@
 ---
 title: "Relationships"
 weight: 5
+toc: false
 ---
-
-# Relationships
 
 The `relationships` block defines how services are mapped within your application.  By default, your application may not talk to any other container within a project.  To access another container you must define a relationship to it.
 

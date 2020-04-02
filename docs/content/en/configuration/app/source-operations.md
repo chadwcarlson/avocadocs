@@ -3,8 +3,6 @@ title: "Source Operations"
 weight: 13
 ---
 
-# Source operations
-
 > **note**
 >
 > Source Operations are currently in Beta.  While the syntax is not expected to change, some behavior might in the future.

@@ -2,10 +2,11 @@
 title: "Configure your application"
 weight: 4
 description: "You control your application and the way it will be built and deployed on Platform.sh via a single configuration file, <code>.platform.app.yaml</code>, located at the root of your application folder inside your Git repository."
- 
 sidebarTitle: "Apps (.platform.app.yaml)"
 layout: single
 ---
+
+{{< description >}}
 
 ![Applications](/images/config-diagrams/applications.png "0.50")
 

@@ -1,9 +1,8 @@
 ---
-title: "Worker configuration"
+title: "Workers"
 weight: 11
+sidebarTitle: "Worker configuration"
 ---
-
-# Workers
 
 Every application may also define zero or more worker instances.  A worker instance runs as its own container independently of the web instance and has no Nginx instance running.  The router service cannot direct public requests to it, either, so running your own web server on a worker (using Node.js or Go) is not useful.
 

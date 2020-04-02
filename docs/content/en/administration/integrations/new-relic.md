@@ -1,10 +1,11 @@
 ---
 title: "New Relic"
 weight: 4
- 
 description: |
   Platform.sh supports [New Relic APM](https://newrelic.com/products/application-monitoring).
 ---
+
+{{< description >}}
 
 ## On a Grid plan
 

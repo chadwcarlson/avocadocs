@@ -1,10 +1,11 @@
 ---
 title: "GitHub"
 weight: 5
- 
 description: |
   The <a href="https://github.com">GitHub</a> integration allows you to manage your Platform.sh environments directly from your GitHub repository.
 ---
+
+{{< description >}}
 
 **Features supported:**
 

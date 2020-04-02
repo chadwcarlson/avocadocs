@@ -1,10 +1,11 @@
 ---
 title: "Tideways"
 weight: 8
- 
 description: |
   Platform.sh supports [Tideways APM](https://tideways.com/) for PHP.  This functionality is only available on PHP 7.0 and later.
 ---
+
+{{< description >}}
 
 {{< note >}}
 The upstream now maintains two versions for Tideways, and both plugins are available on Platform.sh:

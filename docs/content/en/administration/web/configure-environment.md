@@ -1,11 +1,13 @@
 ---
 title: "Environment configuration"
 weight: 3
- 
+
 sidebarTitle: "Configure environments"
 description: |
-  You can access an environment's settings by selecting that environment from the <b>Select Environments</b> pull-down menu at the top of the page or by clicking that environment within the Environments graphic on the right side. Click the `Settings` tab at the top of the screen.
+  You can access an environment's settings by selecting that environment from the **Select Environments** pull-down menu at the top of the page or by clicking that environment within the Environments graphic on the right side. Click the `Settings` tab at the top of the screen.
 ---
+
+{{< description >}}
 
 ## General
 

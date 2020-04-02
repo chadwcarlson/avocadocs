@@ -1,20 +1,24 @@
 ---
 title: "Configure Routes"
 weight: 2
-description: Platform.sh allows you to define the routes used in your environments.<br><br>A route describes how an incoming HTTP request is going to be processed by Platform.sh. The routes are defined using <code>.platform/routes.yaml</code> file in your Git repository.
- 
+description: |
+  Platform.sh allows you to define the routes used in your environments.
 sidebarTitle: "Routes (routes.yaml)"
 layout: single
 ---
 
-![Routes](/images/config-diagrams/routes-basic.png "0.5")
+{{< description >}}
 
-If you don't have a `.platform` folder already, use the commands below to create it:
+A route describes how an incoming HTTP request is going to be processed by Platform.sh. The routes are defined using `.platform/routes.yaml` file in your Git repository.
+
+If you don't have one, use the commands below to create it:
 
 ```bash
 $ mkdir .platform
 $ touch .platform/routes.yaml
 ```
+
+![Routes](/images/config-diagrams/routes-basic.png "0.5")
 
 ## Route templates
 

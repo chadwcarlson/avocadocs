@@ -3,8 +3,6 @@ title: "Storage"
 weight: 7
 ---
 
-# Storage
-
 The built file system image that results from your build process is mounted read-only.  That means it cannot be edited in production, even by accident.
 
 Many applications still require the ability to write and store files, however.  For that, applications can specify one or more mount points, that is, directories that will be mounted from a writable network file system cluster.  They may be mounted anywhere within the file system of your application.  If the specified directory already exists the contents of it will be masked by the writable mount and inaccessible at runtime.

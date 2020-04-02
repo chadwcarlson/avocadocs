@@ -3,8 +3,6 @@ title: "Upgrading"
 weight: 14
 ---
 
-# Upgrading
-
 ## Changes in version 2019.05
 
 * The `!archive` tag in YAML has been un-deprecated, and is now favored over the `!include` option. `!include` is still available for other include types (`yaml`, `binary`, and `string`).

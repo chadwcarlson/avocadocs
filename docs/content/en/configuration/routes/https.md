@@ -1,7 +1,6 @@
 ---
 title: "HTTPS"
 weight: 1
- 
 ---
 
 ## Let's Encrypt
