@@ -28,4 +28,4 @@ web:
             expires: 24h
             rules:
                 '\.(jpe?g|png|gif|svgz?|css|js|map|ico|bmp|eot|woff2?|otf|ttf)$':
-                    expires: 1w
+                    expires: 4w
