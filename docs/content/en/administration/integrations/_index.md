@@ -2,7 +2,6 @@
 title: "Integrations"
 weight: 3
 layout: single
- 
 sidebarTitle: "External integrations"
 description: |
   Platform.sh can easily be integrated with external services. We support native integrations with multiple services, first and foremost Git hosting services such as GitHub, GitLab, or Bitbucket.  You can continue to use those tools for your development workflow, and have Platform.sh environments created automatically for your pull requests and branches.

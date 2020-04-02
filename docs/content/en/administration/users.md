@@ -2,7 +2,7 @@
 title: "User administration"
 weight: 1
 sidebarTitle: "Users"
- 
+
 description: |
   Every Platform.sh user has a role which controls access and improves security on your project. Different roles are authorized to do different things with your applications, environments and users. You can use your collection of Roles to manage how users interact with Platform.sh.
 ---
@@ -33,7 +33,7 @@ When a development team works on a project, the team leader can be the project a
 If you want your users to be able to see everything (Reader), but only commit to a specific branch, change their permission level on that environment to "Contributor".
 
 {{< note theme="info" title="SSH Access Control">}}
-An environment contributor can push code to the environment and has SSH access to the environment. You can change this by [specifying user types](/configuration/app/access.md) with SSH access.
+An environment contributor can push code to the environment and has SSH access to the environment. You can change this by [specifying user types](/configuration/app/access.html) with SSH access.
 {{< /note >}}
 
 {{< note >}}

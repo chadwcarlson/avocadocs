@@ -1,13 +1,13 @@
 ---
 title: "Platform.sh Dedicated cluster specifications"
 weight: 2
- 
+layout: single
 sidebarTitle: "Architecture"
 description: |
-  Platform.sh Dedicated clusters are launched into a Triple Redundant configuration consisting of 3 virtual machines (VMs).  This is an N+1 configuration that is sized to withstand the total loss of any one of the 3 members of the cluster without incurring any downtime.<br><br>
-
-  Each instance hosts the entire application stack, allowing this architecture superior fault tolerance to traditional N-Tier installations. Moreover, the Cores assigned to production are solely for production.
+  Platform.sh Dedicated clusters are launched into a Triple Redundant configuration consisting of 3 virtual machines (VMs). This is an N+1 configuration that is sized to withstand the total loss of any one of the 3 members of the cluster without incurring any downtime.
 ---
+
+Each instance hosts the entire application stack, allowing this architecture superior fault tolerance to traditional N-Tier installations. Moreover, the Cores assigned to production are solely for production.
 
 ## Storage
 
@@ -19,15 +19,13 @@ Default storage is based on the default SSD block-storage offering for each clou
 
 | Service        | Versions                 |
 | ---------------|:------------------------:|
-| [PHP](/languages/php.md)            | 5.6, 7.0, 7.1 (ZTS), 7.2 (ZTS), 7.3 (ZTS) |
-| [NodeJS](/languages/nodejs.md)         | 9.8                      |
+| [PHP](/languages/php.html)            | 5.6, 7.0, 7.1 (ZTS), 7.2 (ZTS), 7.3 (ZTS) |
+| [NodeJS](/languages/nodejs.html)         | 9.8, 10                      |
 | [MariaDB](https://docs.platform.sh/configuration/services/mysql.html)        | 10.0 Galera, 10.1 Galera, 10.2 Galera |
 | [RabbitMQ](https://docs.platform.sh/configuration/services/rabbitmq.html)       | 3.6                      |
-| [Solr](https://docs.platform.sh/configuration/services/solr.html)           | 4.10, 6.3                |
+| [Solr](https://docs.platform.sh/configuration/services/solr.html)           | 4.10, 6.3, 6.6                |
 | [ElasticSearch](https://docs.platform.sh/configuration/services/elasticsearch.html)  | 1.7, 2.4, 5.2, 6.5            |
-| [Redis](https://docs.platform.sh/configuration/services/redis.html)          | 3.2                      |
+| [Redis](https://docs.platform.sh/configuration/services/redis.html)          | 3.2, 5.0                      |
 | [Memcached](https://docs.platform.sh/configuration/services/memcached.html)      | 1.4                      |
 
-Your application will be able to connect to each service by referencing the exact same environment variables as a Grid environment.  While the configuration of the service will be performed by our team, the application configuration is the same and your code should be the same.  See the [services documentation](/configuration/services.html) for service-specific details.
-
-## Additional information
+Your application will be able to connect to each service by referencing the exact same environment variables as a Grid environment.  While the configuration of the service will be performed by our team, the application configuration is the same and your code should be the same.  See the [services documentation](/configuration/services.md) for service-specific details.

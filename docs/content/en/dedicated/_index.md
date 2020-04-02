@@ -1,5 +1,6 @@
 ---
 title: "Dedicated"
 weight: -20
-description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse tortor augue, tincidunt a est quis, ullamcorper feugiat odio. Donec molestie, nunc vitae placerat elementum, ante ligula gravida dolor, ut varius elit ipsum sed nunc. Quisque varius lacinia urna, ac consequat turpis gravida volutpat."
+description: |
+  Platform.sh Dedicated is a robust, redundant layer on top of Platform.sh Professional. This section contains all resources concerning the Dedicated product previously found at `ent.docs.platform.sh`.
 ---

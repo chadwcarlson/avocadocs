@@ -22,6 +22,10 @@ languages:
   #   languageName: Lorem Ipsum
   #   weight: 20
 
+# markup:
+#   goldmark:
+#     renderer:
+#       unsafe: true
 # Syntax highlighting
 # markup:
 #   highlight:

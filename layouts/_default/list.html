@@ -10,7 +10,7 @@
           <h1>{{ .Title }}</h1>
 
           <!-- List page description -->
-          <p class="lead mb-5">{{ .Params.description | safeHTML }}</p>
+          <p class="lead mb-5">{{ .Params.description | markdownify }}</p>
 
           <br>
 

@@ -1,7 +1,6 @@
 ---
 title: "Security & Data privacy"
 weight: 2
- 
 sidebarTitle: "Security and Privacy"
 ---
 

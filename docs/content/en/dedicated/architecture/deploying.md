@@ -1,7 +1,6 @@
 ---
 title: "Deployment"
 weight: 3
- 
 sidebarTitle: "Deploying"
 ---
 
