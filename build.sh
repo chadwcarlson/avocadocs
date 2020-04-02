@@ -21,3 +21,6 @@ npm run fetch-files
 
 # Build the site
 ./hugo
+
+# minify assets
+npm run assets-dist
