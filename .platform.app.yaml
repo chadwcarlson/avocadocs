@@ -26,3 +26,6 @@ web:
             scripts: false
             allow: true
             expires: 24h
+            rules:
+                '\.(jpe?g|png|gif|svgz?|css|js|map|ico|bmp|eot|woff2?|otf|ttf)$':
+                    expires: 1w
