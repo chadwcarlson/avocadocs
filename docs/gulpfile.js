@@ -57,4 +57,14 @@ function javascriptBuildWidgets() {
           .pipe(gulp.dest(`./public/docsuikit/assets/js/`))
   );
 }
-exports.dist = gulp.parallel(cssBuild, javascriptBuild, javascriptBuildWidgets);
+
+function javascriptMinifyAsciiplayer() {
+  return gulp
+    .src('./public/scripts/asciinema-player.js')
+    .pipe(buffer())
+    .pipe(uglify())
+    .pipe(gulp.dest(`./public/scripts/`))
+}
+
+
+exports.dist = gulp.parallel(cssBuild, javascriptBuild, javascriptBuildWidgets, javascriptMinifyAsciiplayer);
