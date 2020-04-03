@@ -38,4 +38,23 @@ function javascriptBuild() {
   );
 }
 
-exports.dist = gulp.parallel(cssBuild, javascriptBuild);
+function javascriptBuildWidgets() {
+  return (
+      browserify({
+          entries: [[
+            './public/docsuikit/assets/vendor/jquery-ui/ui/widgets/autocomplete.js',
+            './public/docsuikit/assets/vendor/jquery-ui/ui/widgets/menu.js',
+            './public/docsuikit/assets/vendor/jquery-ui/ui/widgets/mouse.js',
+          ]],
+          transform: [babelify.configure({ presets: ["@babel/preset-env"] })]
+      })
+          .bundle()
+          .pipe(source("bundle.widgets.js"))
+          // Turn it into a buffer!
+          .pipe(buffer())
+          // And uglify
+          .pipe(uglify())
+          .pipe(gulp.dest(`./public/docsuikit/assets/js/`))
+  );
+}
+exports.dist = gulp.parallel(cssBuild, javascriptBuild, javascriptBuildWidgets);
