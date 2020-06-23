@@ -48,7 +48,7 @@ function codeWasCopied(button) {
   button.innerText = "Copied!";
   setTimeout(function() {
     button.innerText = "Copy";
-  }, 2000);
+  }, 1000);
 }
 
 function addCopyButtonToDom(button, highlightDiv) {

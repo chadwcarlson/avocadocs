@@ -1,19 +1,12 @@
-/* Root */
-@import 'components/rootvars.css';
+/* Root variables */
+@import 'components/root.css';
 
-/* Text import */
-@import url("https://fonts.googleapis.com/css?family=Overpass:300,400,500,700,900");
-@import url("https://fonts.googleapis.com/css?family=Overpass+Mono&display=swap");
+/* Fonts */
+@import 'components/fonts/fonts.css';
 
 /* Layouts */
 @import 'components/layout/mobile.css';
 
 /* Code Syntax Highlight snippets */
-@import 'copytoclipboard.css';
-
-
-/* .highlight { */
-  /* border-radius: 4px; */
-  /* border: 1px solid var(--psh-stone);
-  box-shadow: 0px 1px 5px rgba(152, 160, 171, 0.35); */
-/* } */
+@import 'components/highlight/copytoclipboard.css';
+@import 'components/highlight/inline.css';

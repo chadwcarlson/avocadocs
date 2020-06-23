@@ -1,7 +1,7 @@
 
 # H1
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vulputate ipsum vitae condimentum lacinia. Integer pretium tellus nec tincidunt posuere. Nullam consectetur, neque et gravida dignissim, massa ligula convallis dolor, eu malesuada diam ligula sed sem. Praesent non egestas mi. Maecenas `volutpat tincidunt lectus vitae` venenatis. Aenean porttitor lorem in vehicula venenatis. Vivamus sed hendrerit neque. Nulla imperdiet dapibus arcu eget luctus. Praesent porttitor rhoncus rhoncus.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vulputate ipsum vitae condimentum lacinia. Integer pretium tellus nec tincidunt posuere. Nullam consectetur, neque et gravida dignissim, massa ligula convallis dolor, eu malesuada diam ligula sed sem. Praesent non egestas mi. Maecenas `volutpat tincidunt lectus vitae` venenatis. Aenean porttitor lorem in vehicula venenatis. Vivamus sed hendrerit neque. Nulla imperdiet dapibus arcu eget luctus. Praesent porttitor rhoncus rhoncus. Quisque commodo ultricies nibh, ut suscipit arcu lobortis vel. Pellentesque dapibus malesuada diam, nec facilisis urna laoreet ac. Mauris sodales ante enim, vitae tristique nisl elementum a. Nunc a orci consequat, volutpat ligula et, semper neque. Phasellus at accumsan est. Praesent molestie commodo leo in dignissim. Nulla nec nibh eget sapien iaculis bibendum. Phasellus porttitor lacinia eros non vestibulum. Proin ullamcorper pulvinar diam, at commodo mi luctus viverra. Cras erat elit, lacinia eget velit nec, sollicitudin hendrerit tellus. Nunc efficitur ornare convallis. Etiam purus odio, fermentum non sodales imperdiet, tempus a lorem. Nunc nec mauris non dolor auctor tincidunt. Proin ut ligula semper, rutrum ligula quis, mollis ipsum. Phasellus at porta urna.
 
 ## H2
 
@@ -32,6 +32,8 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis venenatis dignissi
 
 Sed aliquam est vitae imperdiet luctus. Quisque suscipit pharetra ipsum vitae laoreet. Quisque ultrices est eu enim efficitur, quis pretium nibh porta. Ut id ultricies arcu, nec luctus nisl.
 
+<!-- ![test image](static/images/misc/avocados1.jpg) -->
+
 #### H4
 
 Integer nec ultricies arcu, eget semper lorem. Nam consequat eu leo vitae interdum. Etiam aliquam, metus sit amet fermentum pulvinar, quam ante varius turpis, vitae euismod ante nisi at dolor. Vestibulum mattis ornare metus, at tempus enim condimentum ac. Nulla at augue lectus. Nam pulvinar metus et elit volutpat, volutpat cursus ipsum sollicitudin. Donec eu lorem eget erat laoreet viverra.
@@ -42,9 +44,15 @@ platform integration:add --type=github --project=PLATFORMSH_PROJECT_ID --token=G
 
 Nunc volutpat consectetur ligula, id commodo nibh auctor quis. Donec nec ligula sed nulla finibus porta a id mauris. Aliquam a varius magna, tincidunt faucibus eros. Duis nulla dui, consequat eu dolor id, mollis pharetra ex. Nam fermentum massa in diam congue, in posuere magna cursus. Integer condimentum dictum velit eu consequat. Praesent bibendum auctor enim, vel convallis ex ornare sit amet. Quisque eu tellus id sem pretium venenatis. Mauris ante enim, mollis vel tellus a, commodo porttitor turpis.
 
+<!-- {{< figure src="images/misc/avocados1.jpg" title="Steve Francia" >}} -->
+
 ##### H5
 
-Quisque commodo ultricies nibh, ut suscipit arcu lobortis vel. Pellentesque dapibus malesuada diam, nec facilisis urna laoreet ac. Mauris sodales ante enim, vitae tristique nisl elementum a. Nunc a orci consequat, volutpat ligula et, semper neque. Phasellus at accumsan est. Praesent molestie commodo leo in dignissim. Nulla nec nibh eget sapien iaculis bibendum. Phasellus porttitor lacinia eros non vestibulum. Proin ullamcorper pulvinar diam, at commodo mi luctus viverra. Cras erat elit, lacinia eget velit nec, sollicitudin hendrerit tellus. Nunc efficitur ornare convallis. Etiam purus odio, fermentum non sodales imperdiet, tempus a lorem. Nunc nec mauris non dolor auctor tincidunt. Proin ut ligula semper, rutrum ligula quis, mollis ipsum. Phasellus at porta urna.
+Quisque commodo ultricies nibh, ut suscipit arcu lobortis vel. Pellentesque dapibus malesuada diam, nec facilisis urna laoreet ac. Mauris sodales ante enim, vitae tristique nisl elementum a. Nunc a orci consequat, volutpat ligula et, semper neque. Phasellus at accumsan est.
+
+<!-- {{< gist spf13 7896402 >}} -->
+
+Praesent molestie commodo leo in dignissim. Nulla nec nibh eget sapien iaculis bibendum. Phasellus porttitor lacinia eros non vestibulum. Proin ullamcorper pulvinar diam, at commodo mi luctus viverra. Cras erat elit, lacinia eget velit nec, sollicitudin hendrerit tellus. Nunc efficitur ornare convallis. Etiam purus odio, fermentum non sodales imperdiet, tempus a lorem. Nunc nec mauris non dolor auctor tincidunt. Proin ut ligula semper, rutrum ligula quis, mollis ipsum. Phasellus at porta urna.
 
 ```yaml
 # .platform.app.yaml
@@ -129,7 +137,19 @@ crons:
 
 ##### H6
 
-Quisque commodo ultricies nibh, ut suscipit arcu lobortis vel. Pellentesque dapibus malesuada diam, nec facilisis urna laoreet ac. Mauris sodales ante enim, vitae tristique nisl elementum a. Nunc a orci consequat, volutpat ligula et, semper neque. Phasellus at accumsan est. Praesent molestie commodo leo in dignissim. Nulla nec nibh eget sapien iaculis bibendum. Phasellus porttitor lacinia eros non vestibulum. Proin ullamcorper pulvinar diam, at commodo mi luctus viverra. Cras erat elit, lacinia eget velit nec, sollicitudin hendrerit tellus. Nunc efficitur ornare convallis. Etiam purus odio, fermentum non sodales imperdiet, tempus a lorem. Nunc nec mauris non dolor auctor tincidunt. Proin ut ligula semper, rutrum ligula quis, mollis ipsum. Phasellus at porta urna.
+Quisque commodo ultricies nibh, ut suscipit arcu lobortis vel. Pellentesque dapibus malesuada diam, nec facilisis urna laoreet ac.
+
+<!-- {{< instagram BWNjjyYFxVx >}} -->
+
+Mauris sodales ante enim, vitae tristique nisl elementum a. Nunc a orci consequat, volutpat ligula et, semper neque. Phasellus at accumsan est. Praesent molestie commodo leo in dignissim. Nulla nec nibh eget sapien iaculis bibendum.
+
+<!-- {{< tweet 1275458664988434437 >}} -->
+
+Phasellus porttitor lacinia eros non vestibulum. Proin ullamcorper pulvinar diam, at commodo mi luctus viverra. Cras erat elit, lacinia eget velit nec, sollicitudin hendrerit tellus. Nunc efficitur ornare convallis.
+
+<!-- {{< vimeo 146022717 >}} -->
+
+Etiam purus odio, fermentum non sodales imperdiet, tempus a lorem. Nunc nec mauris non dolor auctor tincidunt. Proin ut ligula semper, rutrum ligula quis, mollis ipsum. Phasellus at porta urna.
 
 ```go
 // server.go
@@ -159,3 +179,5 @@ func main() {
     }
 }
 ```
+
+<!-- {{< youtube w7Ft2ymGmfc >}} -->

@@ -1,0 +1,5 @@
+p > code {
+  color: var(--psh-blue);
+  background-color: var(--psh-smoke);
+  padding: .25rem;
+}
