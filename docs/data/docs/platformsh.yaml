@@ -1,8 +1,0 @@
-header:
-  logo:
-    image: "images/Platformsh_logo_white.svg"
-    favicon: "images/favicon.ico"
-    link: "https://platform.sh/"
-    showVersionBadge: false
-  downloadbutton: false
-showContentNav: true

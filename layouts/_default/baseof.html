@@ -1,33 +1,31 @@
-<!DOCTYPE html>
+<!doctype html>
+
 <html lang="en">
+<head>
+  <meta charset="utf-8">
 
-  <!-- Head -->
-  {{ partial "head/head" . }}
+  <title>avocadocs</title>
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"> -->
+  <meta name="description" content="Avocadocs">
+  <meta name="author" content="SitePoint">
 
-  <body class="bg-white">
+  <link rel="stylesheet" href="{{"styles/main.css" | relURL}}">
+</head>
 
-    <!-- Header -->
-    {{ partial "header/header" . }}
-
-    <!-- Scripts -->
-    {{ partial "scripts/scripts" . }}
-
-    <div class="container-fluid">
-
-      <div class="row pt-3">
-
-        <!-- Sidebar -->
-        {{ partial "navigation/sidebar/sidebar" . }}
-
-        <!-- Main content block -->
-        {{- block "main" . }}{{- end }}
-
+  <body>
+    <div class="grid-container">
+      <div class="logo">
+        <img class="image-logo" src="{{ "images/avocadocs-light.svg" | relURL }}" alt="avocadocs">
+        <!-- <img src="{{ "images/Platformsh_logo_white.svg" | relURL }}" alt="avocadocs"> -->
       </div>
-
+      <div class="search">
+        <div class="search-box"></div>
+        <div class="hamburger"></div>
+      </div>
+      <div class="main">
+        {{block "main" .}}{{end}}
+      </div>
     </div>
-
-    <!-- Go to top button -->
-    {{ partial "navigation/gototopbutton" . }}
-
+    <script src="scripts/copytoclipboard.js"></script>
   </body>
 </html>
