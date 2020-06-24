@@ -2,8 +2,9 @@
 
 .highlight-wrapper {
   display: block;
-  border: 1px solid var(--psh-stone);
-  box-shadow: 0px 1px 5px rgba(152, 160, 171, 0.35);
+  border: 1px solid var(--psh-smoke);
+  /* box-shadow: 0px 1px 5px rgba(152, 160, 171, 0.35); */
+  box-shadow: 0px 0.5rem 0.5rem rgba(152, 160, 171, 0.35);
   /* border-radius: 4px; */
 }
 
@@ -12,7 +13,7 @@
   z-index: 0;
   padding: 0;
   margin: 0;
-  overflow-x: hidden; 
+  overflow-x: hidden;
   /* border-radius: 4px; */
 }
 
@@ -42,13 +43,16 @@
   top: 0;
   font-size: 14px;
   font-family: "Overpass", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 700;
+  /* font-weight: 700; */
   line-height: 14px;
-  letter-spacing: 0.5px;
+  letter-spacing: 1px;
   width: 75px;
-  color: var(--psh-ghost-white);
+  /* color: var(--psh-ghost-white);
   background-color: var(--primary-accent);
-  border: 1.25px solid var(--primary-accent);
+  border: 1.25px solid var(--primary-accent); */
+  background-color: var(--psh-light-blue);
+  border: 1.25px solid var(--psh-light-blue);
+  color: var(--psh-night);
   border-top-left-radius: 0;
   /* border-top-right-radius: 4px; */
   border-bottom-right-radius: 0;
@@ -63,9 +67,12 @@
 .copy-code-button:focus,
 .copy-code-button:active,
 .copy-code-button:active:hover {
-  color: var(--psh-night);
+  /* color: var(--psh-night);
   background-color: var(--secondary-accent);
-  border: 1.25px solid var(--secondary-accent);
+  border: 1.25px solid var(--secondary-accent); */
+  background-color: var(--psh-light-pink);
+  border: 1.25px solid var(--psh-light-pink);
+  color: var(--psh-night);
   outline: 0;
 }
 
@@ -73,5 +80,5 @@
   position: absolute;
   height: 0;
   z-index: -1;
-  opacity: .01;
+  /* opacity: .01; */
 }

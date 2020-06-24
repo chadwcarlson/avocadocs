@@ -10,6 +10,7 @@
   <meta name="author" content="SitePoint">
 
   <link rel="stylesheet" href="{{"styles/main.css" | relURL}}">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/3.1.0/css/font-awesome.min.css" />
 </head>
 
   <body>
@@ -19,8 +20,22 @@
         <!-- <img src="{{ "images/Platformsh_logo_white.svg" | relURL }}" alt="avocadocs"> -->
       </div>
       <div class="search">
-        <div class="search-box"></div>
-        <div class="hamburger"></div>
+        <div class="search-area">
+          <div class="search-icon">
+            <img class="search-icon-svg" src="{{ "images/icons/search-solid.svg" | relURL }}" alt="search-icon">
+          </div>
+          <!-- <div class="search-box"> -->
+          <form class="search-box" action="/action_page.php">
+            <input class="search-input" type="text" placeholder="Search Platform.sh" name="search">
+            <!-- <button type="submit"><i class="fa fa-search"></i></button> -->
+          </form>
+          <!-- </div> -->
+        </div>
+        <div class="hamburger-area">
+          <div class="hamburger">
+            <svg width="30" height="12" viewBox="0 0 30 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h30v2H0z" fill="#2D282B"></path><path d="M0 10h30v2H0z" fill="#2D282B"></path></svg>
+          </div>
+        </div>
       </div>
       <div class="main">
         {{block "main" .}}{{end}}

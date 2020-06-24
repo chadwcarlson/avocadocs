@@ -1,0 +1,14 @@
+.toc {
+  padding: 2rem;
+  /* box-shadow: 0px 0.5rem 0.5rem rgba(152, 160, 171, 0.35); */
+  border: 1px solid var(--psh-ghost-white);
+}
+
+.toc ul {
+  list-style: none;
+}
+
+.toc a {
+  text-decoration: none;
+  color: var(--primary-accent);
+}

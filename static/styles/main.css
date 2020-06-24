@@ -10,3 +10,22 @@
 /* Code Syntax Highlight snippets */
 @import 'components/highlight/copytoclipboard.css';
 @import 'components/highlight/inline.css';
+
+
+/* Code tabs */
+@import 'components/tabs.css';
+
+/* Template accordians */
+@import 'components/accordian.css';
+
+/* Tables */
+@import 'components/table.css';
+
+/* Notes */
+@import 'components/blockquote.css';
+
+/* Table of Contents */
+@import 'components/toc.css';
+
+/* Search */
+@import 'components/search/main.css';

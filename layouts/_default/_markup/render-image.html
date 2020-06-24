@@ -1,0 +1,22 @@
+{{ $alt := .PlainText | safeHTML }}
+{{ $checkInline := split .Title "-"}}
+{{ $widthScale := 100 }}
+{{ $scale := 1.0 }}
+
+{{ if gt (len $checkInline) 1 }}
+  {{ with ( index $checkInline 0 ) }}
+    {{ $scale = float . }}
+    {{ $widthScale = mul $scale $widthScale }}
+  {{ end }}
+  <img class="formatted-image" src="{{ .Destination }}" alt="{{ $alt }}" style="max-width: {{ $widthScale }}rem;">
+{{ else }}
+  {{ with .Title }}
+    {{ $scale = float . }}
+    {{ $widthScale = mul $scale $widthScale }}
+  {{ end }}
+  <div class="centered-image" align="center">
+    <p style="max-width: {{ $widthScale }}rem;">
+      <img class="formatted-image" src="{{ .Destination }}" alt="{{ $alt }}">
+    </p>
+  </div>
+{{ end }}

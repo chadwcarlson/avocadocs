@@ -29,19 +29,19 @@ html, body {
   display: grid;
   grid-template-columns: 1fr var(--header-height);
   grid-template-rows: 1fr;
-  grid-template-areas: "search-box hamburger";
+  grid-template-areas: "search-area hamburger-area";
   background: var(--sidebar-background);
   grid-area: search;
   max-width: 100vw;
 }
 
-.search-box {
-  grid-area: search-box;
-}
+/* .search-area {
+  grid-area: search-area;
+} */
 
-.hamburger {
-  grid-area: hamburger;
-  border-left: 1px solid var(--logo-background);
+.hamburger-area {
+  grid-area: hamburger-area;
+  /* border-left: 1px solid var(--logo-background); */
 }
 
 .main {
