@@ -13,3 +13,5 @@ title = "My New Hugo Site"
     noClasses = true
     style = "borland"
     tabWidth = 4
+
+unsafeHTML = true

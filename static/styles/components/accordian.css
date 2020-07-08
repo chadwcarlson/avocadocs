@@ -116,8 +116,8 @@
 .template-logo {
   min-width: 200px;
   min-height: 200px;
-  max-height: 350px;
-  max-width: 350px;
+  max-height: 250px;
+  max-width: 250px;
   /* align-items: center;
   display: flex;
   text-align: center; */

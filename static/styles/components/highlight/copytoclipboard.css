@@ -6,6 +6,7 @@
   /* box-shadow: 0px 1px 5px rgba(152, 160, 171, 0.35); */
   box-shadow: 0px 0.5rem 0.5rem rgba(152, 160, 171, 0.35);
   /* border-radius: 4px; */
+  /* overflow-x: hidden; */
 }
 
 .highlight {
@@ -44,22 +45,24 @@
   font-size: 14px;
   font-family: "Overpass", "Helvetica Neue", Helvetica, Arial, sans-serif;
   /* font-weight: 700; */
-  line-height: 14px;
+  line-height: 16px;
   letter-spacing: 1px;
   width: 75px;
-  /* color: var(--psh-ghost-white);
+  color: var(--psh-ghost-white);
   background-color: var(--primary-accent);
-  border: 1.25px solid var(--primary-accent); */
-  background-color: var(--psh-light-blue);
-  border: 1.25px solid var(--psh-light-blue);
-  color: var(--psh-night);
+  border: 1.25px solid var(--primary-accent);
+  /* background-color: var(--psh-light-blue);
+  border: 1.25px solid var(--psh-light-blue); */
+  /* background-color: #FFFFFF;
+  border: none; */
+  /* color: var(--psh-night); */
   border-top-left-radius: 0;
   /* border-top-right-radius: 4px; */
   border-bottom-right-radius: 0;
   /* border-bottom-left-radius: 4px; */
   white-space: nowrap;
   padding: 4px 4px 5px 4px;
-  margin: 0 0 0 1px;
+  margin: 0px 0 0 1px;
   cursor: pointer;
 }
 
@@ -67,12 +70,12 @@
 .copy-code-button:focus,
 .copy-code-button:active,
 .copy-code-button:active:hover {
-  /* color: var(--psh-night);
-  background-color: var(--secondary-accent);
-  border: 1.25px solid var(--secondary-accent); */
-  background-color: var(--psh-light-pink);
-  border: 1.25px solid var(--psh-light-pink);
   color: var(--psh-night);
+  background-color: var(--secondary-accent);
+  border: 1.25px solid var(--secondary-accent);
+  /* background-color: var(--psh-blue);
+  border: 1.25px solid var(--psh-blue);
+  color: #FFFFFF; */
   outline: 0;
 }
 

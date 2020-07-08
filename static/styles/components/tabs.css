@@ -7,10 +7,20 @@
 .tabs {
     /* background: var(--primary-accent);
     color: #FFFFFF; */
-    background-color: var(--psh-light-blue);
-    color: var(--psh-night);
+    /* background-color: var(--psh-light-blue);
+    color: var(--psh-night); */
     /* border: 1px solid var(--psh-night); */
     box-shadow: 0px 0.5rem 0.5rem rgba(152, 160, 171, 0.35);
+}
+
+.tabs-dark {
+  background: var(--primary-accent);
+  color: #FFFFFF;
+}
+
+.tabs-light {
+  background-color: var(--psh-light-blue);
+  color: var(--psh-night);
 }
 /* You can safely remove the next two lines */
 /* .top {
@@ -70,6 +80,10 @@
     color: var(--psh-night);
 }
 #tab1:checked ~ .tab-content #content1, #tab2:checked ~ .tab-content #content2, #tab3:checked ~ .tab-content #content3, #tab4:checked ~ .tab-content #content4 {
+    display: block;
+}
+
+#tab5:checked ~ .tab-content #content5, #tab6:checked ~ .tab-content #content6, #tab7:checked ~ .tab-content #content7, #tab8:checked ~ .tab-content #content8 {
     display: block;
 }
 @media screen and (max-width: 400px) {

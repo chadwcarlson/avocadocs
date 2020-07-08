@@ -10,7 +10,8 @@
   <meta name="author" content="SitePoint">
 
   <link rel="stylesheet" href="{{"styles/main.css" | relURL}}">
-  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/3.1.0/css/font-awesome.min.css" />
+
+  <!-- <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/3.1.0/css/font-awesome.min.css" /> -->
 </head>
 
   <body>
@@ -25,7 +26,7 @@
             <img class="search-icon-svg" src="{{ "images/icons/search-solid.svg" | relURL }}" alt="search-icon">
           </div>
           <!-- <div class="search-box"> -->
-          <form class="search-box" action="/action_page.php">
+          <form class="search-box">
             <input class="search-input" type="text" placeholder="Search Platform.sh" name="search">
             <!-- <button type="submit"><i class="fa fa-search"></i></button> -->
           </form>
@@ -41,6 +42,7 @@
         {{block "main" .}}{{end}}
       </div>
     </div>
-    <script src="scripts/copytoclipboard.js"></script>
+    {{ partial "mathjax" . }}
+    <script src="{{"scripts/copytoclipboard.js" | relURL}}"></script>
   </body>
 </html>

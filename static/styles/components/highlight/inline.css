@@ -1,6 +1,10 @@
 p > code,
-li > code {
+li > code,
+th > code,
+td > code  {
   color: var(--psh-blue);
   background-color: var(--psh-smoke);
   padding: .25rem;
+  font-size: 100%;
+  line-height: inherit;
 }

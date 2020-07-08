@@ -1,3 +1,8 @@
 {{ define "main" }}
-    {{ .Content }}
+  <h1>{{ .Title }}</h1>
+  <div class="toc">
+      <h3>Contents</h3>
+      {{ .TableOfContents }}
+  </div>
+  {{ .Content }}
 {{ end }}

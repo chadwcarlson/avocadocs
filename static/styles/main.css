@@ -29,3 +29,15 @@
 
 /* Search */
 @import 'components/search/main.css';
+
+/* Mermaid graphics */
+@import 'components/mermaid.css';
+
+/* Buttons */
+@import 'components/buttons/dynamic.css';
+
+/* Links */
+@import 'components/links.css';
+
+/* MathJax/LaTeX rendering */
+@import 'components/mathjax.css';

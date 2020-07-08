@@ -1,0 +1,10 @@
+<!-- shortcodes/note.html: Blockquote note. -->
+{{ if .IsNamedParams }}
+<blockquote class="{{.Get "type" }}">
+  <h3>{{.Get "type" | humanize }}</h3>
+{{ else }}
+<blockquote class="note">
+  <h3>Note</h3>
+{{ end }}
+  {{ .Inner | markdownify }}
+</blockquote>

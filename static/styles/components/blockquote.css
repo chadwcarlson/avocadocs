@@ -1,6 +1,10 @@
 blockquote {
-  padding: 1rem 3rem;
+  /* top | right | bottom | left */
+  padding: 1rem 3rem 2rem 3rem;
+  /* padding: auto; */
+  /* margin: 1rem auto; */
   box-shadow: 0px 0.5rem 0.5rem rgba(152, 160, 171, 0.35);
+  /* max-width: 70%; */
 }
 
 .note {
