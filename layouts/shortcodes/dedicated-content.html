@@ -1,0 +1,3 @@
+{{- if not (isset .Page.Site.Params "hidededicated") -}}
+    {{- .Inner -}}
+{{- end -}}

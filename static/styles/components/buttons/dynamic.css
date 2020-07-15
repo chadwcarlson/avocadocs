@@ -1,0 +1,146 @@
+.dynamic-button {
+  text-align: center;
+  padding-top: 1rem;
+}
+
+.btn-primary2 {
+  display: inline-block;
+  position: relative;
+  background: linear-gradient(to right, #FFEEEE 0%, #FFEEEE 50px, #FFFFFF 50px);
+  z-index: 0;
+}
+
+.btn2 {
+  border: 0px solid transparent;
+  border-radius: 0rem;
+  font-weight: bold;
+  padding: 1rem 2rem;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: left;
+  color: #1A182A;
+  font-family: Overpass Mono;
+  cursor: pointer;
+  outline: none;
+}
+
+.btn-primary2::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #FFBDBB;
+  transform: scaleX(0);
+  transform-origin: 0 50%;
+  transition: transform 0.1s;
+  transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
+}
+
+.btn-primary2:hover::before {
+  transform: scaleX(1);
+}
+
+.btn-secondary2 {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  background: none;
+  z-index: 0;
+}
+
+.btn-secondary2:hover {
+  box-shadow: 0px 0.5rem 0.5rem var(--psh-light-pink);
+}
+
+.chevron-back {
+  transform: rotate(180deg);
+}
+
+/* Full width */
+
+.btn-block {
+  display: block;
+  width: 100%;
+  font-family: Overpass;
+  font-weight: normal;
+}
+
+
+/* Test */
+
+.buttons {
+  text-align: center;
+  padding-top: 1rem;
+}
+
+.btn {
+  border: 0px solid transparent;
+  border-radius: 0rem;
+  font-weight: bold;
+  padding: 1rem 2rem;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: left;
+  color: #1A182A;
+  font-family: Overpass Mono;
+  cursor: pointer;
+  outline: none;
+  /* background-color: #FFFFFF; */
+  /* box-shadow: 0px 0.5rem 0.5rem rgba(152, 160, 171, 0.35); */
+}
+
+.btn-forward {
+  display: inline-block;
+  position: relative;
+  background: linear-gradient(to right, #FFEEEE 0%, #FFEEEE 50px, #FFFFFF 50px);
+  z-index: 0;
+}
+
+.btn-forward::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #FFBDBB;
+  transform: scaleX(0);
+  transform-origin: 0 50%;
+  transition: transform 0.1s;
+  transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
+}
+
+.btn-forward::after{
+  /* background-image: url("/images/icons/chevrons.svg"); */
+  /* background-size: 12px 12px; */
+  /* background-position: 97% 70%; */
+  /* background-repeat: no-repeat; */
+  margin-left: 1rem;
+  /* display: none; */
+  content: url("/images/icons/chevrons.svg");
+  /* position: relative; */
+  /* z-index: -1; */
+  /* top: 0;
+  left: 100;
+  right: 10;
+  bottom: 0; */
+  /* transform: scaleX(0);
+  transform-origin: 0 50%;
+  transition: transform 0.1s;
+  transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1); */
+}
+
+.btn-forward:hover::before {
+  transform: scaleX(1);
+}
+
+
+.btn-forward:hover::after {
+  transform: scaleX(1);
+  /* display: inline; */
+  /* margin-left: 1.5rem; */
+}

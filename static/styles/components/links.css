@@ -1,0 +1,7 @@
+a {
+  color: var(--psh-blue);
+}
+
+a:visited {
+  color: var(--psh-blue);
+}
