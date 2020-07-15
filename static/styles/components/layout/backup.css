@@ -18,7 +18,7 @@ html, body {
   /* width: 100%; */
   grid-template-columns: 1fr;
   grid-template-rows: var(--header-height) var(--header-height) 1fr;
-  grid-template-areas: "logo" "search" "content";
+  grid-template-areas: "logo" "search" "main";
 }
 
 .logo {
@@ -50,32 +50,9 @@ html, body {
   /* border-left: 1px solid var(--logo-background); */
 }
 
-.content {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto 1fr;
-  grid-template-areas: "banner" "main";
-  grid-area: content;
-}
-
-.banner {
-  grid-area: banner;
-  background-color: var(--psh-sunglow);
-  padding: 1.5rem 5rem;
-  margin-top: 1rem;
-}
-
 .main {
   grid-area: main;
-  margin: 3rem 5rem;
+  margin: 5rem;
+  max-width: 100vw;
+  /* display: block; */
 }
-
-/* h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-} */

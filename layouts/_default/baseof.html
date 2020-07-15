@@ -38,9 +38,12 @@
           </div>
         </div>
       </div>
-      <div class="main">
-        {{block "main" .}}{{end}}
-      </div>
+      <div class="content">
+        {{ partial "banner" . }}
+        <div class="main">
+          {{block "main" .}}{{end}}
+        </div>
+    </div>
     </div>
     {{ partial "mathjax" . }}
     <script src="{{"scripts/copytoclipboard.js" | relURL}}"></script>

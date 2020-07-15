@@ -3,9 +3,18 @@ title: "Test page"
 description: |
   You control your application and the way it will be built and deployed on Platform.sh via a single configuration file, `.platform.app.yaml`, located at the root of your application folder inside your Git repository.
 sidebarTitle: "Apps (.platform.app.yaml)"
+company: Platform.sh
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vulputate ipsum vitae condimentum lacinia. Integer pretium tellus nec tincidunt posuere. Nullam consectetur, neque et gravida dignissim, massa ligula convallis dolor, eu malesuada diam ligula sed sem. Praesent non egestas mi. Maecenas `volutpat tincidunt lectus vitae` venenatis. Aenean porttitor lorem in vehicula venenatis. Vivamus sed hendrerit neque. Nulla imperdiet dapibus arcu eget luctus. Praesent porttitor rhoncus rhoncus. Quisque commodo ultricies nibh, ut suscipit arcu lobortis vel. Pellentesque dapibus malesuada diam, nec facilisis urna laoreet ac.
+
+<!-- {{< asciinema src="videos/project-create.cast" >}} -->
+
+Every application you deploy on {{< company >}} is built as a virtual cluster, containing a set of containers. The master branch of your Git repository is always deployed as the production cluster. Any other branch can be deployed as a development cluster.
+
+{{< dedicated-content >}}
+Some Dedicated content.
+{{< /dedicated-content >}}
 
 ## YouTube
 
@@ -46,7 +55,7 @@ See [the docs]({{< relref "shortcodes/localcode.md" >}}).
 
 ## Notes
 
-{{< notes >}}
+See [the docs]({{< relref "shortcodes/note.md" >}}).
 
 ## Tabbed content
 
@@ -65,6 +74,8 @@ Mauris sodales ante enim, vitae tristique nisl elementum a. Nunc a orci consequa
 Nunc efficitur ornare convallis. Etiam purus odio, fermentum non sodales imperdiet, tempus a lorem. Nunc nec mauris non dolor auctor tincidunt. Proin ut ligula semper, rutrum ligula quis, mollis ipsum. Phasellus at porta urna.
 
 ## Template accordians
+
+See [the docs]({{< relref "shortcodes/accordian.md" >}}).
 
 Mauris sodales ante enim, vitae tristique nisl elementum a. Nunc a orci consequat, volutpat ligula et, semper neque. Phasellus at accumsan est. Praesent molestie commodo leo in dignissim. Nulla nec nibh eget sapien iaculis bibendum. Phasellus porttitor lacinia eros non vestibulum. Proin ullamcorper pulvinar diam, at commodo mi luctus viverra. Cras erat elit, lacinia eget velit nec, sollicitudin hendrerit tellus. Nunc efficitur ornare convallis.
 
@@ -284,6 +295,3 @@ Phasellus porttitor lacinia eros non vestibulum. Proin ullamcorper pulvinar diam
 <!-- {{< vimeo 146022717 >}} -->
 
 Etiam purus odio, fermentum non sodales imperdiet, tempus a lorem. Nunc nec mauris non dolor auctor tincidunt. Proin ut ligula semper, rutrum ligula quis, mollis ipsum. Phasellus at porta urna.
-
-
-{{< youtube w7Ft2ymGmfc >}}

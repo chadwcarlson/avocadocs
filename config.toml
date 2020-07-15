@@ -2,6 +2,13 @@ baseURL = "http://example.org/"
 languageCode = "en-us"
 title = "My New Hugo Site"
 
+
+ignorefiles = [ "dedicated/.*" ]
+[params]
+  company = "OVH"
+  # hideDedicated = true
+
+
 [markup]
   [markup.highlight]
     codeFences = true
