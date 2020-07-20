@@ -1,0 +1,141 @@
+html, body {
+  /* height: 100%; */
+  /* display: flex; */
+  /* position: relative; */
+  /* max-width: 100vw; */
+  margin: 0;
+  font-family: "Overpass", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 25px;
+
+  color: var(--psh-night);
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 300px auto auto;
+  grid-template-rows: 80px 1fr 1fr;
+  grid-template-areas: "header header header" "sidebar content content" "sidebar content content";
+}
+
+.header {
+  /* width: 100vw !important; */
+  /* width: 1200px; */
+  display: grid;
+  grid-template-columns: 300px 1fr 300px;
+  grid-template-rows: 80px;
+  grid-template-areas: "logo links widget";
+  grid-area: header;
+  box-shadow: 0px 0.5rem 0.5rem rgba(152, 160, 171, 0.35);
+  background: var(--logo-background);
+}
+
+.logo {
+  grid-area: logo;
+  background: var(--logo-background);
+  /* background: var(--psh-parsley); */
+  /* background: var(--psh-candy-green); */
+  display: flex;
+  justify-content: center;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  /* box-shadow: 0px 0.5rem 0.5rem rgba(152, 160, 171, 0.35); */
+}
+
+/* .img-logo {
+  max-width: 50%;
+} */
+
+.links {
+  grid-area: links;
+  /* background: var(--psh-gray); */
+  /* background: var(--psh-candy-green); */
+  background: var(--logo-background);
+  /* border: 1px solid red; */
+  margin-top: auto;
+  margin-bottom: auto;
+  /* margin: 1rem; */
+  /* padding: 1rem; */
+  /* color: #FFFFFF; */
+  /* background: var(--psh-parsley); */
+}
+
+.widget {
+  grid-area: widget;
+  /* background: var(--psh-gray); */
+  background: var(--logo-background);
+  color: #FFFFFF;
+}
+
+.sidebar {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 80px 1fr;
+  grid-template-areas: "search" ".";
+  grid-area: sidebar;
+  background: var(--sidebar-background);
+  /* box-shadow: 0px 0.5rem 0.5rem rgba(152, 160, 171, 0.35); */
+}
+
+.search {
+  grid-area: search;
+  /* background: #FFFFFF; */
+  /* border: 1px solid #FFFFFF; */
+}
+
+/* .content {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "main";
+  grid-area: content;
+}
+
+.main {
+  grid-area: main;
+  margin: 3rem 5rem;
+} */
+
+.content {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto 1fr;
+  grid-template-areas: "edit-page" "banner" "main";
+  grid-area: content;
+}
+
+.banner {
+  grid-area: banner;
+  background-color: var(--psh-sunglow);
+  padding: 1.5rem 5rem;
+  margin-top: 1rem;
+  box-shadow: 0px 0.25rem 0.25rem rgba(152, 160, 171, 0.35);
+}
+
+.edit-page {
+  grid-area: edit-page;
+  text-align: right;
+  /* margin: 0.5rem; */
+  /* padding: 0.5rem; */
+  /* background-color: var(--psh-light-pink); */
+}
+
+.main {
+  grid-area: main;
+  margin: 3rem 10rem;
+}
+
+/* For presentation only, no need to copy the code below */
+/* .grid-container * {
+ border: 1px solid red;
+ position: relative;
+}
+
+.grid-container *:after {
+ content:attr(class);
+ position: absolute;
+ top: 0;
+ left: 0;
+} */

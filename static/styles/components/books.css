@@ -1,0 +1,38 @@
+
+.book-items {
+  list-style: none;
+  margin-left: 7.5rem;
+  /* border: 1px solid red; */
+}
+
+.book-item {
+  display: inline;
+  margin-right: 2rem;
+  font-size: 18px;
+  /* font-weight: bold; */
+  /* border: 1px solid red; */
+  /* color: #FFFFFF; */
+}
+
+.book-item:hover {
+  border-bottom: 2px solid #FFFFFF;
+}
+
+.book-item-active {
+  display: inline;
+  margin-right: 2rem;
+  font-size: 18px;
+  /* font-weight: bold; */
+  border-bottom: 2px solid #FFFFFF;
+  /* color: #FFFFFF; */
+}
+
+.book-item-link {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+.book-item-link:visited {
+  text-decoration: none;
+  color: #FFFFFF;
+}

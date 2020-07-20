@@ -1,12 +1,28 @@
 ---
-title: "Test page"
+title: "PHP"
 description: |
   You control your application and the way it will be built and deployed on Platform.sh via a single configuration file, `.platform.app.yaml`, located at the root of your application folder inside your Git repository.
 sidebarTitle: "Apps (.platform.app.yaml)"
 company: Platform.sh
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vulputate ipsum vitae condimentum lacinia. Integer pretium tellus nec tincidunt posuere. Nullam consectetur, neque et gravida dignissim, massa ligula convallis dolor, eu malesuada diam ligula sed sem. Praesent non egestas mi. Maecenas `volutpat tincidunt lectus vitae` venenatis. Aenean porttitor lorem in vehicula venenatis. Vivamus sed hendrerit neque. Nulla imperdiet dapibus arcu eget luctus. Praesent porttitor rhoncus rhoncus. Quisque commodo ultricies nibh, ut suscipit arcu lobortis vel. Pellentesque dapibus malesuada diam, nec facilisis urna laoreet ac.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vulputate ipsum vitae condimentum lacinia. Integer pretium tellus nec tincidunt posuere. Nullam consectetur, neque et gravida dignissim, massa ligula convallis dolor, eu malesuada diam ligula sed sem.
+
+## Supported versions
+
+{{< supported2 >}}
+<!--
+## Supported versions (Node.js)
+
+{{< supported2 >}}
+
+## Supported versions (Python)
+
+{{< supported3 >}} -->
+
+## Dedicated content tests
+
+Praesent non egestas mi. Maecenas `volutpat tincidunt lectus vitae` venenatis. Aenean porttitor lorem in vehicula venenatis. Vivamus sed hendrerit neque. Nulla imperdiet dapibus arcu eget luctus. Praesent porttitor rhoncus rhoncus. Quisque commodo ultricies nibh, ut suscipit arcu lobortis vel. Pellentesque dapibus malesuada diam, nec facilisis urna laoreet ac.
 
 <!-- {{< asciinema src="videos/project-create.cast" >}} -->
 
@@ -20,7 +36,11 @@ Some Dedicated content.
 
 See [the docs]({{< relref "shortcodes/hugo/youtube.md" >}}).
 
-{{< youtube w7Ft2ymGmfc >}}
+{{< youtube2 >}}
+
+## Asciinema
+
+{{< asciinema src="videos/snap-merge-restore.cast" >}}
 
 ## LaTeX
 
@@ -262,7 +282,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis venenatis dignissi
 
 Sed aliquam est vitae imperdiet luctus. Quisque suscipit pharetra ipsum vitae laoreet. Quisque ultrices est eu enim efficitur, quis pretium nibh porta. Ut id ultricies arcu, nec luctus nisl.
 
-![test image](images/misc/cooper2.jpg)
+![test image](images/misc/avocados1.jpg)
 
 #### H4
 

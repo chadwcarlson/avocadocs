@@ -16,36 +16,86 @@
 
   <body>
     <div class="grid-container">
-      <div class="logo">
-        <img class="image-logo" src="{{ "images/avocadocs-light.svg" | relURL }}" alt="avocadocs">
-        <!-- <img src="{{ "images/Platformsh_logo_white.svg" | relURL }}" alt="avocadocs"> -->
+      <div class="header">
+        <div class="logo">
+          <!-- <img class="image-logo" src="{{ "images/avocadocs-light.svg" | relURL }}" alt="avocadocs"> -->
+          <img class="image-logo" src="{{ "images/Platformsh_logo_white.svg" | relURL }}" alt="avocadocs">
+        </div>
+        <div class="links">
+            <!-- User documentation -->
+            <ul class="book-items">
+              <li class="book-item-active"><a class="book-item-link" href="#">User documentation</a></li>
+              <li class="book-item"><a class="book-item-link" href="#">Guides</a></li>
+              <li class="book-item"><a class="book-item-link" href="#">Help</a></li>
+              <li class="book-item"><a class="book-item-link" href="#">Contribute</a></li>
+              <li class="book-item"><a class="book-item-link" href="#">Something</a></li>
+              <li class="book-item"><a class="book-item-link" href="#">Else</a></li>
+              <li class="book-item"><a class="book-item-link" href="#">Book</a></li>
+            </ul>
+        </div>
+        <div class="widget">Widget</div>
       </div>
-      <div class="search">
-        <div class="search-area">
-          <div class="search-icon">
-            <img class="search-icon-svg" src="{{ "images/icons/search-solid.svg" | relURL }}" alt="search-icon">
-          </div>
-          <!-- <div class="search-box"> -->
-          <form class="search-box">
-            <input class="search-input" type="text" placeholder="Search Platform.sh" name="search">
-            <!-- <button type="submit"><i class="fa fa-search"></i></button> -->
-          </form>
-          <!-- </div> -->
-        </div>
-        <div class="hamburger-area">
-          <div class="hamburger">
-            <svg width="30" height="12" viewBox="0 0 30 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h30v2H0z" fill="#2D282B"></path><path d="M0 10h30v2H0z" fill="#2D282B"></path></svg>
+      <div class="sidebar">
+        <div class="search">
+          <div class="search-area">
+            <div class="search-icon">
+              <img class="search-icon-svg" src="{{ "images/icons/search-solid.svg" | relURL }}" alt="search-icon">
+            </div>
+            <!-- <div class="search-box"> -->
+            <form class="search-box">
+              <input class="search-input" type="text" placeholder="Search Platform.sh" name="search">
+              <!-- <button type="submit"><i class="fa fa-search"></i></button> -->
+            </form>
+            <!-- </div> -->
           </div>
         </div>
+
+        <div>
+          <h3 class="sidebar-header">Theme Features</h3>
+          <ul class="sidebar-group">
+            <li class="sidebar-item">Buttons</li>
+            <li class="sidebar-item">Code snippets</li>
+            <li class="sidebar-item">Videos</li>
+            <li class="sidebar-item">Asciinema</li>
+            <li class="sidebar-item">Notes & callouts</li>
+            <li class="sidebar-item">Tabbed content</li>
+            <li class="sidebar-item">Tables</li>
+          </ul>
+          <hr class="sidebar-divide">
+          <h3 class="sidebar-header">Platform.sh-specific Features</h3>
+          <ul class="sidebar-group">
+            <li class="sidebar-item">Service versions</li>
+            <li class="sidebar-item">Dedicated content</li>
+            <li class="sidebar-item">Templates</li>
+          </ul>
+          <hr class="sidebar-divide">
+          <h3 class="sidebar-header">Example pages</h3>
+          <ul class="sidebar-group">
+            <li class="sidebar-item">Languages</li>
+            <li class="sidebar-item">Services</li>
+            <li class="sidebar-item">Tier gated (page)</li>
+            <li class="sidebar-item">Tier gated (sections)</li>
+          </ul>
+        </div>
+
       </div>
       <div class="content">
-        {{ partial "banner" . }}
-        <div class="main">
-          {{block "main" .}}{{end}}
+        <div class="edit-page">
+          <!-- <div class="dynamic-button"> -->
+            <button onclick="window.location.href = '#buttons';" type="button" class="edit-page-button">
+              <span class="text-button-">Edit page</span>
+              <!-- <span class="icon"><img class="chevron-next2" aria-hidden="true" src="/images/icons/chevrons.svg" /></span> -->
+            </button>
+          <!-- </div> -->
         </div>
-    </div>
+        <!-- {{ partial "banner" . }} -->
+        <div class="main">
+            {{block "main" .}}{{end}}
+        </div>
+      </div>
     </div>
     {{ partial "mathjax" . }}
     <script src="{{"scripts/copytoclipboard.js" | relURL}}"></script>
+    <script src="{{"scripts/asciinema-player.js" | relURL}}"></script>
   </body>
 </html>

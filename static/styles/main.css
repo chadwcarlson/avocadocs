@@ -5,7 +5,8 @@
 @import 'components/fonts/fonts.css';
 
 /* Layouts */
-@import 'components/layout/mobile.css';
+/* @import 'components/layout/mobile.css'; */
+@import 'components/layout/desktop.css';
 
 /* Code Syntax Highlight snippets */
 @import 'components/highlight/copytoclipboard.css';
@@ -38,6 +39,20 @@
 
 /* Links */
 @import 'components/links.css';
+@import 'components/books.css';
 
 /* MathJax/LaTeX rendering */
 @import 'components/mathjax.css';
+
+/* Sidebar */
+@import 'components/sidebar.css';
+
+/* Video */
+@import "components/video.css";
+@import "components/asciinema-player.css";
+
+/* Edit page button */
+@import "components/edit-page.css";
+
+/* Images */
+@import "components/images.css";

@@ -1,0 +1,51 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>avocadocs</title>
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"> -->
+  <meta name="description" content="Avocadocs">
+  <meta name="author" content="SitePoint">
+
+  <link rel="stylesheet" href="{{"styles/main.css" | relURL}}">
+
+  <!-- <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/3.1.0/css/font-awesome.min.css" /> -->
+</head>
+
+  <body>
+    <div class="grid-container">
+      <div class="logo">
+        <img class="image-logo" src="{{ "images/avocadocs-light.svg" | relURL }}" alt="avocadocs">
+        <!-- <img src="{{ "images/Platformsh_logo_white.svg" | relURL }}" alt="avocadocs"> -->
+      </div>
+      <div class="search">
+        <div class="search-area">
+          <div class="search-icon">
+            <img class="search-icon-svg" src="{{ "images/icons/search-solid.svg" | relURL }}" alt="search-icon">
+          </div>
+          <!-- <div class="search-box"> -->
+          <form class="search-box">
+            <input class="search-input" type="text" placeholder="Search Platform.sh" name="search">
+            <!-- <button type="submit"><i class="fa fa-search"></i></button> -->
+          </form>
+          <!-- </div> -->
+        </div>
+        <div class="hamburger-area">
+          <div class="hamburger">
+            <svg width="30" height="12" viewBox="0 0 30 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h30v2H0z" fill="#2D282B"></path><path d="M0 10h30v2H0z" fill="#2D282B"></path></svg>
+          </div>
+        </div>
+      </div>
+      <div class="content">
+        {{ partial "banner" . }}
+        <div class="main">
+          {{block "main" .}}{{end}}
+        </div>
+    </div>
+    </div>
+    {{ partial "mathjax" . }}
+    <script src="{{"scripts/copytoclipboard.js" | relURL}}"></script>
+  </body>
+</html>

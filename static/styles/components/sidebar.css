@@ -1,0 +1,17 @@
+.sidebar-header {
+  margin-left: 1.5rem;
+}
+
+.sidebar-group {
+  list-style: none;
+}
+
+.sidebar-item {
+  margin-bottom: 0.5rem;
+}
+
+.sidebar-divide {
+  width: 90%;
+  border: 0;
+  border-top: 1.5px solid #ffffff;
+}

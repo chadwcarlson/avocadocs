@@ -1,0 +1,20 @@
+.edit-page-button {
+  /* border: 1px solid red; */
+  height: 40px;
+  width: 100px;
+  background-color: var(--psh-light-blue);
+  border: none;
+  margin-right: 0.5rem;
+  outline: none;
+  cursor: pointer;
+  box-shadow: 0px 0.25rem 0.25rem rgba(152, 160, 171, 0.35);
+  font-family: "Overpass", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 25px;
+}
+
+.edit-page-button:hover {
+  background-color: var(--psh-light-pink);
+}
