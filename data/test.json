@@ -1,0 +1,213 @@
+{
+    "version" : "https://jsonfeed.org/version/1",
+    "title" : "Platform.sh",
+    "description": "Recent product announcements on Platform.sh",
+    "production_url" : "https://platform.sh/",
+    "testing_url": "https://pr-321-nkazswa-gwlsqxgw46fku.us-2.platformsh.site/",
+    "feed_url" : "https://platform.sh/product/announcements/index.json",
+    "items" : [
+    {
+        "title" : "Activities just got an upgrade",
+        "date_published" : "2020-07-21T00:00:00Z",
+        "id": "0",
+        "url": "https://platform.sh/product/announcements/activity-feed-2.0/",
+        "content": "Improved visibility of your recent, pending and currently running activities!",
+        "artwork": "/product/announcements/activity-feed-2.0/dd-activity_2.0@2x.png",
+        "tileTheme": "light-pink",
+        "publish": false,
+        "steps": [
+          {
+            "content": " \u003ch3\u003eActivities just got an upgrade\u003c/h3\u003e \u003cp\u003eWe’ve improved the visibility of your recent, pending and currently running activity with a new look and feel. Your Activities feed 2.0 delivers a more informative status of your project and environment activities up front, while still allowing you to filter by type from the ‘All’ tab.\u003c/p\u003e \u003cp\u003eCheck out the rundown in our \u003ca target=\"_blank\" href=\"https://docs.platform.sh/administration/web.html#activity-feed\"\u003edocumentation\u003c/a\u003e.\u003c/p\u003e ",
+            "artwork": "/product/announcements/activity-feed-2.0/modal-activity_2.0@2x.png"
+          }]
+    },
+    {
+        "title" : "Integrations in Console",
+        "date_published" : "2020-06-18T00:00:00Z",
+        "id": "1",
+        "url": "https://platform.sh/product/announcements/integrations-in-console/",
+        "content": "Now you can see your integrations and integration activities without leaving the console.",
+        "artwork": "/product/announcements/integrations-in-console/dd-integrations@2x.png",
+        "tileTheme": "skye-light",
+        "publish": true,
+        "steps": [
+          {
+            "content": " \u003ch3\u003eIntegrations in Console\u003c/h3\u003e \u003cp\u003eNow you can see your integrations and integration activities without leaving the console.\u003c/p\u003e \u003cp\u003eTo learn more about our new integrations interface, check out our recent \u003ca target=\"_blank\" href=\"https://platform.sh/blog/2020/integrations-management-through-platform-sh-console/\"\u003eblog post\u003c/a\u003e or read more in our detailed \u003ca target=\"_blank\" href=\"https://docs.platform.sh/integrations.html\"\u003edocumentation\u003c/a\u003e.\u003c/p\u003e ",
+            "artwork": "/product/announcements/integrations-in-console/modal-integrations@2x.png"
+          }]
+    },
+    {
+        "title" : "Email alerts will be sent on credit card expiration",
+        "date_published" : "2020-05-25T00:00:00Z",
+        "id": "2",
+        "url": "https://platform.sh/product/announcements/email-alerts/",
+        "content": "Nobody wants a project to go offline because a credit card has expired. So as of 25 May, 2020 Platform.sh will automatically email project owners and billing contacts if your credit card will no longer be valid on the next billing cycle. That way, you can \u003ca href=\"https://accounts.platform.sh/user/credit-card/edit-card\"\u003eupdate your payment information\u003c/a\u003e to ensure continuity of service.",
+        "artwork" : false,
+        "tileTheme": "tusk",
+        "publish": true,
+        "steps": []
+    },
+    {
+        "title" : "Activity Scripts",
+        "date_published" : "2020-05-12T00:00:00Z",
+        "id": "3",
+        "url": "https://platform.sh/product/announcements/activity-scripts/",
+        "content": "Or how to build your own Platform.sh features",
+        "artwork": "/product/announcements/activity-scripts/dd-activity_scripts@2x.png",
+        "tileTheme": "tusk",
+        "publish": true,
+        "steps": [
+          {
+            "content": " \u003ch3\u003eActivity Scripts: or how to build your own Platform.sh features\u003c/h3\u003e \u003cp\u003eActivity Scripts are custom pieces of JavaScript code that are added to your Platform.sh project via a single API call or CLI command. They live within your project, so there is no need to host it or run it anywhere else.\u003c/p\u003e \u003cp\u003eCheck out our \u003ca target=\"_blank\" href=\"https://platform.sh/blog/2020/introducing-activity-scripts-or-how-to-build-your-own-platform.sh-features/\"\u003eblog post\u003c/a\u003e or read the detailed specifications in our \u003ca target=\"_blank\" href=\"https://docs.platform.sh/integrations/activity.html\"\u003edocumentation\u003c/a\u003e.\u003c/p\u003e ",
+            "artwork": "/product/announcements/activity-scripts/modal-activity_scripts@2x.png"
+          },
+          {
+            "content": " \u003ch3\u003eActivity Scripts allow your Platform.sh projects to:\u003c/h3\u003e \u003cp\u003e\u003cul\u003e\u003cli\u003eInteract with third-party services (Slack, Twilio, PagerDuty, Jira, you-name-it)\u003c/li\u003e\u003cli\u003eAutomate complex tasks when an activity is triggered or has completed\u003c/li\u003e\u003cli\u003eSet up custom notifications, alerts, or reminders\u003c/li\u003e\u003cli\u003eBe compliant across your fleet of sites by ensuring that all your projects are using the latest supported services and runtimes\u003c/li\u003e\u003cli\u003eAnd so much more.\u003c/li\u003e\u003c/ul\u003e\u003c/p\u003e \u003cp\u003eThe only limit is your imagination.\u003c/p\u003e ",
+            "artwork": false
+          },
+          {
+            "content": " \u003ch3\u003eNow that they’re available, what integration will you build?\u003c/h3\u003e \u003cp\u003eWhatever you’re inspired to build, we hope you’ll share it with the Platform.sh community. Upload your own scripts, ideas, recipes, or browse existing ones, to the activity script section of our \u003ca target=\"_blank\" href=\"https://community.platform.sh/c/activity-scripts\"\u003ecommunity site\u003c/a\u003e.\u003c/p\u003e \u003cp\u003eWe can’t wait to see what you come up with!\u003c/p\u003e ",
+            "artwork": "/product/announcements/activity-scripts/modal-activity_scripts@2x.png"
+          }]
+    },
+    {
+        "title" : "Improving integrations visibility",
+        "date_published" : "2020-05-12T00:00:00Z",
+        "id": "4",
+        "url": "https://platform.sh/product/announcements/integrations-activities/",
+        "content": "This makes validating, testing, and troubleshooting an external integration so much easier.",
+        "artwork": "/product/announcements/integrations-activities/mobile-100.jpg",
+        "tileTheme": "light-pink",
+        "publish": true,
+        "steps": [
+          {
+            "content": " \u003ch3\u003eImprove visibility over your external integrations\u003c/h3\u003e \u003cp\u003ePlatform.sh now supports displaying activities from your integrations in the API or command line.\u003c/p\u003e \u003cp\u003eThis means that from now on, external integrations (GitHub, Gitlab, Slack, etc.) that you enable in your Platform.sh project will trigger activities every time that something happens with that integration.\u003c/p\u003e \u003cp\u003e\u003ca target=\"_blank\" href=\"https://platform.sh/blog/2020/improve-visibility-over-your-external-integrations/\"\u003eLearn more in our blog post\u003c/a\u003e\u003c/p\u003e ",
+            "artwork": "/product/announcements/integrations-activities/new-100.jpg"
+          }]
+    },
+    {
+        "title" : "New authentication workflow, strong passwords, and SSO",
+        "date_published" : "2020-04-20T00:00:00Z",
+        "id": "5",
+        "url": "https://platform.sh/product/announcements/new-auth/",
+        "content": "By 29 April, 2020 we are introducing multiple changes to our infrastructure to improve the performance and security of our user management. We are also introducing support for Single Sign-On (SSO) for Enterprise and Elite tiers. \u003ca target=\"_blank\" href=\"https://platform.sh/blog/2020/improving-access-and-security-for-your-projects/\"\u003eRead more\u003c/a\u003e",
+        "artwork" : false,
+        "tileTheme": "ebony",
+        "publish": true,
+        "steps": []
+    },
+    {
+        "title" : "Health notifications for all",
+        "date_published" : "2020-04-07T00:00:00Z",
+        "id": "6",
+        "url": "https://platform.sh/product/announcements/health-notifications-for-all/",
+        "content": "As of 6 April, all new projects will have email notifications configured by default for all admin users on a project. No extra steps necessary; create a project and you’ll get health notifications. You’re still free to add more notification channels if you wish. \u003ca target=\"_blank\" href=\"https://platform.sh/blog/2020/health-notifications-for-all/\"\u003eRead how\u003c/a\u003e",
+        "artwork" : false,
+        "tileTheme": "tusk",
+        "publish": true,
+        "steps": []
+    },
+    {
+        "title" : "Streamlined project creation",
+        "date_published" : "2019-12-19T00:00:00Z",
+        "id": "7",
+        "url": "https://platform.sh/product/announcements/streamlined-project-creation/",
+        "content": "Get your projects started faster than ever before with just 3 simple steps",
+        "artwork": "/product/announcements/streamlined-project-creation/dd-projectcreate@2x.png",
+        "tileTheme": "ebony",
+        "publish": true,
+        "steps": [
+          {
+            "content": " \u003ch3\u003eStreamline project creation\u003c/h3\u003e \u003cp\u003eOur new, streamlined 3-step process speeds project creation, enabling you to work on your projects faster than ever before. All new projects will default to our smallest plan size; you can edit your plan to upgrade your project at any time.\u003c/p\u003e \u003cp\u003eTo learn more about our latest console enhancements, check out our recent \u003ca href=\"https://platform.sh/blog/2019/migrating-your-applications-made-simple/\"\u003eblog post\u003c/a\u003e or read more in our detailed \u003ca href=\"https://docs.platform.sh/gettingstarted/template/create-project.html\"\u003edocumentation\u003c/a\u003e.\u003c/p\u003e",
+            "artwork": "/product/announcements/streamlined-project-creation/modal-projectcreate@2x.png"
+          },
+          {
+            "content": " \u003ch3\u003eHow project creation works\u003c/h3\u003e \u003ch4\u003eSelect your project type\u003c/h4\u003e \u003cp\u003eCreate a new project, migrate an existing project or choose from one of our project templates to start your project.\u003c/p\u003e \u003ch4\u003eAdd your project details\u003c/h4\u003e \u003cp\u003eName and select the data center region for your project.\u003c/p\u003e \u003ch4\u003eApply a template, if you’d like\u003c/h4\u003e \u003cp\u003eChoose from our large collection of language-specific, ready-to-use templates.\u003c/p\u003e \u003ch4\u003eYou’re ready to go\u003c/h4\u003e \u003cp\u003eYour project is now built.  Remember that all new projects will be created automatically on our smallest Development plan size; upgrade whenever you want to go live.\u003c/p\u003e",
+            "artwork": "/product/announcements/streamlined-project-creation/modal-projectcreate@2x.png"
+          },
+          {
+            "content": " \u003ch3\u003eGet down to the work that matters, faster\u003c/h3\u003e \u003cp\u003eStreamlining project creation means that you can quickly create projects, then upgrade or customize your plan size whenever you’re ready.\u003c/p\u003e \u003cp\u003eTo learn more about what’s happening in the console, check out our recent blog posts (link: need link to feature announcement blog post)or read more in our detailed \u003ca href=\"https://docs.platform.sh/gettingstarted/template/create-project.html\"\u003edocumentation\u003c/a\u003e.\u003c/p\u003e",
+            "artwork": "/product/announcements/streamlined-project-creation/modal-projectcreate@2x.png"
+          }]
+    },
+    {
+        "title" : "What’s New",
+        "date_published" : "2019-12-04T00:00:00Z",
+        "id": "8",
+        "url": "https://platform.sh/product/announcements/what-is-new/",
+        "content": "So you don’t miss a thing!",
+        "artwork": "/product/announcements/what-is-new/dd-whatsnew@2x.png",
+        "tileTheme": "skye-light",
+        "publish": true,
+        "steps": [
+          {
+            "content": " \u003ch3\u003eWhat's new\u003c/h3\u003e \u003cp\u003eWhat’s new is new! From now on when we launch something new and shiny - you’ll see one of these introduction modals to introduce you to our new feature and how it works.\u003c/p\u003e \u003cp\u003eTo learn more about our latest about what’s happening in the console, check out our recent \u003ca target=\"_blank\" href=\"https://platform.sh/blog/\"\u003eblog posts\u003c/a\u003e or read more in our detailed \u003ca target=\"_blank\" href=\"https://docs.platform.sh/\"\u003edocumentation\u003c/a\u003e.\u003c/p\u003e ",
+            "artwork": "/product/announcements/what-is-new/modal-whatsnew@2x.png"
+          }]
+    },
+    {
+        "title" : "Supersize app containers",
+        "date_published" : "2019-12-03T00:00:00Z",
+        "id": "9",
+        "url": "https://platform.sh/product/announcements/supersize-app-containers/",
+        "content": "Have larger apps that require mega resources? No worries.",
+        "artwork": "/product/announcements/supersize-app-containers/dd-supersize@2x.png",
+        "tileTheme": "light-pink",
+        "publish": true,
+        "steps": [
+          {
+            "content": " \u003ch3\u003eSupersize app containers\u003c/h3\u003e \u003cp\u003eHave larger apps that require mega resources, whether they’re on production or development branches? No worries. Now there's a great option to increase the size of your dev containers.\u003c/p\u003e \u003cp\u003e\u003ca target=\"_blank\" href=\"https://platform.sh/blog/2019/supersize-app-containers-in-your-dev-environments/\"\u003eLearn more in our blog post\u003c/a\u003e\u003c/p\u003e ",
+            "artwork": "/product/announcements/supersize-app-containers/modal-supersize@2x.png"
+          }]
+    },
+    {
+        "title" : "PHP 7.4 release",
+        "date_published" : "2019-12-02T00:00:00Z",
+        "id": "10",
+        "url": "https://platform.sh/product/announcements/php-7.4/",
+        "content": "Upgrading to the latest is now just a git push away. Read more in the \u003ca target=\"_blank\" href=\"https://platform.sh/blog/2019/php-7.4-is-just-a-git-push-away/\"\u003eblog\u003c/a\u003e",
+        "artwork" : false,
+        "tileTheme": "ebony",
+        "publish": true,
+        "steps": []
+    },
+    {
+        "title" : "New Services insights",
+        "date_published" : "2019-12-01T00:00:00Z",
+        "id": "11",
+        "url": "https://platform.sh/product/announcements/services-page/",
+        "content": "Gain deeper service and app  information directly from your console.",
+        "artwork": "/product/announcements/services-page/dd-services@2x.png",
+        "tileTheme": "tusk",
+        "publish": true,
+        "steps": [
+          {
+            "content": " \u003ch3\u003eNew Services insights\u003c/h3\u003e \u003cp\u003eIn your Project Environment you'll now see a Services tab giving you more insight into your application, service, and route containers.\u003c/p\u003e \u003cp\u003eTo learn more about our about the new services insights, check out our recent \u003ca target=\"_blank\" href=\"https://platform.sh/blog/2019/new-services-page/\"\u003eblog posts\u003c/a\u003e or read more in our \u003ca target=\"_blank\" href=\"https://docs.platform.sh/configuration/services.html\"\u003edetailed documentation\u003c/a\u003e.\u003c/p\u003e ",
+            "artwork": "/product/announcements/services-page/modal-services@2x.png"
+          },
+          {
+            "content": " \u003ch3\u003eHow it works\u003c/h3\u003e \u003ch4\u003eRoutes\u003c/h4\u003e \u003cp\u003eView information about each route configured in your routes.yaml file.\u003c/p\u003e \u003ch4\u003eApp Overview\u003c/h4\u003e \u003cp\u003eSize of the app container, the amount of persistent disk you have allocated for it, the number of active workers and cron jobs, as well as the command to ssh into that container.\u003c/p\u003e \u003ch4\u003eApp crons\u003c/h4\u003e \u003cp\u003eView status, frequency, the last time it was run, and the run command.\u003c/p\u003e \u003ch4\u003eApp configuration\u003c/h4\u003e \u003cp\u003eSee the summary of your .platform.app.yaml file.\u003c/p\u003e \u003ch4\u003eServices\u003c/h4\u003e \u003cp\u003eSee allocated disk space, container size and configuration information.\u003c/p\u003e ",
+            "artwork": false
+          },
+          {
+            "content": " \u003ch3\u003eThat’s all folks!\u003c/h3\u003e \u003cp\u003eBy introducing our new Services tab we aim to giving you more insight into your application, service, and route containers to help you better manage your projects.\u003c/p\u003e \u003cp\u003eTo learn more about our about the new services insights, check out our recent \u003ca target=\"_blank\" href=\"https://platform.sh/blog/2019/new-services-page/\"\u003eblog posts\u003c/a\u003e or read more in our \u003ca target=\"_blank\" href=\"https://docs.platform.sh/configuration/services.html\"\u003edetailed documentation\u003c/a\u003e.\u003c/p\u003e ",
+            "artwork": "/product/announcements/services-page/modal-services@2x.png"
+          }]
+    },
+    {
+        "title" : "Welcome, Dark Mode",
+        "date_published" : "2019-11-30T00:00:00Z",
+        "id": "12",
+        "url": "https://platform.sh/product/announcements/dark-mode/",
+        "content": "You can now work in our new Dark Mode on your Platform.sh console.",
+        "artwork": "/product/announcements/dark-mode/dd-darkmode@2x.png",
+        "tileTheme": "ebony",
+        "publish": true,
+        "steps": [
+          {
+            "content": " \u003ch3\u003eWelcome, Dark Mode\u003c/h3\u003e \u003cp\u003eHave larger apps that require mega resources, whether they’re on production or development branches? No worries. Now there's a great option to increase the size of your dev containers.\u003c/p\u003e \u003cp\u003e\u003cstrong\u003eTo enable Dark Mode\u003c/strong\u003e\u003c/p\u003e \u003col\u003e \u003cli\u003eOpen Account settings\u003c/li\u003e \u003cli\u003eSelect Color Scheme \u003e Dark\u003c/li\u003e \u003cli\u003eSave\u003c/li\u003e \u003cli\u003eWork in the dark and look cool doing it!\u003c/li\u003e \u003c/ol\u003e ",
+            "artwork": "/product/announcements/dark-mode/modal-darkmode@2x.png"
+          }]
+    }
+    ]
+}

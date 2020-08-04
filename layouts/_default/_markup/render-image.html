@@ -14,9 +14,11 @@
     {{ $scale = float . }}
     {{ $widthScale = mul $scale $widthScale }}
   {{ end }}
-  <div class="centered-image" align="center">
-    <p style="max-width: {{ $widthScale }}rem;">
-      <img class="formatted-image" src="{{ .Destination }}" alt="{{ $alt }}">
-    </p>
+  <div class="centered-image">
+    <img class="formatted-image" src="{{ .Destination }}" alt="{{ $alt }}">
+    <!-- <p style="max-width: {{ $widthScale }}rem;"> -->
+      <!-- <img class="formatted-image" src="{{ .Destination }}" alt="{{ $alt }}" style="max-width: {{ $widthScale }}rem;"> -->
+      <!-- <p style="max-width: {{ $widthScale }}rem;">Integer nec ultricies arcu, eget semper lorem. Nam consequat eu leo vitae interdum. Etiam aliquam, metus sit amet fermentum pulvinar, quam ante varius turpis, vitae euismod ante nisi at dolor.</p> -->
+    <!-- </p> -->
   </div>
 {{ end }}
