@@ -1,7 +1,13 @@
 .centered-image {
-  max-width: 100%;
+  text-align: center;
+  /* max-width: 100%; */
+  /* background-color: var(--psh-light-blue); */
+  /* margin: 1rem 5rem; */
+  /* padding: 2.5rem 2.5rem; */
 }
 
 .formatted-image {
-  max-width: 100%;
+  max-width: 80%;
+  /* margin: 3rem; */
+  /* background-color: var(--psh-light-blue); */
 }

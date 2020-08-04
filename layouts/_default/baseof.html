@@ -7,7 +7,7 @@
   <title>avocadocs</title>
   <!-- <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"> -->
   <meta name="description" content="Avocadocs">
-  <meta name="author" content="SitePoint">
+  <meta name="author" content="Platform.sh">
 
   <link rel="stylesheet" href="{{"styles/main.css" | relURL}}">
 
@@ -24,61 +24,17 @@
         <div class="links">
             <!-- User documentation -->
             <ul class="book-items">
-              <li class="book-item-active"><a class="book-item-link" href="#">User documentation</a></li>
+              <li class="book-item-active"><a class="book-item-link" href="#">Documentation</a></li>
               <li class="book-item"><a class="book-item-link" href="#">Guides</a></li>
               <li class="book-item"><a class="book-item-link" href="#">Help</a></li>
-              <li class="book-item"><a class="book-item-link" href="#">Contribute</a></li>
-              <li class="book-item"><a class="book-item-link" href="#">Something</a></li>
-              <li class="book-item"><a class="book-item-link" href="#">Else</a></li>
-              <li class="book-item"><a class="book-item-link" href="#">Book</a></li>
+              <li class="book-item"><a class="book-item-link" href="#">Example Site</a></li>
             </ul>
         </div>
         <div class="widget">Widget</div>
       </div>
-      <div class="sidebar">
-        <div class="search">
-          <div class="search-area">
-            <div class="search-icon">
-              <img class="search-icon-svg" src="{{ "images/icons/search-solid.svg" | relURL }}" alt="search-icon">
-            </div>
-            <!-- <div class="search-box"> -->
-            <form class="search-box">
-              <input class="search-input" type="text" placeholder="Search Platform.sh" name="search">
-              <!-- <button type="submit"><i class="fa fa-search"></i></button> -->
-            </form>
-            <!-- </div> -->
-          </div>
-        </div>
 
-        <div>
-          <h3 class="sidebar-header">Theme Features</h3>
-          <ul class="sidebar-group">
-            <li class="sidebar-item">Buttons</li>
-            <li class="sidebar-item">Code snippets</li>
-            <li class="sidebar-item">Videos</li>
-            <li class="sidebar-item">Asciinema</li>
-            <li class="sidebar-item">Notes & callouts</li>
-            <li class="sidebar-item">Tabbed content</li>
-            <li class="sidebar-item">Tables</li>
-          </ul>
-          <hr class="sidebar-divide">
-          <h3 class="sidebar-header">Platform.sh-specific Features</h3>
-          <ul class="sidebar-group">
-            <li class="sidebar-item">Service versions</li>
-            <li class="sidebar-item">Dedicated content</li>
-            <li class="sidebar-item">Templates</li>
-          </ul>
-          <hr class="sidebar-divide">
-          <h3 class="sidebar-header">Example pages</h3>
-          <ul class="sidebar-group">
-            <li class="sidebar-item">Languages</li>
-            <li class="sidebar-item">Services</li>
-            <li class="sidebar-item">Tier gated (page)</li>
-            <li class="sidebar-item">Tier gated (sections)</li>
-          </ul>
-        </div>
+      {{ partial "sidebar" . }}
 
-      </div>
       <div class="content">
         <div class="edit-page">
           <!-- <div class="dynamic-button"> -->
@@ -88,7 +44,7 @@
             </button>
           <!-- </div> -->
         </div>
-        <!-- {{ partial "banner" . }} -->
+        <!-- {{ partial "welcome-banner" . }} -->
         <div class="main">
             {{block "main" .}}{{end}}
         </div>

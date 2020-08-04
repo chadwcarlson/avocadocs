@@ -1,8 +1,10 @@
 .edit-page-button {
   /* border: 1px solid red; */
-  height: 40px;
-  width: 100px;
-  background-color: var(--psh-light-blue);
+  /* height: 30px; */
+  padding: 0.3rem 1rem;
+  /* width: 100px; */
+  background-color: var(--psh-pink);
+  color: var(--psh-night);
   border: none;
   margin-right: 0.5rem;
   outline: none;
@@ -11,10 +13,11 @@
   font-family: "Overpass", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
-  font-size: 14px;
-  line-height: 25px;
+  font-size: 16px;
+  line-height: 20px;
 }
 
 .edit-page-button:hover {
-  background-color: var(--psh-light-pink);
+  background-color: var(--psh-blue);
+  color: white;
 }

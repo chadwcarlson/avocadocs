@@ -1,0 +1,68 @@
+<div class="sidebar">
+  <div class="search">
+    <div class="search-area">
+      <div class="search-icon">
+        <img class="search-icon-svg" src="{{ "images/icons/search-solid.svg" | relURL }}" alt="search-icon">
+      </div>
+      <!-- <div class="search-box"> -->
+      <form class="search-box">
+        <input class="search-input" type="text" placeholder="Search Platform.sh" name="search">
+        <!-- <button type="submit"><i class="fa fa-search"></i></button> -->
+      </form>
+      <!-- </div> -->
+    </div>
+  </div>
+  <div>
+
+    {{ range .Site.Sections }}
+      <!-- Check if separate book -->
+      {{ $section_url := .Permalink }}
+      {{ if eq .Section "home" }}
+        {{ $section_url = "/" }}
+      {{ end }}
+      <h3 class="sidebar-header"><a class="sidebar-link-header" href="{{ $section_url }}">{{ .Title }}</a></h3>
+      <ul class="sidebar-group">
+      {{ range .Pages }}
+        <li class="sidebar-item"><a class="sidebar-link" href="{{ .Permalink }}">{{ .Title }}</a></li>
+      {{ end }}
+      </ul>
+    {{ end }}
+
+    <hr class="sidebar-divide">
+    <hr class="sidebar-divide">
+
+    <h3 class="sidebar-header">Basics</h3>
+    <ul class="sidebar-group">
+      <li class="sidebar-item">Structure</li>
+      <li class="sidebar-item">Install</li>
+      <li class="sidebar-item">Deploy</li>
+    </ul>
+    <hr class="sidebar-divide">
+    <h3 class="sidebar-header">Theme Features</h3>
+    <ul class="sidebar-group">
+      <li class="sidebar-item">Buttons</li>
+      <li class="sidebar-item">Code snippets</li>
+      <li class="sidebar-item">Videos</li>
+      <li class="sidebar-item">Asciinema</li>
+      <li class="sidebar-item">Notes & callouts</li>
+      <li class="sidebar-item">Tabbed content</li>
+      <li class="sidebar-item">Tables</li>
+    </ul>
+    <hr class="sidebar-divide">
+    <h3 class="sidebar-header">Platform.sh-specific Features</h3>
+    <ul class="sidebar-group">
+      <li class="sidebar-item">Service versions</li>
+      <li class="sidebar-item">Dedicated content</li>
+      <li class="sidebar-item">Templates</li>
+    </ul>
+    <hr class="sidebar-divide">
+    <h3 class="sidebar-header">Example pages</h3>
+    <ul class="sidebar-group">
+      <li class="sidebar-item">Languages</li>
+      <li class="sidebar-item">Services</li>
+      <li class="sidebar-item">Tier gated (page)</li>
+      <li class="sidebar-item">Tier gated (sections)</li>
+    </ul>
+  </div>
+
+</div>

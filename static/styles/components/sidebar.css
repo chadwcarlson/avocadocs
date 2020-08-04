@@ -10,6 +10,24 @@
   margin-bottom: 0.5rem;
 }
 
+.sidebar-link,
+.sidebar-link-header {
+  color: var(--psh-gray);
+  text-decoration: none;
+  color: var(--psh-night);
+}
+
+.sidebar-link:hover,
+.sidebar-link-header:hover {
+  color: var(--psh-black);
+  text-decoration: underline;
+}
+
+.sidebar-link:visited,
+.sidebar-link-header:visited {
+  color: var(--psh-gray);
+}
+
 .sidebar-divide {
   width: 90%;
   border: 0;

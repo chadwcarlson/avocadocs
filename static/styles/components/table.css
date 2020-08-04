@@ -18,7 +18,7 @@ table {
 table td, table th {
   /* border: 1px solid #ddd; */
   padding: 0.3rem 0.75rem;
-  text-align: center;
+  /* text-align: center; */
   /* box-shadow: 0px 0.5rem 0.5rem rgba(152, 160, 171, 0.35); */
 
 }
