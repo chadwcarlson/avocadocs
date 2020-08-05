@@ -6,3 +6,9 @@
 
 /* Book links in header */
 @import 'components/book-links.css';
+
+/* Sidebar */
+@import 'components/sidebar.css';
+
+/* Search */
+@import 'components/search.css';

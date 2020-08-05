@@ -1,0 +1,19 @@
+name = "avocadocs"
+license = "MIT"
+licenselink = "https://github.com/platformsh/avocadocs"
+description = "A simple documentation theme"
+homepage = "Website of your theme"
+tags = ["documentation"]
+features = ["multiple books", "mobile-frienly", "asciinema"]
+min_version = "0.72.0"
+
+# If the theme has multiple authors
+authors = [
+  {name = "Platform.sh", homepage = "https://platform.sh"},
+  {name = "Chad Carlson", homepage = "https://github.com/chadwcarlson"}
+]
+
+# If the theme has a single author
+[author]
+    name = "Your name"
+    homepage = "Your website"

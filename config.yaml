@@ -1,6 +1,7 @@
 baseURL: /
 languageCode: en-us
 title: avocadocs documentation theme
+
 markup:
   highlight:
     codeFences: true
@@ -12,6 +13,11 @@ markup:
     noClasses: true
     style: borland
     tabWidth: 4
+  goldmark:
+    renderer:
+      unsafe: true
+
+enableEmoji: true
 
 params:
     # favicon: "img/Platformsh_icon_black.svg"
