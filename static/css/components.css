@@ -12,3 +12,7 @@
 
 /* Search */
 @import 'components/search.css';
+
+/* Code highlighting */
+@import 'components/highlight/inline.css';
+@import 'components/highlight/copytoclipboard.css';

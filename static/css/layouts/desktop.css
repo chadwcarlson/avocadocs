@@ -12,8 +12,8 @@ html, body {
   display: grid;
   grid-template-areas:
     "header header header"
-    "nav content side";
-  grid-template-columns: 300px 1fr 250px;
+    "nav content content";
+  grid-template-columns: 300px 1fr 1fr;
   grid-template-rows: 80px 1fr;
   height: 100vh;
 }
@@ -88,49 +88,6 @@ header {
 main {
   grid-area: content;
   /* top | right | bottom | left */
-  padding: 5rem 1rem 5rem 5rem;
+  padding: 5rem;
   overflow: auto;
-}
-
-aside {
-  grid-area: side;
-  /* border: 1px solid var(--sidebar-background-color); */
-  /* overflow: auto;
-  float: right; */
-}
-
-@media (max-width: 768px) {
-  .container {
-    grid-template-areas:
-      "header"
-      "nav"
-      "content";
-
-    grid-template-columns: 1fr;
-    grid-template-rows:
-      50px /* Header */
-      50px /* Nav */
-      1fr; /* Content */
-  }
-}
-
-@media (max-width: 1200px) {
-
-  .container {
-    grid-template-areas:
-      "header header header"
-      "nav content content";
-    grid-template-columns: 300px 1fr;
-    grid-template-rows: 80px 1fr;
-  }
-
-  aside {
-    display: none;
-  }
-
-  main {
-    /* top | right | bottom | left */
-    margin: 5rem 2.5rem 5rem 2.5rem;
-  }
-
 }
