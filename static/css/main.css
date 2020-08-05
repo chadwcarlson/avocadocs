@@ -1,0 +1,9 @@
+/* Colors and fonts*/
+@import 'root.css';
+
+/* Layouts */
+@import 'layouts/desktop.css';
+@import 'layouts/mobile.css';
+
+/* Components */
+@import 'components.css'

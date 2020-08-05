@@ -1,3 +1,0 @@
-<!-- shortcodes/localcode.html: Pull local file, present in highlight. -->
-{{ $content := readFile (.Get "file") }}
-{{ highlight $content (.Get "lang") (.Get "options") }}

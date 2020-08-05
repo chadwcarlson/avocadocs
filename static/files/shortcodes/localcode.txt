@@ -1,1 +1,0 @@
-{{< localcode file="layouts/shortcodes/github.html" lang="html" >}}

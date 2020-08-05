@@ -1,0 +1,110 @@
+html, body {
+  margin: 0;
+  font-family: "Overpass", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 25px;
+  color: var(--psh-night);
+}
+
+.container {
+  display: grid;
+  grid-template-areas:
+    "header header header"
+    "nav content side";
+  grid-template-columns: 300px 1fr 250px;
+  grid-template-rows: 80px 1fr;
+  height: 100vh;
+}
+
+header {
+  grid-area: header;
+  color: white;
+  background-color: var(--header-background-color);
+  display: grid;
+  grid-template-columns: 300px 1fr 300px;
+  grid-template-rows: 80px;
+  grid-template-areas: "logo links widget";
+  grid-area: header;
+  box-shadow: 0px 0.5rem 0.5rem rgba(152, 160, 171, 0.35);
+}
+
+.logo {
+  grid-area: logo;
+  background: var(--logo-background);
+  display: flex;
+  justify-content: center;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.links {
+  grid-area: links;
+  background: var(--logo-background);
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.widget {
+  grid-area: widget;
+  /* background: var(--psh-gray); */
+  background: var(--logo-background);
+  color: #FFFFFF;
+}
+
+.nav {
+  grid-area: nav;
+  background-color: var(--sidebar-background-color);
+  overflow: auto;
+}
+
+main {
+  grid-area: content;
+  /* top | right | bottom | left */
+  padding: 5rem 1rem 5rem 5rem;
+  overflow: auto;
+}
+
+aside {
+  grid-area: side;
+  /* border: 1px solid var(--sidebar-background-color); */
+  /* overflow: auto;
+  float: right; */
+}
+
+@media (max-width: 768px) {
+  .container {
+    grid-template-areas:
+      "header"
+      "nav"
+      "content";
+
+    grid-template-columns: 1fr;
+    grid-template-rows:
+      50px /* Header */
+      50px /* Nav */
+      1fr; /* Content */
+  }
+}
+
+@media (max-width: 1200px) {
+
+  .container {
+    grid-template-areas:
+      "header header header"
+      "nav content content";
+    grid-template-columns: 300px 1fr;
+    grid-template-rows: 80px 1fr;
+  }
+
+  aside {
+    display: none;
+  }
+
+  main {
+    /* top | right | bottom | left */
+    margin: 5rem 2.5rem 5rem 2.5rem;
+  }
+
+}

@@ -1,57 +1,26 @@
-<!doctype html>
-
+<!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-
-  <title>avocadocs</title>
-  <!-- <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"> -->
-  <meta name="description" content="Avocadocs">
-  <meta name="author" content="Platform.sh">
-
-  <link rel="stylesheet" href="{{"styles/main.css" | relURL}}">
-
-  <!-- <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/3.1.0/css/font-awesome.min.css" /> -->
-</head>
-
+  {{ partial "head" . }}
   <body>
-    <div class="grid-container">
-      <div class="header">
-        <div class="logo">
-          <!-- <img class="image-logo" src="{{ "images/avocadocs-light.svg" | relURL }}" alt="avocadocs"> -->
-          <img class="image-logo" src="{{ "images/Platformsh_logo_white.svg" | relURL }}" alt="avocadocs">
-        </div>
-        <div class="links">
-            <!-- User documentation -->
-            <ul class="book-items">
-              <li class="book-item-active"><a class="book-item-link" href="#">Documentation</a></li>
-              <li class="book-item"><a class="book-item-link" href="#">Guides</a></li>
-              <li class="book-item"><a class="book-item-link" href="#">Help</a></li>
-              <li class="book-item"><a class="book-item-link" href="#">Example Site</a></li>
-            </ul>
-        </div>
-        <div class="widget">Widget</div>
-      </div>
+    <div class="container">
+      <!-- Header content -->
+      {{ partial "body/header" . }}
 
-      {{ partial "sidebar" . }}
+      <!-- Sidebar/dropdown navigation -->
+      <nav class="nav">
+        navigation
+      </nav>
 
-      <div class="content">
-        <div class="edit-page">
-          <!-- <div class="dynamic-button"> -->
-            <button onclick="window.location.href = '#buttons';" type="button" class="edit-page-button">
-              <span class="text-button-">Edit page</span>
-              <!-- <span class="icon"><img class="chevron-next2" aria-hidden="true" src="/images/icons/chevrons.svg" /></span> -->
-            </button>
-          <!-- </div> -->
-        </div>
-        <!-- {{ partial "welcome-banner" . }} -->
-        <div class="main">
-            {{block "main" .}}{{end}}
-        </div>
-      </div>
+      <!-- Main content -->
+      <main class="main">
+        {{ block "main" . }}{{ end }}
+      </main>
+
+      <!-- Floating TOC -->
+      <aside  class="aside">
+        {{ partial "body/side-toc" . }}
+      </aside>
+
     </div>
-    {{ partial "mathjax" . }}
-    <script src="{{"scripts/copytoclipboard.js" | relURL}}"></script>
-    <script src="{{"scripts/asciinema-player.js" | relURL}}"></script>
   </body>
 </html>

@@ -1,0 +1,19 @@
+.side-toc {
+  padding-top: 2rem;
+  font-size: 0.85rem;
+  line-height: 1.3rem;
+  /* font-weight: bold; */
+  /* border: 1px solid black; */
+}
+
+#TableOfContents > ul,
+#TableOfContents > ul ul {
+  list-style: none;
+  padding-inline-start: 25px;
+  padding-inline-end: 10px;
+  /* margin-right: 2rem; */
+}
+
+#TableOfContents > ul a {
+  text-decoration: none;
+}

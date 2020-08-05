@@ -1,1 +1,0 @@
-{{< github repo="platformsh/language-examples" file="/golang/examples/postgresql.go" lang="go" >}}

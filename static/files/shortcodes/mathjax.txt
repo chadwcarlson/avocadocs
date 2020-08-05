@@ -1,5 +1,0 @@
-{{< tex >}}
-\frac{f(x+\Delta x)-f(x)}{\Delta x}
-   \overset{\Delta x\to 0}{\longrightarrow}
-f'(x)
-{{< /tex >}}
