@@ -1,0 +1,12 @@
+.math {
+  text-align: center;
+  margin: 4rem;
+  padding: 1rem;
+}
+
+.math mjx-container {
+  padding: 4rem;
+  margin: 2rem;
+  width: 100%;
+  outline: none;
+}

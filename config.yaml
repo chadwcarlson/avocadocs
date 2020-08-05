@@ -25,3 +25,13 @@ params:
     # favicon: "img/avocado-icon-dark.svg"
     # logo: "img/avocadocs-light.svg"
     logo: "img/Platformsh_logo_white.svg"
+
+    books:
+      home:
+        title: Documentation
+        section: "/"
+        weight: -120
+      hugoBasicExample:
+        title: Hugo Basic Example
+        section: hugoBasicExample
+        weight: -110

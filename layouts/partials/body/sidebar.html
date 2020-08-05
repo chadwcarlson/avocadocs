@@ -1,3 +1,6 @@
+{{- $currentPage := .Page -}}
+{{- $currentRelLink := .Page.RelPermalink -}}
+
 <div class="sidebar">
   <div class="search">
     <div class="search-area">
@@ -20,14 +23,21 @@
       {{ if eq .Section "home" }}
         {{ $section_url = "/" }}
       {{ end }}
-      <h3 class="sidebar-header"><a class="sidebar-link-header" href="{{ $section_url }}">{{ .Title }}</a></h3>
+
+      {{ $headerClass := "sidebar-header" }}
+      {{ if eq $currentPage . }}
+          {{ $headerClass = "sidebar-header-active" }}
+      {{ else if and (eq .Section "home") (eq $currentRelLink "/") }}
+          {{ $headerClass = "sidebar-header-active" }}
+      {{ end }}
+
+      <h3 class="{{ $headerClass }}"><a class="sidebar-link-header" href="{{ $section_url }}">{{ .Title }}</a></h3>
       <ul class="sidebar-group">
       {{ range .Pages }}
-        <li class="sidebar-item"><a class="sidebar-link" href="{{ .Permalink }}">{{ .Title }}</a></li>
+        <li class="sidebar-item{{ if eq $currentPage . }}-active{{ end }}"><a class="sidebar-link" href="{{ .Permalink }}">{{ .Title }}</a></li>
       {{ end }}
       </ul>
+      <hr class="sidebar-divide">
     {{ end }}
-
-    <hr class="sidebar-divide">
 
 </div>

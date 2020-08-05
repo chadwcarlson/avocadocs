@@ -16,3 +16,19 @@
 /* Code highlighting */
 @import 'components/highlight/inline.css';
 @import 'components/highlight/copytoclipboard.css';
+
+/* Note blockquotes */
+@import 'components/blockquote.css';
+
+/* Videos */
+@import 'components/asciinema-player.css';
+@import 'components/video.css';
+
+/* LaTeX/MathJax */
+@import 'components/mathjax.css';
+
+/* Tabs */
+@import 'components/tabs.css';
+
+/* Tables */
+@import 'components/table.css';

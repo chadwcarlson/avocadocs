@@ -1,4 +1,4 @@
 ---
-title: "Shorcodes"
+title: "Shortcodes"
 weight: 2
 ---
