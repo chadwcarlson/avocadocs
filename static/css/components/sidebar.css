@@ -30,7 +30,7 @@
 .sidebar-link-header {
   /* border-left: 10px solid transparent; */
   text-decoration: none;
-  /* color: var(--psh-night); */
+  color: var(--psh-night);
 }
 
 .sidebar-item-active {
