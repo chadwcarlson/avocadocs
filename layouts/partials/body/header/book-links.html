@@ -1,9 +1,44 @@
+<!-- Header/Book Links -->
+
+<!-- Get list of books -->
+{{ $keys := slice }}
+{{ range $key, $value := .Site.Params.books }}
+  {{ $keys = $keys | append $key }}
+{{ end }}
+
+{{ $currentBook := .Section }}
+
 <div class="links">
-    <!-- User documentation -->
+  {{ if isset .Site.Params "books" }}
     <ul class="book-items">
-      <li class="book-item-active"><a class="book-item-link" href="#">Documentation</a></li>
-      <li class="book-item"><a class="book-item-link" href="#">Guides</a></li>
-      <li class="book-item"><a class="book-item-link" href="#">Help</a></li>
-      <li class="book-item"><a class="book-item-link" href="#">Hugo Basic Example</a></li>
+
+      {{ if not ( in $keys $currentBook ) }}
+        {{ $currentBook = "/" }}
+      {{ end }}
+
+      {{ range $bookPath, $bookParams := sort ( .Site.Params.books ) "weight" }}
+
+        {{ $suffixFreePath := "/" }}
+
+        {{ if isset $bookParams "section" }}
+          {{ $suffixFreePath = path.Join $suffixFreePath ( index $bookParams "section" ) }}
+        {{ else if isset $bookParams "url" }}
+          {{ $suffixFreePath = ( index $bookParams "url" ) }}
+        {{ end }}
+
+        {{ $stripped := ( index ( split ( index $bookParams "section" ) "." ) 0 ) }}
+
+        <!-- Active books should be underlined in header -->
+        {{ if eq $currentBook $stripped }}
+          <li class="book-item-active">
+        {{ else }}
+          <li class="book-item">
+        {{ end }}
+        <a class="book-item-link" href="{{ printf "%s" $suffixFreePath }}" title="{{ index $bookParams "title" }}">{{ index $bookParams "title"  }}</a>
+
+        </li>
+      {{ end }}
+
     </ul>
+  {{ end }}
 </div>

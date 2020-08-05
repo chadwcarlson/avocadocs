@@ -1,5 +1,13 @@
 {{- $currentPage := .Page -}}
 {{- $currentRelLink := .Page.RelPermalink -}}
+{{- $homeBook := .Site.Params.homebook -}}
+{{- $currentSection := .Page.Section -}}
+
+<!-- Get list of books -->
+{{ $keys := slice }}
+{{ range $key, $value := .Site.Params.books }}
+  {{ $keys = $keys | append $key }}
+{{ end }}
 
 <div class="sidebar">
   <div class="search">
@@ -17,13 +25,34 @@
   </div>
   <div>
 
-    {{ range .Site.Sections }}
-      <!-- Check if separate book -->
-      {{ $section_url := .Permalink }}
-      {{ if eq .Section "home" }}
-        {{ $section_url = "/" }}
+    <!-- Reglar Pages/"home book" -->
+    {{ if not ( and ( in $keys $currentSection) (ne $homeBook $currentSection) ) }}
+
+      {{ range .Site.Sections }}
+        <!-- Check if separate book -->
+        {{ $section_url := .Permalink }}
+        {{ if eq .Section "home" }}
+          {{ $section_url = "/" }}
+        {{ end }}
+
+        {{ $headerClass := "sidebar-header" }}
+        {{ if eq $currentPage . }}
+            {{ $headerClass = "sidebar-header-active" }}
+        {{ else if and (eq .Section "home") (eq $currentRelLink "/") }}
+            {{ $headerClass = "sidebar-header-active" }}
+        {{ end }}
+        {{ if or (not ( in $keys .Section )) ( eq .Section $homeBook ) }}
+          <h3 class="{{ $headerClass }}"><a class="sidebar-link-header" href="{{ $section_url }}">{{ .Title }}</a></h3>
+          <ul class="sidebar-group">
+          {{ range .Pages }}
+            <li class="sidebar-item{{ if eq $currentPage . }}-active{{ end }}"><a class="sidebar-link" href="{{ .Permalink }}">{{ .Title }}</a></li>
+          {{ end }}
+          </ul>
+          <hr class="sidebar-divide">
+        {{ end }}
       {{ end }}
 
+    {{ else }}
       {{ $headerClass := "sidebar-header" }}
       {{ if eq $currentPage . }}
           {{ $headerClass = "sidebar-header-active" }}
@@ -31,13 +60,25 @@
           {{ $headerClass = "sidebar-header-active" }}
       {{ end }}
 
-      <h3 class="{{ $headerClass }}"><a class="sidebar-link-header" href="{{ $section_url }}">{{ .Title }}</a></h3>
+      <h3 class="{{ $headerClass }}"><a class="sidebar-link-header" href="{{ .Permalink }}">Introduction</a></h3>
       <ul class="sidebar-group">
-      {{ range .Pages }}
+      {{ range .RegularPages }}
         <li class="sidebar-item{{ if eq $currentPage . }}-active{{ end }}"><a class="sidebar-link" href="{{ .Permalink }}">{{ .Title }}</a></li>
       {{ end }}
       </ul>
       <hr class="sidebar-divide">
+
+      {{ range .Sections }}
+        <h3 class="{{ $headerClass }}"><a class="sidebar-link-header" href="{{ .Permalink }}">{{ .Title }}</a></h3>
+        <ul class="sidebar-group">
+        {{ range .Pages }}
+          <li class="sidebar-item{{ if eq $currentPage . }}-active{{ end }}"><a class="sidebar-link" href="{{ .Permalink }}">{{ .Title }}</a></li>
+        {{ end }}
+        </ul>
+        <hr class="sidebar-divide">
+      {{ end }}
+
+
     {{ end }}
 
 </div>
