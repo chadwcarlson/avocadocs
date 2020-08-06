@@ -2,8 +2,6 @@
   padding-top: 2rem;
   font-size: 0.85rem;
   line-height: 1.3rem;
-  /* font-weight: bold; */
-  /* border: 1px solid black; */
 }
 
 #TableOfContents > ul,
@@ -11,9 +9,21 @@
   list-style: none;
   padding-inline-start: 25px;
   padding-inline-end: 10px;
-  /* margin-right: 2rem; */
 }
 
 #TableOfContents > ul a {
   text-decoration: none;
+}
+
+.toc {
+  padding: .25rem 2rem 1rem 2rem;
+  border: 1px solid var(--sidebar-bg-color);
+}
+
+.toc nav li {
+  list-style: none;
+}
+
+.toc nav a {
+  color: var(--brand-color-primary-blue);
 }

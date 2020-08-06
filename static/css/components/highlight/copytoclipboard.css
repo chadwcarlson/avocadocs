@@ -3,28 +3,20 @@
 .highlight-wrapper {
   display: block;
   border: 1px solid var(--psh-smoke);
-  /* box-shadow: 0px 1px 5px rgba(152, 160, 171, 0.35); */
-  /* box-shadow: 0px 0.5rem 0.5rem rgba(152, 160, 171, 0.35); */
   border-radius: 4px;
-  /* overflow-x: hidden; */
+  margin: 1.5rem 1rem 1.5rem 1rem;
 }
 
 .highlight {
-  /* Commenting this out fixes the scroll, but the copy button disappera */
   position: relative;
   z-index: 0;
   padding: 0;
   margin: 0;
   overflow-x: hidden;
-  /* border-radius: 4px; */
 }
 
 .highlight table td, .highlight table th {
-  /* border: 1px solid #ddd; */
-  /* padding: 0.3rem 0.75rem; */
   text-align: left;
-  /* box-shadow: 0px 0.5rem 0.5rem rgba(152, 160, 171, 0.35); */
-
 }
 
 .highlight > .chroma {
@@ -32,7 +24,6 @@
   background-color: #212121;
   position: static;
   z-index: 1;
-  /* border-radius: 4px; */
   padding: 10px;
 }
 
@@ -53,22 +44,14 @@
   top: 0;
   font-size: 14px;
   font-family: "Overpass", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  /* font-weight: 700; */
   line-height: 16px;
   letter-spacing: 1px;
   width: 75px;
   color: var(--psh-ghost-white);
   background-color: var(--primary-accent);
   border: 1.25px solid var(--primary-accent);
-  /* background-color: var(--psh-light-blue);
-  border: 1.25px solid var(--psh-light-blue); */
-  /* background-color: #FFFFFF;
-  border: none; */
-  /* color: var(--psh-night); */
   border-top-left-radius: 0;
-  /* border-top-right-radius: 4px; */
   border-bottom-right-radius: 0;
-  /* border-bottom-left-radius: 4px; */
   white-space: nowrap;
   padding: 4px 4px 5px 4px;
   margin: 0px 0 0 1px;
@@ -82,9 +65,6 @@
   color: var(--psh-night);
   background-color: var(--secondary-accent);
   border: 1.25px solid var(--secondary-accent);
-  /* background-color: var(--psh-blue);
-  border: 1.25px solid var(--psh-blue);
-  color: #FFFFFF; */
   outline: 0;
 }
 
@@ -92,5 +72,4 @@
   position: absolute;
   height: 0;
   z-index: -1;
-  /* opacity: .01; */
 }

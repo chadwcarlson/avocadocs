@@ -1,20 +1,5 @@
 :root {
 
-  /* Colors */
-  /* (PSH) */
-  --logo-background-color: var(--psh-night);
-  --header-background-color: var(--psh-night);
-  --header-font-color: #FFFFFF;
-  --sidebar-background-color: var(--psh-smoke);
-  --primary-accent: var(--psh-blue);
-  --secondary-accent: var(--psh-pink);
-
-  /* (Avocadocs) */
-  /* --logo-background: var(--psh-parsley);
-  --sidebar-background: var(--psh-smoke);
-  --primary-accent: var(--psh-candy-green);
-  --secondary-accent: var(--psh-pastel-green); */
-
   /* Platform.sh */
   /* Primary colors */
   --psh-black: #171719;
@@ -41,6 +26,36 @@
   --psh-aqua: #7BD8DB;
   --psh-java: #23B7B7;
   --psh-bold-red: #FB3728;
+
+  /* COLORS */
+  
+  /* Header */
+  --header-background-color: var(--psh-night);
+  --header-font-color: #FFFFFF;
+  --logo-background-color: var(--psh-night);
+  --booklinks-background-color: var(--psh-night);
+  --widget-background-color: var(--psh-night);
+
+  /* Sidebar */
+  --sidebar-background-color: var(--psh-smoke);
+  --primary-accent: var(--psh-blue);
+  --secondary-accent: var(--psh-pink);
+
+
+  /* (PSH) */
+  /* --logo-background-color: var(--psh-night);
+  --header-background-color: var(--psh-night);
+  --header-font-color: #FFFFFF;
+  --sidebar-background-color: var(--psh-smoke);
+  --primary-accent: var(--psh-blue);
+  --secondary-accent: var(--psh-pink); */
+
+  /* (Avocadocs) */
+  /* --logo-background: var(--psh-parsley);
+  --sidebar-background: var(--psh-smoke);
+  --primary-accent: var(--psh-candy-green);
+  --secondary-accent: var(--psh-pastel-green); */
+
 
   /* Layout */
   --header-height: 80px;

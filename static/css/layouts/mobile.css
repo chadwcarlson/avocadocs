@@ -16,4 +16,14 @@
     /* top | right | bottom | left */
     padding: 2rem;
   }
+
+  .nav {
+    display: none;
+  }
+}
+
+@media (max-width: 1200px) {
+  .links {
+    display: none;
+  }
 }

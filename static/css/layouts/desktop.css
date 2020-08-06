@@ -48,7 +48,6 @@ header {
 
 .widget {
   grid-area: widget;
-  /* background: var(--psh-gray); */
   background: var(--logo-background);
   color: #FFFFFF;
   display: flex;
@@ -73,7 +72,7 @@ header {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 80px 1fr;
-  grid-template-areas: "search" ".";
+  grid-template-areas: "search";
   grid-area: sidebar;
   background: var(--sidebar-background);
   box-shadow: 0px 0.5rem 0.5rem rgba(152, 160, 171, 0.35);
@@ -81,6 +80,11 @@ header {
 
 .search {
   grid-area: search;
+  position: fixed;
+  width: 300px;
+  background-color: var(--sidebar-background-color);
+
+  /* padding-bottom: 5rem; */
   /* background: #FFFFFF; */
   /* border: 1px solid #FFFFFF; */
 }

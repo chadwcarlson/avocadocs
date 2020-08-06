@@ -32,6 +32,15 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam `non tellus et`
 
 ## Source
 
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus libero tellus, mollis eu cursus quis, porttitor tempus ante. Etiam eget sollicitudin mauris, vitae porta velit. Nulla ultrices efficitur diam, et blandit sem suscipit sit amet. Mauris lobortis ornare dolor et iaculis. Maecenas accumsan velit sed tempus laoreet.
+
+* Nulla ultrices efficitur diam, et blandit sem suscipit sit amet.
+    {{< localcode file="layouts/shortcodes/note.html" lang="html" >}}
+* Nulla ultrices efficitur diam, et blandit sem suscipit sit amet.
+* Nulla ultrices efficitur diam, et blandit sem suscipit sit amet.
+* Nulla ultrices efficitur diam, et blandit sem suscipit sit amet.
+
+
 {{< localcode file="layouts/shortcodes/note.html" lang="html" >}}
 
 ## Styles

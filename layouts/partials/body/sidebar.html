@@ -11,7 +11,7 @@
 
 <div class="sidebar">
   <div class="search">
-    <div class="search-area">
+    <div class="xssroot">
       <div class="search-icon">
         <img class="search-icon-svg" src="{{ "img/icons/search-solid.svg" | relURL }}" alt="search-icon">
       </div>
@@ -23,7 +23,7 @@
       <!-- </div> -->
     </div>
   </div>
-  <div>
+  <div class="sidebar-entries">
 
     <!-- Reglar Pages/"home book" -->
     {{ if not ( and ( in $keys $currentSection) (ne $homeBook $currentSection) ) }}
@@ -47,7 +47,6 @@
           {{ range .Pages }}
             <li class="sidebar-item{{ if eq $currentPage . }}-active{{ end }}"><a class="sidebar-link" href="{{ .Permalink }}">{{ .Title }}</a></li>
           {{ end }}
-          </ul>
           <hr class="sidebar-divide">
         {{ end }}
       {{ end }}
