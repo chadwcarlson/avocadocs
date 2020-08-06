@@ -1,0 +1,32 @@
+blockquote {
+  /* top | right | bottom | left */
+  padding: 1rem 3rem 2rem 3rem;
+  box-shadow: 0px 0.5rem 0.5rem rgba(152, 160, 171, 0.35);
+}
+
+.note {
+  background-color: var(--psh-light-blue);
+}
+
+.info {
+  background-color: var(--psh-aqua);
+}
+
+.warning {
+  background-color: var(--psh-light-pink);
+}
+
+.danger {
+  background-color: var(--psh-dark-pink);
+}
+
+.tiered {
+  background-color: var(--psh-pastel-green);
+}
+
+blockquote code {
+  color: var(--psh-blue);
+  background-color: #FFFFFF;
+  padding: .15rem .3rem;
+  line-height: 1.7;
+}

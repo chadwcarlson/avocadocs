@@ -1,4 +1,4 @@
-HUGOVERSION=0.68.3
+HUGOVERSION=0.72.0
 SITEDIR=exampleSite
 
 # Move theme into the example site

@@ -19,4 +19,4 @@ sidebarTitle: "Apps (.platform.app.yaml)"
 
 ## Styles
 
-{{< localcode file="static/styles/components/accordian.css" lang="css" >}}
+{{< localcode file="static/css/components/accordian.css" lang="css" >}}

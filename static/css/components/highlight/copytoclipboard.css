@@ -1,0 +1,75 @@
+/* Modified from: https://aaronluna.dev/blog/add-copy-button-to-code-blocks-hugo-chroma/ */
+
+.highlight-wrapper {
+  display: block;
+  border: 1px solid var(--psh-smoke);
+  border-radius: 4px;
+  margin: 1.5rem 1rem 1.5rem 1rem;
+}
+
+.highlight {
+  position: relative;
+  z-index: 0;
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+.highlight table td, .highlight table th {
+  text-align: left;
+}
+
+.highlight > .chroma {
+  color: #d0d0d0;
+  background-color: #212121;
+  position: static;
+  z-index: 1;
+  padding: 10px;
+}
+
+.chroma .lntd:first-child {
+  padding: 7px 7px 7px 10px;
+  margin: 0;
+}
+
+.chroma .lntd:last-child {
+  padding: 7px 10px 7px 7px;
+  margin: 0;
+}
+
+.copy-code-button {
+  position: absolute;
+  z-index: 2;
+  right: 0;
+  top: 0;
+  font-size: 14px;
+  font-family: "Overpass", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 16px;
+  letter-spacing: 1px;
+  width: 75px;
+  color: var(--psh-ghost-white);
+  background-color: var(--primary-accent);
+  border: 1.25px solid var(--primary-accent);
+  border-top-left-radius: 0;
+  border-bottom-right-radius: 0;
+  white-space: nowrap;
+  padding: 4px 4px 5px 4px;
+  margin: 0px 0 0 1px;
+  cursor: pointer;
+}
+
+.copy-code-button:hover,
+.copy-code-button:focus,
+.copy-code-button:active,
+.copy-code-button:active:hover {
+  color: var(--psh-night);
+  background-color: var(--secondary-accent);
+  border: 1.25px solid var(--secondary-accent);
+  outline: 0;
+}
+
+.copyable-text-area {
+  position: absolute;
+  height: 0;
+  z-index: -1;
+}

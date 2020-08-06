@@ -5,6 +5,4 @@ description: |
 sidebarTitle: "Apps (.platform.app.yaml)"
 ---
 
-## Asciinema
-
 {{< asciinema src="videos/snap-merge-restore.cast" >}}

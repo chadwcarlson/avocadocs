@@ -1,0 +1,124 @@
+.accordian-content {
+  overflow: hidden;
+  display: none;
+}
+.accordian input:checked ~ .accordian-content {
+  display: block;
+}
+
+/* [THE ENTIRE TAB] */
+.accordian {
+  position: relative;
+  margin: 2px;
+}
+
+/* [THE LABEL] */
+.accordian input {
+  display: none;
+}
+.accordian label {
+  display: block;
+  font-size: 20px;
+  font-weight: 700;
+  padding: 1rem 2rem;
+  cursor: pointer;
+}
+.accordian label::before {
+  content: url("/img/icons/chevrons.svg");
+  position: absolute;
+  left: -5px;
+  top: 17px;
+  display: block;
+  transition: all 0.4s;
+}
+
+.accordian input[type=radio]:checked + label::before {
+  transform: rotate(90deg);
+}
+
+.accordian input[type=radio]:checked + label {
+  border-bottom: none;
+
+}
+
+/* [THE CONTENTS] */
+.accordian-content {
+  display: none;
+  grid-template-columns: 0.5fr 1.5fr;
+  grid-template-rows: auto 50px;
+  grid-gap: 10px;
+  background: #FFFFFF;
+  border-left: 2px solid #fb3728;
+  transition: display 0.1s;
+  transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
+  padding: 10px;
+}
+.accordian-content p {
+  margin: 20px;
+}
+
+.accordian-content h1,
+.accordian-content h2,
+.accordian-content h3,
+.accordian-content h4,
+.accordian-content h5,
+.accordian-content h6 {
+  margin: 20px;
+}
+
+.accordian-content > div {
+  padding: 20px 0;
+}
+
+.template-image {
+  grid-column: 1;
+  grid-row: 1;
+  margin: auto;
+  display: flex;
+}
+.template-logo {
+  min-width: 200px;
+  min-height: 200px;
+  max-height: 250px;
+  max-width: 250px;
+}
+.template-description {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.template-deployonpsh {
+  grid-column: 1;
+  grid-row: 2;
+  margin: auto;
+  padding: 0 !important;
+}
+
+.template-source {
+  grid-column: 2;
+  grid-row: 2;
+  align-items: center;
+  display: flex;
+  margin-left: 20px;
+}
+
+.template-source div {
+  margin: 0px !important;
+  background: url("/img/icons/GitHub-Mark-32px.png") no-repeat;
+  background-size: contain;
+  padding-left: 2rem;
+}
+
+.template-source div:hover {
+  opacity: 0.75;
+}
+
+.template-source a {
+  text-decoration: none;
+  color: var(--psh-night);
+  font-weight: inherit;
+}
+
+.accordian input:checked ~ .accordian-content {
+  display: grid;
+}

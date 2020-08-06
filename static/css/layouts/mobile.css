@@ -1,0 +1,29 @@
+@media (max-width: 768px) {
+  .container {
+    grid-template-areas:
+      "header"
+      "nav"
+      "content";
+
+    grid-template-columns: 1fr;
+    grid-template-rows:
+      50px /* Header */
+      50px /* Nav */
+      1fr; /* Content */
+  }
+
+  main {
+    /* top | right | bottom | left */
+    padding: 2rem;
+  }
+
+  .nav {
+    display: none;
+  }
+}
+
+@media (max-width: 1200px) {
+  .links {
+    display: none;
+  }
+}

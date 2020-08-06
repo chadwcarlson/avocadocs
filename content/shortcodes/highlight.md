@@ -5,8 +5,6 @@ description: |
 sidebarTitle: "Apps (.platform.app.yaml)"
 ---
 
-## Syntax highlighting
-
 Mauris sodales ante enim, vitae tristique nisl elementum a. Nunc a orci consequat, volutpat ligula et, semper neque. Phasellus at accumsan est. Praesent molestie commodo leo in dignissim. Nulla nec nibh eget sapien iaculis bibendum.
 
 ### Inline code

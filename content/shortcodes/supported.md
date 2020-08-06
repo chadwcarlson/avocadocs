@@ -5,6 +5,8 @@ description: |
 sidebarTitle: "Apps (.platform.app.yaml)"
 ---
 
-## Supported versions
-
+{{< supported >}}
+<br/><br/><br/>
 {{< supported2 >}}
+<br/><br/><br/>
+{{< supported3 >}}
