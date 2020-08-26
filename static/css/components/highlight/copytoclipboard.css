@@ -3,7 +3,6 @@
 .highlight-wrapper {
   display: block;
   border: 1px solid var(--psh-smoke);
-  border-radius: 4px;
   margin: 1.5rem 1rem 1.5rem 1rem;
 }
 
@@ -13,6 +12,7 @@
   padding: 0;
   margin: 0;
   overflow-x: hidden;
+  max-height: 500px;
 }
 
 .highlight table td, .highlight table th {
@@ -20,11 +20,16 @@
 }
 
 .highlight > .chroma {
-  color: #d0d0d0;
-  background-color: #212121;
+  /* color: #d0d0d0; */
+  /* background-color: #212121; */
   position: static;
   z-index: 1;
   padding: 10px;
+  /* font-family: 'Overpass Mono', monospace; */
+}
+
+.highlight > .chroma > code {
+  font-family: 'Overpass Mono', monospace !important;
 }
 
 .chroma .lntd:first-child {

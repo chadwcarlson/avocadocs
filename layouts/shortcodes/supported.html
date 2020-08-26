@@ -1,42 +1,11 @@
-<div class="supported-table">
-<table class="table-dark">
-<thead>
-  <tr>
-    <th></th>
-    <th>5.4</th>
-    <th>5.5</th>
-    <th>5.6</th>
-    <th>7.0</th>
-    <th>7.1</th>
-    <th>7.2</th>
-    <th>7.3</th>
-    <th>7.4</th>
-  </tr>
-</thead>
-<tbody>
-  <tr class="grid-row">
-    <th class="tier">Grid</th>
-    <td>{{ partial "icons/deprecated" . }}</td>
-    <td>{{ partial "icons/deprecated" . }}</td>
-    <td>{{ partial "icons/deprecated" . }}</td>
-    <td>{{ partial "icons/deprecated" . }}</td>
-    <td>{{ partial "icons/deprecated" . }}</td>
-    <td>{{ partial "icons/supported" . }}</td>
-    <td>{{ partial "icons/supported" . }}</td>
-    <td>{{ partial "icons/supported" . }}</td>
-  </tr>
-  <tr>
-    <th class="tier">Dedicated</th>
-    <td>{{ partial "icons/unsupported" . }}</td>
-    <td>{{ partial "icons/unsupported" . }}</td>
-    <td>{{ partial "icons/deprecated" . }}</td>
-    <td>{{ partial "icons/deprecated" . }}</td>
-    <td>{{ partial "icons/deprecated" . }}</td>
-    <td>{{ partial "icons/supported" . }}</td>
-    <td>{{ partial "icons/supported" . }}</td>
-    <td>{{ partial "icons/supported" . }}</td>
-  </tr>
-</tbody>
-</table>
-<div class="deprecated">Deprecated versions are available but no longer receive security updates from upstream, so their use is not recommended. They will be removed at some point in the future.</div>
-</div>
+{{ $image := "elasticsearch"}}
+{{ $registry := ( readFile "static/files/registry.json" ) | transform.Unmarshal }}
+
+{{ $supported  := index $registry "elasticsearch" "versions" "supported" }}
+
+<h3> Supported versions </h3>
+<ul>
+{{ range $supported }}
+  <li>{{.}}</li>
+{{ end }}
+</ul>

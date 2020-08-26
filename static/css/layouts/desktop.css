@@ -8,6 +8,10 @@ html, body {
   color: var(--psh-night);
 }
 
+pre {
+  font-family: 'Overpass Mono', monospace;
+}
+
 .container {
   display: grid;
   grid-template-areas:
@@ -66,9 +70,13 @@ header {
   height: 100vh;
   position: fixed;
   width: 300px;
-  overflow-y: scroll;
-  /* z-index: 100; */
-  top: 80px;
+  overflow-y: auto;
+  scrollTop: 977;
+  /* position: sticky; */
+  /* y: 100; */
+  /* z-index: 100;
+  y: 100; */
+  /* top: 80px; */
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 80px 1fr;
@@ -91,7 +99,6 @@ header {
 
 main {
   grid-area: content;
-  /* top | right | bottom | left */
-  padding: 5rem;
+  padding: 7rem;
   overflow: auto;
 }

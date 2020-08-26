@@ -1,13 +1,15 @@
 
 .book-items {
   list-style: none;
-  margin-left: 2.6rem;
+  margin-left: 5rem;
 }
 
 .book-item {
   display: inline;
   margin-right: 2rem;
-  font-size: 18px;
+  font-size: 20px;
+  line-height: 40px;
+  font-weight: 700;
 }
 
 .book-item:hover {
@@ -17,13 +19,18 @@
 .book-item-active {
   display: inline;
   margin-right: 2rem;
-  font-size: 18px;
-  border-bottom: 2px solid #FFFFFF;
+  font-size: 20px;
+  line-height: 40px;
+  font-weight: 700;  border-bottom: 2px solid #FFFFFF;
 }
 
 .book-item-link {
   text-decoration: none;
   color: #FFFFFF;
+}
+
+.book-item-link:hover {
+  text-decoration: none;
 }
 
 .book-item-link:visited {

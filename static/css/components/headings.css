@@ -1,5 +1,49 @@
 h1, h2, h3, h4, h5, h6 {
-  margin-top: 2rem;
-  margin-bottom: 1rem;
+  font-weight: 900;
+  margin-top: 50px;
+  margin-bottom: 30px;
   scroll-margin-top: 2.5em;
+}
+
+h1 {
+  font-size: 24px;
+  line-height: 40px;
+}
+
+h2, h3, h4, h5, h6 {
+  line-height: 168.52%;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+h3 {
+  font-size: 16px;
+}
+
+h4 {
+  font-size: 14px;
+}
+
+h5 {
+  font-size: 13px;
+}
+
+h6 {
+  font-size: 12px;
+}
+
+h2:hover .headline-hash,
+h3:hover .headline-hash,
+h4:hover .headline-hash,
+h5:hover .headline-hash,
+h6:hover .headline-hash {
+  visibility: visible;
+}
+
+.headline-hash {
+  margin-top: 15px;
+  height: 18px;
+  visibility: hidden;
 }
