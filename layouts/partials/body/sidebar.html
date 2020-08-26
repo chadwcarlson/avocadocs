@@ -10,6 +10,8 @@
 {{ end }}
 
 <div class="sidebar">
+
+  <!-- Search -->
   <div class="search">
     <div class="xssroot">
       <div class="search-icon">
@@ -23,61 +25,97 @@
       <!-- </div> -->
     </div>
   </div>
+
+  <!-- Actual sidebar entries -->
   <div class="sidebar-entries">
 
     <!-- Reglar Pages/"home book" -->
-    {{ if not ( and ( in $keys $currentSection) (ne $homeBook $currentSection) ) }}
+    {{ if not ( and (in $keys $currentSection) ( not ( index .Site.Params.books .Section "home") ) ) }}
 
       {{ range .Site.Sections }}
-        <!-- Check if separate book -->
-        {{ $section_url := .Permalink }}
-        {{ if eq .Section "home" }}
-          {{ $section_url = "/" }}
-        {{ end }}
 
-        {{ $headerClass := "sidebar-header" }}
-        {{ if eq $currentPage . }}
-            {{ $headerClass = "sidebar-header-active" }}
-        {{ else if and (eq .Section "home") (eq $currentRelLink "/") }}
-            {{ $headerClass = "sidebar-header-active" }}
-        {{ end }}
-        {{ if or (not ( in $keys .Section )) ( eq .Section $homeBook ) }}
-          <h3 class="{{ $headerClass }}"><a class="sidebar-link-header" href="{{ $section_url }}">{{ .Title }}</a></h3>
-          <ul class="sidebar-group">
-          {{ range .Pages }}
-            <li class="sidebar-item{{ if eq $currentPage . }}-active{{ end }}"><a class="sidebar-link" href="{{ .Permalink }}">{{ .Title }}</a></li>
+        {{ $isBook := ( in $keys .Section ) }}
+        {{ $isHomeBook := false }}
+        {{ if $isBook }}
+          {{ if ( index .Site.Params.books .Section "home" ) }}
+              {{ $isHomeBook = true }}
           {{ end }}
+        {{ end }}
+
+        {{ if and ($isHomeBook) ($isBook) }}
+
+          <h3 class="sidebar-header{{ if eq $currentPage . }}-active{{ end }}"><a class="sidebar-link-header{{ if eq $currentPage . }}-active{{ end }}" href="{{ .Permalink }}">{{ .Title }}</a></h3>
+          <ul class="sidebar-group">
+
+            <!-- Place the homepage as the  first entry in the first section -->
+            <li class="sidebar-item{{ if $currentPage.IsHome }}-active{{ end }}"><a class="sidebar-link{{ if $currentPage.IsHome }}-active{{ end }}" href="/">{{ .Site.Home.Title }}</a></li>
+
+            {{ range .Pages }}
+              <li class="sidebar-item{{ if eq $currentPage . }}-active{{ end }}"><a class="sidebar-link{{ if eq $currentPage . }}-active{{ end }}" href="{{ .Permalink }}">{{ if isset .Params "sidebartitle" }}{{ .Params.sidebarTitle }}{{ else }}{{ .Title }}{{ end }}</a></li>
+              {{ if .IsNode }}
+                <ul class="sidebar-group sidebar-group-level2">
+                {{ $groupPages := .Pages }}
+                {{ range .Pages }}
+                  {{ if or ( eq $currentPage .Parent ) ( in $groupPages $currentPage ) }}
+                    <li class="sidebar-item{{ if eq $currentPage . }}-active-level2{{ end }} sidebar-item-level2"><a class="sidebar-link{{ if eq $currentPage . }}-active{{ end }}" href="{{ .Permalink }}">{{ if isset .Params "sidebartitle" }}{{ .Params.sidebarTitle }}{{ else }}{{ .Title }}{{ end }}</a></li>
+                  {{ end }}
+                {{ end }}
+                </ul>
+              {{ end }}
+            {{ end }}
+          </ul>
           <hr class="sidebar-divide">
+
+        {{ else if ( and (not $isHomeBook) (not $isBook) ) }}
+
+          <h3 class="sidebar-header{{ if eq $currentPage . }}-active{{ end }}"><a class="sidebar-link-header{{ if eq $currentPage . }}-active{{ end }}" href="{{ .Permalink }}">{{ .Title }}</a></h3>
+          <ul class="sidebar-group">
+            {{ range .Pages }}
+              <li class="sidebar-item{{ if eq $currentPage . }}-active{{ end }}"><a id="link-sidebar-event" class="sidebar-link{{ if eq $currentPage . }}-active{{ end }}" href="{{ .Permalink }}">{{ if isset .Params "sidebartitle" }}{{ .Params.sidebarTitle }}{{ else }}{{ .Title }}{{ end }}</a></li>
+              {{ if .IsNode }}
+                <ul class="sidebar-group sidebar-group-level2">
+                {{ $groupPages := .Pages }}
+                {{ range .Pages }}
+                  {{ if or ( eq $currentPage .Parent ) ( in $groupPages $currentPage ) }}
+                    <li class="sidebar-item{{ if eq $currentPage . }}-active-level2{{ end }} sidebar-item-level2"><a id="link-sidebar-event" class="sidebar-link{{ if eq $currentPage . }}-active{{ end }}" href="{{ .Permalink }}">{{ if isset .Params "sidebartitle" }}{{ .Params.sidebarTitle }}{{ else }}{{ .Title }}{{ end }}</a></li>
+                  {{ end }}
+                {{ end }}
+                </ul>
+              {{ end }}
+            {{ end }}
+          </ul>
+          <hr class="sidebar-divide">
+
         {{ end }}
+
       {{ end }}
 
+    <!-- Secondary books -->
     {{ else }}
-      {{ $headerClass := "sidebar-header" }}
-      {{ if eq $currentPage . }}
-          {{ $headerClass = "sidebar-header-active" }}
-      {{ else if and (eq .Section "home") (eq $currentRelLink "/") }}
-          {{ $headerClass = "sidebar-header-active" }}
-      {{ end }}
 
-      <h3 class="{{ $headerClass }}"><a class="sidebar-link-header" href="{{ .Permalink }}">Introduction</a></h3>
-      <ul class="sidebar-group">
-      {{ range .RegularPages }}
-        <li class="sidebar-item{{ if eq $currentPage . }}-active{{ end }}"><a class="sidebar-link" href="{{ .Permalink }}">{{ .Title }}</a></li>
-      {{ end }}
-      </ul>
-      <hr class="sidebar-divide">
-
-      {{ range .Sections }}
-        <h3 class="{{ $headerClass }}"><a class="sidebar-link-header" href="{{ .Permalink }}">{{ .Title }}</a></h3>
+      {{ range .FirstSection.Sections }}
+        <h3 class="sidebar-header"><a class="sidebar-link-header" href="{{ .Permalink }}">{{ if isset .Params "sidebartitle" }}{{ .Params.sidebarTitle }}{{ else }}{{ .Title }}{{ end }}</a></h3>
         <ul class="sidebar-group">
-        {{ range .Pages }}
-          <li class="sidebar-item{{ if eq $currentPage . }}-active{{ end }}"><a class="sidebar-link" href="{{ .Permalink }}">{{ .Title }}</a></li>
-        {{ end }}
-        </ul>
-        <hr class="sidebar-divide">
-      {{ end }}
+            {{ range .Pages }}
+              <li class="sidebar-item{{ if eq $currentPage . }}-active{{ end }}"><a class="sidebar-link{{ if eq $currentPage . }}-active{{ end }}" href="{{ .Permalink }}">{{ if isset .Params "sidebartitle" }}{{ .Params.sidebarTitle }}{{ else }}{{ .Title }}{{ end }}</a></li>
+              {{ if .IsNode }}
+                <ul class="sidebar-group sidebar-group-level2">
+                {{ $groupPages := .Pages }}
+                {{ range .Pages }}
+                  {{ if or ( eq $currentPage .Parent ) ( in $groupPages $currentPage ) }}
+                    <li class="sidebar-item{{ if eq $currentPage . }}-active-level2{{ end }} sidebar-item-level2"><a class="sidebar-link{{ if eq $currentPage . }}-active{{ end }}" href="{{ .Permalink }}">{{ if isset .Params "sidebartitle" }}{{ .Params.sidebarTitle }}{{ else }}{{ .Title }}{{ end }}</a></li>
+                  {{ end }}
+                {{ end }}
+                </ul>
+              {{ end }}
+            {{ end }}
+          </ul>
+          <hr class="sidebar-divide">
 
+      {{ end }}
 
     {{ end }}
+
+
 
 </div>

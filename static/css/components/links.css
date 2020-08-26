@@ -1,0 +1,9 @@
+a,
+a:visited {
+  color: var(--psh-blue);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}

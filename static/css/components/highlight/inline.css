@@ -3,7 +3,8 @@ li > code,
 .video-desc > code {
   color: var(--psh-blue);
   background-color: var(--psh-smoke);
-  padding: .25rem;
+  padding: .15rem;
   font-size: 100%;
   line-height: inherit;
+  font-family: 'Overpass Mono', monospace;
 }

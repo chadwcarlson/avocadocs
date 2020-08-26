@@ -1,11 +1,22 @@
 {{ define "main" }}
   <h1>{{ .Title }}</h1>
   {{ if ne .Params.toc false }}
-    <div class="toc">
+    <!-- <div class="toc">
       <h4>Contents:</h4>
       {{ .TableOfContents }}
-    </div>
+    </div> -->
   {{ end }}
   <p>{{ .Description | markdownify }}</p>
-  {{ .Content }}
+  <!-- Page content, anchorized -->
+  {{ partial "headline-hash.html" .Content }}
+
+    <!-- Section cards -->
+  {{ range .Pages }}
+    <div class="list-page">
+      <button onclick="window.location.href = '{{ .RelPermalink }}';" type="button" class="list-button" style="text-align: left;">
+        <p><b>{{ if isset .Params "sidebartitle" }}{{ .Params.sidebarTitle }}{{ else }}{{ .Title }}{{ end }}</b></p>
+        <p>{{ .Params.description | markdownify }}</p>
+      </button>
+    </div>
+  {{ end }}
 {{ end }}

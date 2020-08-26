@@ -7,5 +7,6 @@
     </div>
   {{ end }}
   <p>{{ .Description | markdownify }}</p>
-  {{ .Content }}
+  <!-- Page content, anchorized -->
+  {{ partial "headline-hash.html" .Content }}
 {{ end }}

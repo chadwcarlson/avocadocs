@@ -1,0 +1,22 @@
+.list-page {
+  /* font-family: "Overpass", "Helvetica Neue", Helvetica, Arial, sans-serif; */
+}
+
+.list-button {
+  background-color: var(--psh-light-pink);
+  width: 100%;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  margin: 0.5rem;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  box-shadow: 0px 0.25rem 0.25rem rgba(152, 160, 171, 0.35);
+  font-size: 16px;
+  font-family: "Overpass", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.list-button:hover {
+  background-color: var(--psh-pink);
+  /* border: 1px solid var(--psh-pink); */
+  /* box-shadow: 0px 0.5rem 0.5rem rgba(152, 160, 171, 0.35); */
+}

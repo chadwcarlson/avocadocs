@@ -1,0 +1,27 @@
+{{ $headerClass := "sidebar-header" }}
+{{ $linkClass := "sidebar-link"}}
+{{ if eq $currentPage . }}
+    {{ $headerClass = "sidebar-header-active" }}
+    {{ $linkClass := "sidebar-link-active"}}
+{{ else if and (eq .Section "home") (eq $currentRelLink "/") }}
+    {{ $headerClass = "sidebar-header-active" }}
+    {{ $linkClass := "sidebar-link-active"}}
+{{ end }}
+
+<h3 class="{{ $headerClass }}"><a class="sidebar-link-header" href="{{ .Permalink }}">Introduction</a></h3>
+<ul class="sidebar-group">
+{{ range .RegularPages }}
+  <li class="sidebar-item{{ if eq $currentPage . }}-active{{ end }}"><a class="{{ $linkClass }}" href="{{ .Permalink }}">{{ if isset .Params "sidebartitle" }}{{ .Params.sidebarTitle }}{{ else }}{{ .Title }}{{ end }}</a></li>
+{{ end }}
+</ul>
+<hr class="sidebar-divide">
+
+{{ range .Sections }}
+  <h3 class="{{ $headerClass }}"><a class="sidebar-link-header" href="{{ .Permalink }}">{{ .Title }}</a></h3>
+  <ul class="sidebar-group">
+  {{ range .Pages }}
+    <li class="sidebar-item{{ if eq $currentPage . }}-active{{ end }}"><a class="{{ $linkClass }}" href="{{ .Permalink }}">{{ if isset .Params "sidebartitle" }}{{ .Params.sidebarTitle }}{{ else }}{{ .Title }}{{ end }}</a></li>
+  {{ end }}
+  </ul>
+  <hr class="sidebar-divide">
+{{ end }}
